@@ -36,6 +36,21 @@
   /* overflow: hidden; */
 }
 
+.custom-splideshow__text-content .button::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background: red;
+  left: -100%;
+  transition: left 0.3s ease;
+}
+
+.custom-splideshow__text-content .button:hover::before {
+  left: 0;
+  transition: left 0.3s ease;
+}
+
 .custom-slideshow .splide__slide {
   border-radius: 15px;
   overflow: hidden;
