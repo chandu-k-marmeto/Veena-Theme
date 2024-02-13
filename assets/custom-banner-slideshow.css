@@ -107,7 +107,7 @@
 }
 .custom-slideshow__heading a:not(:hover)::before {
   width: 0%;
-  left: 0;
+  left: 100%;
   transition: width 0.5s ease;
   transform-origin: right;
 }
