@@ -1,6 +1,142 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Custom SlideShow",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "range",
+      "label": "Padding Top",
+      "id": "padding_top",
+      "default": 30,
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Padding Bottom",
+      "id": "padding_bottom",
+      "default": 30,
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Slider Options"
+    },
+    {
+      "type": "checkbox",
+      "label": "Auto Play",
+      "id": "auto_play",
+      "default": true
+    },
+    {
+      "type": "range",
+      "label": "Auto Play Duration",
+      "id": "auto_play_duration",
+      "default": 1000,
+      "min": 1000,
+      "max": 5000,
+      "step": 1000,
+      "unit": "sec"
+    },
+    {
+      "type": "checkbox",
+      "label": "Show Pagination",
+      "id": "show_pagination",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "settings": [
+        {
+      "type": "image_picker",
+      "label": "Image",
+      "id": "image",
+      "info": "Image for Desktop"
+    },
+    {
+      "type": "image_picker",
+      "label": "Image (Mobile)",
+      "id": "image_mobile",
+      "info": "Image For Mobile"
+    },
+    {
+      "type": "select",
+      "label": "Desktop Content Position",
+      "id": "desktop_content_position",
+      "default": "middle-center",
+      "options": [
+        {
+          "label": "Top Left",
+          "value": "top-left"
+        },
+        {
+          "label": "Top Center",
+          "value": "top-center"
+        },
+        {
+          "label": "Top Right",
+          "value": "top-right"
+        },
+        {
+          "label": "Middle Left",
+          "value": "middle-left"
+        },
+        {
+          "label": "Middle Center",
+          "value": "middle-center"
+        },
+        {
+          "label": "Middle Right",
+          "value": "middle-right"
+        },
+        {
+          "label": "Bottom Left",
+          "value": "bottom-left"
+        },
+        {
+          "label": "Bottom Center",
+          "value": "bottm-center"
+        },
+        {
+          "label": "Bottom Right",
+          "value": "bottom-right"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "label": "Desktop Text Allignment",
+      "id": "desktop_text_allignment",
+      "options": [
+        {
+          "label": "Left",
+          "value": "left"
+        },
+        {
+          "label": "Center",
+          "value": "center"
+        },
+        {
+          "label": "Right",
+          "value": "right"
+        }
+      ]
+    }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom SlideShow"
+    }
+  ]
+}
 {% endschema %}
