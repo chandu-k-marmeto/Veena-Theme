@@ -58,11 +58,11 @@
   opacity: 1;
 }
 .custom-slideshow .splide__arrow.splide__arrow--prev {
-  left: 45%;
+  left: 40%;
   margin-bottom: 10px;
 }
 .custom-slideshow .splide__arrow.splide__arrow--next {
-  right: 45%;
+  right: 40%;
   margin-bottom: 10px;
 }
 .custom-slideshow .splide__arrow svg {
