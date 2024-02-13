@@ -113,10 +113,33 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "custom_banner_slideshow_w6VMUp": {
+      "type": "custom-banner-slideshow",
+      "blocks": {
+        "slide_6NP7Ry": {
+          "type": "slide",
+          "settings": {
+            "desktop_content_position": "middle-center",
+            "desktop_text_allignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "slide_6NP7Ry"
+      ],
+      "settings": {
+        "padding_top": 30,
+        "padding_bottom": 30,
+        "auto_play": true,
+        "auto_play_duration": 5000,
+        "show_pagination": true
+      }
     }
   },
   "order": [
     "slideshow_AFzDeQ",
-    "collection_list_PwxrD8"
+    "collection_list_PwxrD8",
+    "custom_banner_slideshow_w6VMUp"
   ]
 }
