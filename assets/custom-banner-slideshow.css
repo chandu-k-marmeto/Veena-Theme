@@ -63,7 +63,7 @@
   width: 1rem;
   height: 1rem;
 }
-.custom-slideshow .is-active {
+.custom-slideshow .splide__pagination__page .is-active {
   width: 3rem;
   border-radius: 10px;
 }
