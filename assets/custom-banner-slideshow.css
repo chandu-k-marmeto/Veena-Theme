@@ -56,7 +56,12 @@
   bottom: 0;
   transform: unset;
 }
-
+.custom-slideshow .splide__arrow .splide__arrow--prev {
+  left: 45%;
+}
+.custom-slideshow .splide__arrow .splide__arrow--next {
+  right: 45%;
+}
 .custom-slideshow .splide__arrow svg {
   fill: #fff;
 }
