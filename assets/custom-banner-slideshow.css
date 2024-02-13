@@ -30,13 +30,13 @@
   padding: 20px 35px;
   margin-bottom: 75px;
 }
-.custom-slideshow__text-content .button {
+.custom-slideshow__text-content a {
   margin-top: 30px;
   position: relative;
   /* overflow: hidden; */
 }
 
-.custom-splideshow__text-content .button::before {
+.custom-splideshow__text-content a::before {
   content: "";
   width: 100%;
   position: absolute;
@@ -46,7 +46,7 @@
   transition: left 0.3s ease;
 }
 
-.custom-splideshow__text-content .button:hover::before {
+.custom-splideshow__text-content a:hover::before {
   left: 0;
   transition: left 0.3s ease;
 }
