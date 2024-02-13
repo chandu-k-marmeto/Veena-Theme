@@ -56,12 +56,15 @@
   width: 0;
   transition: width 0.5s ease;
   border-radius: 31px;
-  opacity: 1;
 }
 
 .custom-slideshow__text-content a:hover {
   color: red;
   opacity: 0.8;
+}
+
+.custom-slideshow__text-content a:not(:hover) {
+  opacity: 1;
 }
 
 .custom-slideshow .splide__slide {
