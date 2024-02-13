@@ -119,6 +119,12 @@
 .custom-slideshow__heading a:hover::before {
   width: 100%;
   transition: width 1s ease;
+  transform-origin: left;
+}
+.custom-slideshow__heading a:not(:hover)::before {
+  width: 0%;
+  transition: width 1s ease;
+  transform-origin: left;
 }
 
 .custom-slideshow__heading a:hover {
