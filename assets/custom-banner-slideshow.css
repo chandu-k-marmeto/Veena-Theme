@@ -32,6 +32,23 @@
 }
 .custom-slideshow__text-content a {
   margin-top: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-slideshow__text-content a::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+}
+
+.custom-slideshow__text-content a:hover::before {
+  width: 100%;
+  color: red;
+  transition: width 1s ease;
 }
 
 .custom-slideshow .splide__slide {
