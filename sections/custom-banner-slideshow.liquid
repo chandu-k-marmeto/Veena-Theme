@@ -42,7 +42,7 @@
                 assign desktopContainerAllignment = blocks.settings.desktop_content_position
                 assign textAllignment = blocks.settings.desktop_text_allignment
               %}
-              <li class="splide__slide">
+              <li class="splide__slide color-{{ colorSchema.id }}">
                 <div class="custom-slideshow__image">
                   {% if desktopImage != blank or mobileImage != blank %}
                     {% render 'responsive-image', desktopImage: desktopImage, mobileImage: mobileImage %}
