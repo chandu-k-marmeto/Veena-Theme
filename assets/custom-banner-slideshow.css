@@ -3,7 +3,11 @@
   width: 100%;
   height: auto;
 }
-
+.custom-slideshow__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .custom-slideshow {
   position: relative;
 }
