@@ -46,13 +46,13 @@
   background: #f5f5f5;
 }
 
-.custom-slideshow__text-content .button:hover::before {
+.custom-slideshow__text-content a:hover::before {
   width: 100%;
   transition: width 0.5s ease;
   border-radius: 31px;
 }
 
-.custom-slideshow__text-content .button:not(:hover)::before {
+.custom-slideshow__text-content a:not(:hover)::before {
   width: 0;
   transition: width 0.5s ease;
   border-radius: 31px;
