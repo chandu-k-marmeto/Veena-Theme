@@ -132,10 +132,40 @@
             "button_label": "Shop Now",
             "button_url": ""
           }
+        },
+        "slide_4QMkjQ": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/veena-png-1.webp",
+            "image_mobile": "shopify:\/\/shop_images\/veena-png-1.webp",
+            "desktop_content_position": "middle-center",
+            "desktop_text_allignment": "center",
+            "color_scheme": "background-1",
+            "sub_heading": "Trendy Classics",
+            "heading": "Discover Signature Look: Fashion Forward and Fabulous!",
+            "button_label": "Shop Now",
+            "button_url": ""
+          }
+        },
+        "slide_GLBUXU": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/veena-png-2.webp",
+            "image_mobile": "shopify:\/\/shop_images\/veena-png-2.webp",
+            "desktop_content_position": "bottom-left",
+            "desktop_text_allignment": "center",
+            "color_scheme": "background-1",
+            "sub_heading": "Trendy Classics",
+            "heading": "Discover Signature Look: Fashion Forward and Fabulous!",
+            "button_label": "Shop Now",
+            "button_url": ""
+          }
         }
       },
       "block_order": [
-        "slide_6NP7Ry"
+        "slide_6NP7Ry",
+        "slide_4QMkjQ",
+        "slide_GLBUXU"
       ],
       "settings": {
         "padding_top": 30,
