@@ -2,13 +2,11 @@
   position: relative;
   width: 100%;
   height: auto;
-  border-radius: 30px;
 }
 .custom-slideshow__image img {
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 30px;
 }
 .custom-slideshow {
   position: relative;
@@ -21,7 +19,6 @@
   left: 0;
   top: 0;
   padding: 20px;
-  border-radius: 30px;
   height: 100%;
 }
 
