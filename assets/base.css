@@ -3582,3 +3582,42 @@ details-disclosure > details {
     --border-offset: 0px; /* Prevent the border from growing on buttons when this effect is on. */
   }
 }
+
+/* custom css */
+
+.top-left {
+  justify-content: start;
+  align-content: start;
+}
+.top-center {
+  justify-content: center;
+  align-items: start;
+}
+.top-right {
+  justify-content: end;
+  align-items: start;
+}
+.middle-left {
+  justify-content: start;
+  align-items: center;
+}
+.middle-center {
+  justify-content: center;
+  align-items: center;
+}
+.middle-right {
+  justify-content: end;
+  align-items: center;
+}
+.bottom-left {
+  justify-content: start;
+  align-items: end;
+}
+.bottom-center {
+  justify-content: center;
+  align-items: end;
+}
+.bottom-right {
+  justify-content: end;
+  align-items: end;
+}
