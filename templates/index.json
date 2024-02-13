@@ -173,7 +173,8 @@
         "auto_play": true,
         "auto_play_duration": 1000,
         "show_pagination": true,
-        "slide_type": "fade"
+        "slide_type": "fade",
+        "show_arrows": true
       }
     }
   },
