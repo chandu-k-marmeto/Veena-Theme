@@ -25,6 +25,6 @@
   height: 100%;
 }
 
-.custom-slideshow {
+.custom-slideshow .splide__slide {
   border-radius: 30px;
 }
