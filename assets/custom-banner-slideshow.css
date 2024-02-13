@@ -33,7 +33,6 @@
 .custom-slideshow__text-content .button {
   margin-top: 30px;
   position: relative;
-  /* overflow: hidden; */
 }
 
 .custom-slideshow__text-content .button::before {
@@ -95,12 +94,12 @@
   margin-bottom: 10px;
 }
 .custom-slideshow .splide__arrow svg {
-  fill: #fff;
+  fill: inherit;
 }
 
 .custom-slideshow .splide__pagination__page {
   background: transparent;
-  border: #fff solid 1px;
+  border: inherit solid 1px;
   width: 1rem;
   height: 1rem;
 }
