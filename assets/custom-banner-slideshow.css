@@ -51,3 +51,10 @@
 .custom-slideshow__sub-heading li {
   list-style-type: disc;
 }
+.custom-slideshow .splide__arrow {
+  background: none;
+}
+
+.custom-slideshow .splide__arrow svg {
+  fill: #fff;
+}
