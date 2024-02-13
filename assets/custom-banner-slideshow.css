@@ -60,6 +60,7 @@
 
 .custom-slideshow__text-content a:hover {
   color: red;
+  opacity: 0.8;
 }
 
 .custom-slideshow .splide__slide {
