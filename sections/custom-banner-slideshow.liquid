@@ -12,7 +12,17 @@
 %}
 
 <div class="custom-slideshow padding-{{ section.id }}">
-  <div class="page-width"></div>
+  <div class="page-width">
+    <splider-component>
+      <script>
+        {
+          "autoplay":{{autoPlay}},
+          "pagination":{{showPagination}},
+          "speed":{{autoPlayDuration}}
+        }
+      </script>
+    </splider-component>
+  </div>
 </div>
 
 {% schema %}
