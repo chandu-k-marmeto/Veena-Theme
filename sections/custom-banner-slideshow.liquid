@@ -51,7 +51,22 @@
                   {% endif %}
                 </div>
                 <div class="custom-slideshow__text-content-container">
-                  <div class="custom-slideshow__text-content"></div>
+                  <div class="custom-slideshow__text-content">
+                    <div>
+                      <span>{{ subHeading }}</span>
+                    </div>
+                    <h2 class="h1">{{ heading }}</h2>
+                    <a
+                      class="button"
+                      {% if buttonUrl != blank %}
+                        href="{{ buttonUrl }}"
+                      {% else %}
+                        aria-aria-disabled="true"
+                      {% endif %}
+                    >
+                      {{- buttonLabel -}}
+                    </a>
+                  </div>
                 </div>
               </li>
             {% endfor %}
