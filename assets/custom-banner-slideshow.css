@@ -62,7 +62,8 @@
   margin-bottom: 10px;
 }
 .custom-slideshow .splide__arrow.splide__arrow--next {
-  left: 50%;
+  left: 45%;
+  margin-bottom: 10px;
 }
 .custom-slideshow .splide__arrow svg {
   fill: #fff;
