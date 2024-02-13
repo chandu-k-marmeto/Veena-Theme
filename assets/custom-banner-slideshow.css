@@ -34,6 +34,6 @@
   border: 1px solid;
   border: 1px solid;
 }
-..custom-slideshow__sub-heading li {
+.custom-slideshow__sub-heading li {
   list-style-type: disc;
 }
