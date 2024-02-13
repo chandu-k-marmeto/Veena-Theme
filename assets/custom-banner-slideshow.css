@@ -90,12 +90,10 @@
     text-align: center;
   }
   .custom-slideshow .splide__arrow.splide__arrow--prev {
-    left: 35%;
-    margin-bottom: 10px;
+    left: 30%;
   }
   .custom-slideshow .splide__arrow.splide__arrow--next {
-    right: 35%;
-    margin-bottom: 10px;
+    right: 30%;
   }
   .custom-slideshow__text-content a {
     margin-top: 0;
