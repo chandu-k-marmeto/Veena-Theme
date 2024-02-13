@@ -35,6 +35,7 @@
   border-radius: 30px;
   padding-right: 5px;
   backdrop-filter: blur(10px);
+  font-size: calc(var(--font-body-scale) * 14px);
 }
 .custom-slideshow__sub-heading li {
   list-style-type: disc;
