@@ -3,6 +3,18 @@
 <script src="{{ "splide.min.js" | asset_url }}" defer></script>
 <script src="{{ "custom-splide-component.js" | asset_url }}" defer></script>
 
+{% liquid
+  assign autoPlay = section.settings.auto_play
+  assign autoPlayDuration = section.settings.auto_play_duration
+  assign showPagination = section.settings.show_pagination
+  assign paddingTop = section.settings.padding_top
+  assign paddingBottom = section.settings.padding_bottom
+%}
+
+<div class="custom-slideshow padding-{{ section.id }}">
+  <div class="page-width"></div>
+</div>
+
 {% schema %}
 {
   "name": "Custom SlideShow",
@@ -134,7 +146,13 @@
           "value": "right"
         }
       ]
-    }
+    },
+      {
+        "type":"color_scheme",
+        "id":"color_scheme",
+        "label":"Color Scheme",
+        "default":"background-1"
+      }
       ]
     }
   ],
