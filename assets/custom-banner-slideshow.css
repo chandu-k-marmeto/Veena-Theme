@@ -25,6 +25,10 @@
   height: 100%;
 }
 
+.custom-slideshow__text-content {
+  width: 50%;
+}
+
 .custom-slideshow .splide__slide {
   border-radius: 30px;
 }
