@@ -33,6 +33,7 @@
   display: inline-block;
   border: 1px solid;
   border-radius: 30px;
+  padding-right: 5px;
 }
 .custom-slideshow__sub-heading li {
   list-style-type: disc;
