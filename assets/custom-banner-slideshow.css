@@ -66,12 +66,12 @@
   margin-bottom: 10px;
 }
 .custom-slideshow .splide__arrow svg {
-  fill: rgb(var(--color-foreground));
+  fill: var(--color-foreground);
 }
 
 .custom-slideshow .splide__pagination__page {
   background: transparent;
-  border: rgb(var(--color-foreground)) solid 1px;
+  border: var(--color-foreground) solid 1px;
   width: 1rem;
   height: 1rem;
 }
@@ -79,7 +79,7 @@
   width: 3rem;
   border-radius: 10px;
   margin: 10px;
-  background: rgb(var(--color-foreground));
+  background: var(--color-foreground);
   opacity: 1;
 }
 
