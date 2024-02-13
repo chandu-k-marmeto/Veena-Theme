@@ -1,3 +1,8 @@
+{{ 'custom-banner-slideshow.css' | asset_url | stylesheet_tag }}
+{{ 'splide.min.css' | asset_url | stylesheet_tag }}
+<script src="{{ "splide.min.js" | asset_url }}" defer></script>
+<script src="{{ "custom-splide-component.js" | asset_url }}" defer></script>
+
 {% schema %}
 {
   "name": "Custom SlideShow",
