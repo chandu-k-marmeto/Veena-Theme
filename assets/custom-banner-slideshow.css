@@ -58,3 +58,9 @@
 .custom-slideshow .splide__arrow svg {
   fill: #fff;
 }
+
+@media screen and (max-width: 768px) {
+  .custom-slideshow__text-content {
+    width: 100%;
+  }
+}
