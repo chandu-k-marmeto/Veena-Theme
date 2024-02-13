@@ -121,6 +121,10 @@
   transition: width 1s ease;
 }
 
+.custom-slideshow__heading a:hover {
+  color: red;
+}
+
 @media screen and (max-width: 768px) {
   .custom-slideshow__text-content {
     width: 100%;
