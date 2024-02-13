@@ -9,6 +9,7 @@
   assign showPagination = section.settings.show_pagination
   assign paddingTop = section.settings.padding_top
   assign paddingBottom = section.settings.padding_bottom
+  assign slideType = section.settings.slide_type
 %}
 
 {% style %}
@@ -78,6 +79,7 @@
           "autoplay":{{autoPlay}},
           "pagination":{{showPagination}},
           "speed":{{autoPlayDuration}},
+          "type":{{slideType}},
           "breakpoints":{
             "768":{
               "height":"40vh"
@@ -139,6 +141,26 @@
       "label": "Show Pagination",
       "id": "show_pagination",
       "default": true
+    },
+    {
+      "type":"select",
+      "label":"Type of Slide",
+      "id":"slide_type",
+      "default":"slide",
+      "options":[
+        {
+          "label":"Fade",
+          "value":"fade"
+        },
+        {
+          "label":"Loop",
+          "value":"loop"
+        },
+        {
+          "label":"Slide",
+          "value":"slide"
+        }
+      ]
     }
   ],
   "blocks": [
