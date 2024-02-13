@@ -90,11 +90,11 @@
     text-align: center;
   }
   .custom-slideshow .splide__arrow.splide__arrow--prev {
-    left: 30%;
+    left: 35%;
     margin-bottom: 10px;
   }
   .custom-slideshow .splide__arrow.splide__arrow--next {
-    right: 30%;
+    right: 35%;
     margin-bottom: 10px;
   }
 }
