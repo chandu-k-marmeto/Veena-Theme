@@ -28,3 +28,24 @@
 .custom-slideshow .splide__slide {
   border-radius: 30px;
 }
+
+.custom-slideshow__sub-heading {
+  padding: 5px;
+  display: inline;
+  border: 1px solid;
+}
+
+.custom-slideshow__sub-heading span {
+  position: absolute;
+}
+
+.custom-slideshow__sub-heading span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-right: 10px;
+  width: 1px;
+  height: 1px;
+  background: white;
+}
