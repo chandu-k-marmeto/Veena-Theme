@@ -38,6 +38,7 @@
 
 .custom-slideshow .splide__slide {
   border-radius: 30px;
+  overflow: hidden;
 }
 
 .custom-slideshow__sub-heading {
