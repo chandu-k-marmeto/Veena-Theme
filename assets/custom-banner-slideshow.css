@@ -57,10 +57,11 @@
   transform: unset;
   opacity: 1;
 }
-.custom-slideshow .splide__arrow .splide__arrow--prev {
-  left: 50%;
+.custom-slideshow .splide__arrow.splide__arrow--prev {
+  left: 45%;
+  margin-bottom: 10px;
 }
-.custom-slideshow .splide__arrow .splide__arrow--next {
+.custom-slideshow .splide__arrow.splide__arrow--next {
   left: 50%;
 }
 .custom-slideshow .splide__arrow svg {
