@@ -64,4 +64,7 @@
     width: 100%;
     padding: 10px;
   }
+  .custom-slideshow .splide__slide {
+    border-radius: 15px;
+  }
 }
