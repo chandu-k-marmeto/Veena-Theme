@@ -30,6 +30,9 @@
   padding: 20px 35px;
   margin-bottom: 75px;
 }
+.custom-slideshow__text-content a {
+  margin-top: 30px;
+}
 
 .custom-slideshow .splide__slide {
   border-radius: 30px;
