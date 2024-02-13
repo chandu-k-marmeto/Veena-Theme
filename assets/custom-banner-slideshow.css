@@ -89,4 +89,12 @@
     padding: 10px;
     text-align: center;
   }
+  .custom-slideshow .splide__arrow.splide__arrow--prev {
+    left: 30%;
+    margin-bottom: 10px;
+  }
+  .custom-slideshow .splide__arrow.splide__arrow--next {
+    right: 30%;
+    margin-bottom: 10px;
+  }
 }
