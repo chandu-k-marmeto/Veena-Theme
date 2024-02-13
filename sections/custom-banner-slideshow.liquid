@@ -11,6 +11,19 @@
   assign paddingBottom = section.settings.padding_bottom
 %}
 
+{% style %}
+  .padding-{{section.id}}{
+    padding-top:{{paddingTop}}px;
+    padding-bottom:{{paddingBottom}}px;
+  }
+  @media screen and (max-width:768px){
+    .padding-{{section.id}}{
+      padding-top:{{paddingTop | divided_by:2}}px;
+      padding-bottom:{{paddingBottom | divided_by:2}}px;
+    }
+  }
+{% endstyle %}
+
 <div class="custom-slideshow padding-{{ section.id }}">
   <div class="page-width">
     <splider-component>
