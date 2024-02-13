@@ -55,6 +55,7 @@
   top: unset;
   bottom: 0;
   transform: unset;
+  opacity: 1;
 }
 .custom-slideshow .splide__arrow .splide__arrow--prev {
   left: 45%;
