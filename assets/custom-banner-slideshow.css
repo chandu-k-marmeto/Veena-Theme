@@ -62,6 +62,7 @@
   border: #fff solid 1px;
   width: 1rem;
   height: 1rem;
+  fill: #fff;
 }
 .custom-slideshow .splide__pagination__page.is-active {
   width: 3rem;
