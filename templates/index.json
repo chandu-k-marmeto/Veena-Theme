@@ -172,7 +172,7 @@
         "padding_bottom": 30,
         "auto_play": true,
         "auto_play_duration": 1000,
-        "show_pagination": false
+        "show_pagination": true
       }
     }
   },
