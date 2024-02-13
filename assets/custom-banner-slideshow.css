@@ -60,6 +60,8 @@
 .custom-slideshow .splide__pagination__page {
   background: transparent;
   border: #fff solid 1px;
+  width: 1rem;
+  height: 1rem;
 }
 
 @media screen and (max-width: 768px) {
