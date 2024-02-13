@@ -98,4 +98,8 @@
   .custom-slideshow__text-content a {
     margin-top: 0;
   }
+  .custom-slideshow__text-content-container {
+    justify-content: center;
+    align-items: center;
+  }
 }
