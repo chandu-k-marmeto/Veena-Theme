@@ -53,6 +53,13 @@
   border-radius: 31px;
 }
 
+.custom-slideshow__text-content .button:not(:hover)::before {
+  width: 0;
+  color: red;
+  transition: width 0.5s ease;
+  border-radius: 31px;
+}
+
 .custom-slideshow__text-content a:hover {
   color: red;
   opacity: 0.7;
