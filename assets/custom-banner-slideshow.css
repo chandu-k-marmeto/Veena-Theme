@@ -52,6 +52,9 @@
 }
 .custom-slideshow .splide__arrow {
   background: none;
+  top: unset;
+  bottom: 0;
+  transform: unset;
 }
 
 .custom-slideshow .splide__arrow svg {
