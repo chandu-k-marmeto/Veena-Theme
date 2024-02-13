@@ -58,10 +58,10 @@
   opacity: 1;
 }
 .custom-slideshow .splide__arrow .splide__arrow--prev {
-  left: 45%;
+  left: 50%;
 }
 .custom-slideshow .splide__arrow .splide__arrow--next {
-  right: 45%;
+  left: 50%;
 }
 .custom-slideshow .splide__arrow svg {
   fill: #fff;
