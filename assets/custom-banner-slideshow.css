@@ -30,13 +30,13 @@
   padding: 20px 35px;
   margin-bottom: 75px;
 }
-.custom-slideshow__text-content a {
+.custom-slideshow__text-content .button {
   margin-top: 30px;
   position: relative;
   /* overflow: hidden; */
 }
 
-.custom-slideshow__text-content a::before {
+.custom-slideshow__text-content .button::before {
   position: absolute;
   content: "";
   top: 0;
@@ -46,7 +46,7 @@
   background: red;
 }
 
-.custom-slideshow__text-content a:hover::before {
+.custom-slideshow__text-content .button:hover::before {
   width: 100%;
   color: red;
   transition: width 1s ease;
