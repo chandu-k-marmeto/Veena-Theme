@@ -52,6 +52,10 @@
   transition: width 1s ease;
 }
 
+.custom-slideshow__text-content a:hover {
+  color: red;
+}
+
 .custom-slideshow .splide__slide {
   border-radius: 15px;
   overflow: hidden;
