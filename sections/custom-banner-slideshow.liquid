@@ -10,6 +10,7 @@
   assign paddingTop = section.settings.padding_top
   assign paddingBottom = section.settings.padding_bottom
   assign slideType = section.settings.slide_type
+  assign showArrows = section.settings.show_arrows
 %}
 
 {% style %}
@@ -161,6 +162,12 @@
           "value":"slide"
         }
       ]
+    },
+    {
+      "type": "checkbox",
+      "label": "Show Arrows",
+      "id": "show_arrows",
+      "default": true
     }
   ],
   "blocks": [
