@@ -42,7 +42,13 @@
                 assign desktopContainerAllignment = blocks.settings.desktop_content_position
                 assign textAllignment = blocks.settings.desktop_text_allignment
               %}
-              <li class="splide__slide">{{ heading }}</li>
+              <li class="splide__slide">
+                {% if desktopImage != blank or mobileImage != blank %}
+                  {% render 'responsive-image', desktopImage: desktopImage, mobileImage: mobileImage %}
+                {% else %}
+                  {{ 'image' | placeholder_svg_tag }}
+                {% endif %}
+              </li>
             {% endfor %}
           </ul>
         </div>
