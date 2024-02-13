@@ -17,12 +17,13 @@
 .custom-slideshow__text-content-container {
   position: absolute;
   width: 100%;
-  height: auto;
+
   background: transparent;
   left: 0;
   top: 0;
   padding: 20px;
   border-radius: 30px;
+  height: 100%;
 }
 
 .custom-slideshow {
