@@ -7,6 +7,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 30px;
 }
 .custom-slideshow {
   position: relative;
@@ -78,6 +79,9 @@
     text-align: center;
   }
   .custom-slideshow .splide__slide {
+    border-radius: 15px;
+  }
+  .custom-slideshow__image img {
     border-radius: 15px;
   }
 }
