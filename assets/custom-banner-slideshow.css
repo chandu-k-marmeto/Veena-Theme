@@ -36,7 +36,7 @@
 }
 
 .custom-slideshow__sub-heading span {
-  position: absolute;
+  position: relative;
 }
 
 .custom-slideshow__sub-heading span::before {
