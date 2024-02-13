@@ -57,10 +57,14 @@
   fill: #fff;
 }
 
+.custom-slideshow .splide__pagination__page {
+}
+
 @media screen and (max-width: 768px) {
   .custom-slideshow__text-content {
     width: 100%;
     padding: 10px;
+    text-align: center;
   }
   .custom-slideshow .splide__slide {
     border-radius: 15px;
