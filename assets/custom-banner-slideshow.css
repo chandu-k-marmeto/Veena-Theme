@@ -132,6 +132,11 @@
   transition: color 0.5s ease;
 }
 
+.custom-slideshow__heading a:not(:hover) {
+  color: inherit;
+  transition: color 0.5s ease;
+}
+
 @media screen and (max-width: 768px) {
   .custom-slideshow__text-content {
     width: 100%;
