@@ -63,6 +63,7 @@
         "slide_9VzbfW",
         "slide_Jrcgxd"
       ],
+      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "slide_height": "medium",
@@ -101,6 +102,7 @@
         "featured_collection_GWenhM",
         "featured_collection_bhkVcD"
       ],
+      "disabled": true,
       "settings": {
         "title": "Collections",
         "heading_size": "h1",
@@ -121,7 +123,12 @@
           "type": "slide",
           "settings": {
             "desktop_content_position": "middle-center",
-            "desktop_text_allignment": "left"
+            "desktop_text_allignment": "left",
+            "color_scheme": "",
+            "sub_heading": "Trendy Classics",
+            "heading": "Discover Signature Look: Fashion Forward and Fabulous!",
+            "button_label": "Shop Now",
+            "button_url": ""
           }
         }
       },
