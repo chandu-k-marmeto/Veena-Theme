@@ -124,7 +124,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/veena-png.webp",
             "image_mobile": "shopify:\/\/shop_images\/veena-png.webp",
-            "desktop_content_position": "top-left",
+            "desktop_content_position": "bottom-right",
             "desktop_text_allignment": "left",
             "color_scheme": "background-1",
             "sub_heading": "Trendy Classics",
