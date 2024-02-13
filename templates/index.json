@@ -122,22 +122,22 @@
         "slide_6NP7Ry": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/veena-png.webp",
-            "image_mobile": "shopify:\/\/shop_images\/veena-png.webp",
-            "desktop_content_position": "middle-left",
-            "desktop_text_allignment": "left",
+            "image": "shopify:\/\/shop_images\/veena-png-1.webp",
+            "image_mobile": "shopify:\/\/shop_images\/veena-png-1.webp",
+            "desktop_content_position": "middle-center",
+            "desktop_text_allignment": "center",
             "color_scheme": "background-1",
-            "sub_heading": "Trendy Classics",
-            "heading": "Discover Signature Look: Fashion Forward and Fabulous!",
-            "button_label": "Shop Now",
+            "sub_heading": "Women's Approval",
+            "heading": "Elevate your wardrobe with our limited-offer fashion offer!",
+            "button_label": "Explore More",
             "button_url": ""
           }
         },
         "slide_4QMkjQ": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/veena-png-1.webp",
-            "image_mobile": "shopify:\/\/shop_images\/veena-png-1.webp",
+            "image": "shopify:\/\/shop_images\/veena-png.webp",
+            "image_mobile": "shopify:\/\/shop_images\/veena-png.webp",
             "desktop_content_position": "middle-center",
             "desktop_text_allignment": "center",
             "color_scheme": "background-1",
@@ -155,9 +155,9 @@
             "desktop_content_position": "bottom-left",
             "desktop_text_allignment": "center",
             "color_scheme": "background-1",
-            "sub_heading": "Trendy Classics",
-            "heading": "Discover Signature Look: Fashion Forward and Fabulous!",
-            "button_label": "Shop Now",
+            "sub_heading": "Modern Elegance",
+            "heading": "Step into the World of Style with the Latest Fashion Trends Unveiled!",
+            "button_label": "Explore Now",
             "button_url": ""
           }
         }
