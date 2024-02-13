@@ -36,38 +36,6 @@
   /* overflow: hidden; */
 }
 
-.custom-slideshow__text-content a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transition: box-shadow var(--duration-long) ease;
-  width: 0;
-}
-
-.custom-slideshow__text-content a:hover::before {
-  width: 100%;
-  transition: width 0.5s ease;
-  border-radius: 31px;
-}
-
-.custom-slideshow__text-content a:not(:hover)::before {
-  width: 0;
-  transition: width 0.5s ease;
-  border-radius: 31px;
-}
-
-.custom-slideshow__text-content a:hover {
-  color: red;
-  opacity: 0.8;
-}
-
-.custom-slideshow__text-content a:not(:hover) {
-  opacity: 1;
-}
-
 .custom-slideshow .splide__slide {
   border-radius: 15px;
   overflow: hidden;
