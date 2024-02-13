@@ -3587,7 +3587,7 @@ details-disclosure > details {
 
 .top-left {
   justify-content: start;
-  align-content: start;
+  align-items: start;
 }
 .top-center {
   justify-content: center;
