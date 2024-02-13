@@ -14,10 +14,11 @@
 %}
 
 {% style %}
-  .padding-{{section.id}}{
-    padding-top:{{paddingTop}}px;
-    padding-bottom:{{paddingBottom}}px;
+  .padding-{{ section.id }}{
+    padding-top: {{ paddingTop }}px;
+    padding-bottom: {{ paddingBottom }}px;
   }
+  
   @media screen and (max-width:768px){
     .padding-{{section.id}}{
       padding-top:{{paddingTop | divided_by:2}}px;
@@ -44,14 +45,16 @@
                 assign desktopContainerAllignment = blocks.settings.desktop_content_position
                 assign textAllignment = blocks.settings.desktop_text_allignment
               %}
+              
               <li class="splide__slide color-{{ colorSchema.id }}">
                 <div class="custom-slideshow__image">
                   {% if desktopImage != blank or mobileImage != blank %}
                     {% render 'responsive-image', desktopImage: desktopImage, mobileImage: mobileImage %}
                   {% else %}
-                    {{ 'image' | placeholder_svg_tag }}
+                    {{ 'hero-apparel-1' | placeholder_svg_tag }}
                   {% endif %}
                 </div>
+              
                 <div class="custom-slideshow__text-content-container {{ desktopContainerAllignment }}">
                   <div class="custom-slideshow__text-content {{ textAllignment }}">
                     <ul class="custom-slideshow__sub-heading">
@@ -63,7 +66,7 @@
                       {% if buttonUrl != blank %}
                         href="{{ buttonUrl }}"
                       {% else %}
-                        aria-disabled="true"
+                        role="link" aria-disabled="true"
                       {% endif %}
                     >
                       {{- buttonLabel -}}
