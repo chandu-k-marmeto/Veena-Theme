@@ -97,4 +97,7 @@
     right: 35%;
     margin-bottom: 10px;
   }
+  .custom-slideshow__text-content a {
+    margin-top: 0;
+  }
 }
