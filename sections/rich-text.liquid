@@ -29,7 +29,8 @@
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
-                {{ block.settings.heading }}
+                <!-- {{ block.settings.heading }} -->
+                {{ block.settings.heading | split: 'animate--' | first }}
               </h2>
             {%- when 'caption' -%}
               <p
