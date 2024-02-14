@@ -139,10 +139,14 @@
   left: 0;
   width: 0;
   height: 100%;
-  background: #ff003b;
+  background: #000;
   transition: all 0.35s;
 }
 
 .rich-text__buttons a:hover:after {
   width: 100%;
+}
+
+.rich-text__buttons a:not(:hover):after {
+  width: 0%;
 }
