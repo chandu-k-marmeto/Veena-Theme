@@ -10,6 +10,16 @@
   assign showArrows = section.settings.show_arrows
 %}
 
+{% capture slideOptions %}
+  {
+    "autoplay":{{autoPlay}},
+    "pagination":{{showPagination}},
+    "speed":{{autoPlayDuration}},
+    "type":"{{slideType}}",
+    "arrows":{{showArrows}}
+  }
+{% endcapture %}
+
 {% style %}
   .padding-{{ section.id }}{
     padding-top: {{ paddingTop | divided_by:2 }}px;
@@ -26,7 +36,7 @@
 
 <div class="custom-slideshow padding-{{ section.id }}">
   <div class="page-width">
-    <splider-component data-slider-settings="">
+    <splider-component data-slider-settings="{{ slideOptions }}">
       <section class="splide" aria-label="Splide Basic HTML Example">
         <div class="splide__track">
           <ul class="splide__list">
@@ -81,16 +91,6 @@
           </ul>
         </div>
       </section>
-
-      <script>
-        {
-          "autoplay":{{autoPlay}},
-          "pagination":{{showPagination}},
-          "speed":{{autoPlayDuration}},
-          "type":"{{slideType}}",
-          "arrows":{{showArrows}}
-        }
-      </script>
     </splider-component>
   </div>
 </div>
