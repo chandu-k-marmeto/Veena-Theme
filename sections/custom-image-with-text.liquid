@@ -20,6 +20,27 @@
   }
 {% endstyle %}
 
+<div class="custom-image-with-text padding-{{ section.id }}">
+  <div class="page-width">
+    <div class="grid grid--col-1 grid--col-2-tablet grid--col-2-desktop">
+      {% for blocks in section.blocks %}
+        {% liquid
+          assign desktopImage = blocks.settings.image
+          assign mobileImage = blocks.settings.image_mobile
+          assign desktopAllignment = blocks.settingsdesktop_content_allignment
+          assign textAllignment = blocks.settings.text_allignment
+          assign heading = blocks.settings.block_heading
+          assign preHeading = blocks.settings.pre_heading
+          assign buttonLabel = blocks.settings.button_label
+          assign buttonLink = blocks.settings.button_link
+          assign colorSchema = blocks.settings.color_scheme
+        %}
+        {% render 'image-with-text' %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
 {% schema %}
 {
   "name": "Custom Image with Text",
@@ -150,6 +171,12 @@
           "value": "right"
         }
       ]
+    },
+    {
+      "type":"color_scheme",
+      "id":"color_scheme",
+      "label":"Color Scheme",
+      "default":"background-1"
     }
       ]
     }
