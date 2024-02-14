@@ -22,6 +22,9 @@
 
 <div class="custom-image-with-text padding-{{ section.id }}">
   <div class="page-width">
+    {% if heading != blank %}
+      <h2>{{ heading }}</h2>
+    {% endif %}
     <div class="grid grid--1-col grid--2-col-tablet grid--2-col-desktop">
       {% for blocks in section.blocks %}
         {% liquid
@@ -29,7 +32,7 @@
           assign mobileImage = blocks.settings.image_mobile
           assign desktopAllignment = blocks.settingsdesktop_content_allignment
           assign textAllignment = blocks.settings.text_allignment
-          assign heading = blocks.settings.block_heading
+          assign blockHeading = blocks.settings.block_heading
           assign preHeading = blocks.settings.pre_heading
           assign buttonLabel = blocks.settings.button_label
           assign buttonLink = blocks.settings.button_link
@@ -41,7 +44,7 @@
             mobileImage: mobileImage,
             desktopContainerAllignment: desktopAllignment,
             textAllignment: textAllignment,
-            heading: heading,
+            heading: blockHeading,
             preHeading: preHeading,
             buttonLabel: buttonLabel,
             buttonLink: buttonLink,
@@ -63,6 +66,26 @@
       "label": "Heading",
       "id": "heading",
       "default": "Collections"
+    },
+    {
+      "type": "select",
+      "label": "Heading size",
+      "id": "heading_size",
+      "default": "h1",
+      "options": [
+        {
+          "label": "Large",
+          "value": "h0"
+        },
+        {
+          "label": "Medium",
+          "value": "h1"
+        },
+        {
+          "label": "Small",
+          "value": "h2"
+        }
+      ]
     },
     {
       "type": "select",
