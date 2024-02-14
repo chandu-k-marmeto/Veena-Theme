@@ -71,8 +71,8 @@
   position: relative;
 }
 
-.image-with-text-section__heading {
-  font-size: calc(var(--font-heading-scale) * 22px);
+.image-with-text-section__heading.h1 {
+  font-size: calc(var(--font-heading-scale) * 26px);
   margin-bottom: 20px;
 }
 
