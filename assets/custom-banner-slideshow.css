@@ -79,9 +79,10 @@
 .custom-slideshow .splide__pagination__page.is-active {
   width: 3rem;
   border-radius: 10px;
-  margin: 10px;
+  margin: 5px;
   background: #fff;
   opacity: 1;
+  transform: scale(1.1);
 }
 
 .custom-slideshow__heading a {
