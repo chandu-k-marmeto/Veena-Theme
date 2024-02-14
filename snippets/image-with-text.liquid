@@ -1,4 +1,6 @@
-<li class="splide__slide color-{{ colorSchema.id }}">
+{{ 'image-with-text.css' | asset_url | stylesheet_tag }}
+
+<div class="color-{{ colorSchema.id }}">
   <div class="custom-slideshow__image">
     {% if desktopImage != blank or mobileImage != blank %}
       {% render 'responsive-image', desktopImage: desktopImage, mobileImage: mobileImage %}
@@ -31,4 +33,4 @@
       {% endif %}
     </div>
   </div>
-</li>
+</div>
