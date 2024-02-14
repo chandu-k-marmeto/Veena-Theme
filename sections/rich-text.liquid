@@ -31,6 +31,13 @@
               >
                 <!-- {{ block.settings.heading }} -->
                 {{ block.settings.heading | split: 'animate--' | first }}
+                {% assign link = block.settings.heading | split: 'animate--' %}
+                <a>
+                  {% for char in link[1] %}
+                    <span style="--i:{{ i }}">{{ char }}</span>
+                    {% assign i = i | plus: 1 %}
+                  {% endfor %}
+                </a>
               </h2>
             {%- when 'caption' -%}
               <p
