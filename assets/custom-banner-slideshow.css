@@ -131,7 +131,7 @@
   margin: 0px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
   .custom-slideshow__text-content {
     width: 100%;
     padding: 10px;
