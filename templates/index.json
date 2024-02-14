@@ -125,8 +125,8 @@
             "image": "shopify:\/\/shop_images\/veena-png-1.webp",
             "pre_heading": "Trendy Classics",
             "heading": "<p>Elevate your wardrobe with our <a href=\"\/products\/august-rib-wool-oak\" title=\"August Rib Wool Oak\">limited-offer<\/a> fashion offer!<\/p>",
-            "button_label": "",
-            "button_url": "",
+            "button_label": "Shop Now",
+            "button_url": "shopify:\/\/collections\/frontpage",
             "desktop_content_position": "middle-center",
             "desktop_text_allignment": "center",
             "color_scheme": "background-1"
