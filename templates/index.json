@@ -148,7 +148,7 @@
     "custom_image_with_text_bzfwG4": {
       "type": "custom-image-with-text",
       "settings": {
-        "card_shap": "sqaure",
+        "card_shap": "landscape",
         "padding_top": 20,
         "padding_bottom": 20
       }
