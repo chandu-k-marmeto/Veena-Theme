@@ -90,7 +90,7 @@
   position: relative;
 }
 
-.custom-slideshow__heading a::after {
+/* .custom-slideshow__heading a::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -106,7 +106,7 @@
 .custom-slideshow__heading a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
-}
+} */
 
 .custom-slideshow__heading a:hover {
   color: #d03c3f;
