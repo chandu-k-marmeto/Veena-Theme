@@ -64,17 +64,6 @@
   position: relative;
 }
 
-.image-with-text-section__pre-heading {
-  display: inline-block;
-  border: 1px solid;
-  border-radius: 30px;
-  padding-right: 10px;
-  font-size: calc(var(--font-body-scale) * 14px);
-}
-.image-with-text-section__pre-heading li {
-  list-style-type: disc;
-}
-
 .image-with-text-section__heading a {
   color: inherit;
   text-decoration: none;
