@@ -3658,6 +3658,7 @@ a {
   height: 100%;
   background: #000;
   transition: all 0.5s;
+  transition-timing-function: cubic-bezier(1, 0.99, 0.5, 0.09);
 }
 
 .button span {
