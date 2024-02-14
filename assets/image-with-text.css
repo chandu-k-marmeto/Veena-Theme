@@ -75,24 +75,6 @@
   margin-bottom: 20px;
 }
 
-/* .image-with-text-section__heading a::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #d03c3f;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.image-with-text-section__heading a:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
- */
 .image-with-text-section__heading a:hover {
   color: #d03c3f;
   transition: all 0.5s ease;
