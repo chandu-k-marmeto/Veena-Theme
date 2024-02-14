@@ -62,16 +62,18 @@
                     {% if heading != blank %}
                       <h2 class="h1 custom-slideshow__heading">{{ heading }}</h2>
                     {% endif %}
-                    <a
-                      class="button"
-                      {% if buttonUrl != blank %}
-                        href="{{ buttonUrl }}"
-                      {% else %}
-                        role="link" aria-disabled="true"
-                      {% endif %}
-                    >
-                      {{- buttonLabel -}}
-                    </a>
+                    {% if buttonLabel != blank %}
+                      <a
+                        class="button"
+                        {% if buttonUrl != blank %}
+                          href="{{ buttonUrl }}"
+                        {% else %}
+                          role="link" aria-disabled="true"
+                        {% endif %}
+                      >
+                        {{- buttonLabel -}}
+                      </a>
+                    {% endif %}
                   </div>
                 </div>
               </li>
