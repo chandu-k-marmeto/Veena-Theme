@@ -50,7 +50,9 @@ admin{{ 'custom-image-with-text-section.css' | asset_url | stylesheet_tag }}
         </div>
       {% else %}
         {% for i in (1..2) %}
-          {{ 'image-1' | placeholder_svg_tag }}
+          <div class="grid__item">
+            {{ 'image-1' | placeholder_svg_tag }}
+          </div>
         {% endfor %}
       {% endfor %}
     </div>
