@@ -46,7 +46,11 @@
               <li class="splide__slide color-{{ colorSchema.id }}">
                 <div class="custom-slideshow__image">
                   {% if desktopImage != blank or mobileImage != blank %}
-                    {% render 'responsive-image', desktopImage: desktopImage, mobileImage: mobileImage %}
+                    {% render 'responsive-image',
+                      desktopImage: desktopImage,
+                      mobileImage: mobileImage,
+                      class: 'media media--landscape-'
+                    %}
                   {% else %}
                     {{ 'hero-apparel-1' | placeholder_svg_tag }}
                   {% endif %}
