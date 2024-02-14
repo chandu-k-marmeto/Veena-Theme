@@ -179,17 +179,17 @@
     "rich_text_nnnBRT": {
       "type": "rich-text",
       "blocks": {
+        "text_WD7Vcr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>What you ware<\/p>"
+          }
+        },
         "heading_eHJ9fC": {
           "type": "heading",
           "settings": {
             "heading": "Fashion Emerges As Universal Language",
             "heading_size": "h1"
-          }
-        },
-        "text_WD7Vcr": {
-          "type": "text",
-          "settings": {
-            "text": "<p>What you ware<\/p>"
           }
         },
         "button_zG8Qk7": {
@@ -205,8 +205,8 @@
         }
       },
       "block_order": [
-        "heading_eHJ9fC",
         "text_WD7Vcr",
+        "heading_eHJ9fC",
         "button_zG8Qk7"
       ],
       "settings": {
