@@ -3674,6 +3674,36 @@ a {
   width: 0%;
 }
 
+.h0 a::after,
+.h1 a::after,
+.h2 a::after,
+.h3 a::after,
+.h4 a::after,
+.h5 a::after,
+.h6 a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #d03c3f;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.h0 a:hover::after,
+.h1 a:hover::after,
+.h2 a:hover::after,
+.h3 a:hover::after,
+.h4 a:hover::after,
+.h5 a:hover::after,
+.h6 a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 .pre-heading {
   display: inline-block;
   border: 1px solid;
