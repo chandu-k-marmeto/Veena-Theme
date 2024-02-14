@@ -140,10 +140,9 @@
         "collections_dWtPpM"
       ],
       "settings": {
-        "heading": "Collections",
         "card_shap": "sqaure",
-        "padding_top": 20,
-        "padding_bottom": 20
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
