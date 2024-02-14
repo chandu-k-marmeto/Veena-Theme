@@ -109,14 +109,12 @@
         "collections_ACNaWQ": {
           "type": "collections",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_4264.webp",
-            "image_mobile": "shopify:\/\/shop_images\/Rectangle_4264.webp",
             "pre_heading": "Women's collections",
             "block_heading": "<p>Women's Clothing Collections<\/p>",
             "button_label": "Shop Now",
             "button_link": "shopify:\/\/collections",
             "desktop_content_allignment": "bottom-center",
-            "desktop_text_allignment": "center",
+            "desktop_text_allignment": "right",
             "color_scheme": "background-1"
           }
         },
