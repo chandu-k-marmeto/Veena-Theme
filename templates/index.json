@@ -167,11 +167,11 @@
         "slide_GLBUXU"
       ],
       "settings": {
-        "auto_play": true,
+        "auto_play": false,
         "show_pagination": true,
         "show_arrows": true,
         "auto_play_duration": 1000,
-        "slide_type": "fade",
+        "slide_type": "loop",
         "padding_top": 0,
         "padding_bottom": 30
       }
