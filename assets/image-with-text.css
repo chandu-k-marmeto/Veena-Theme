@@ -36,7 +36,6 @@
   margin-bottom: 75px;
 }
 .image-with-text-section__text-content a {
-  margin-top: 30px;
   position: relative;
 }
 
@@ -56,6 +55,10 @@
   color: inherit;
   text-decoration: none;
   position: relative;
+}
+
+.image-with-text-section__heading {
+  font-size: calc(var(--font-heading-scale) * 22px);
 }
 
 .image-with-text-section__heading a::after {
