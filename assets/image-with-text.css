@@ -1,3 +1,7 @@
+.image-with-text-section {
+  position: relative;
+}
+
 .custom-slideshow__image {
   position: relative;
   width: 100%;
