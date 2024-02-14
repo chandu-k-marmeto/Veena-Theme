@@ -19,7 +19,9 @@
 
 .rich-text__heading a {
   animation: animate 2s ease-in-out infinite;
-  animation-delay: calc(0.1s * var(--i));
+  animation-delay: 1s;
+  color: #d03c3f !important;
+  text-decoration: none;
 }
 
 @keyframes animate {
@@ -103,10 +105,6 @@
 
 .rich-text__blocks.right .rich-text__buttons {
   justify-content: flex-end;
-}
-.rich-text__heading a {
-  color: #d03c3f !important;
-  text-decoration: none;
 }
 
 @media screen and (max-width: 991px) {
