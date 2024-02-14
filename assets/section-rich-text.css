@@ -90,7 +90,7 @@
 }
 
 @media screen and (max-width: 991px) {
-  .rich-text__blocks .rich-text__heading.hxl {
+  .rich-text__blocks .rich-text__heading.hl {
     font-size: calc(var(--font-heading-scale) * 30px);
   }
 }
