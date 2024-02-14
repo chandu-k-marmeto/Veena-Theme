@@ -101,6 +101,7 @@
   background-color: #d03c3f;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
+  transition: all 0.5s ease;
 }
 
 .custom-slideshow__heading a:hover::after {
@@ -110,12 +111,10 @@
 
 .custom-slideshow__heading a:hover {
   color: #d03c3f;
-  transition: all 0.5s ease;
 }
 
 .custom-slideshow__heading a:not(:hover) {
   color: inherit;
-  transition: all 0.5s ease;
 }
 
 .custom-slideshow__heading * {
