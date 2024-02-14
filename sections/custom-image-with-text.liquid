@@ -1,8 +1,6 @@
 {{ 'custom-image-with-text-section.css' | asset_url | stylesheet_tag }}
 
 {% liquid
-  assign heading = section.settings.heading
-  assign headingSize = section.settings.heading_size
   assign cardShape = section.settings.card_shap
   assign paddingTop = section.settings.padding_top
   assign paddingBottom = section.settings.padding_bottom
@@ -59,32 +57,6 @@
   "name": "Custom Image with Text",
   "tag": "section",
   "settings": [
-    {
-      "type": "text",
-      "label": "Heading",
-      "id": "heading",
-      "default": "Collections"
-    },
-    {
-      "type": "select",
-      "label": "Heading size",
-      "id": "heading_size",
-      "default": "h1",
-      "options": [
-        {
-          "label": "Large",
-          "value": "h0"
-        },
-        {
-          "label": "Medium",
-          "value": "h1"
-        },
-        {
-          "label": "Small",
-          "value": "h2"
-        }
-      ]
-    },
     {
       "type": "select",
       "label": "Card shape",
