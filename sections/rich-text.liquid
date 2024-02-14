@@ -29,19 +29,7 @@
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
-                <!-- {{ block.settings.heading }} -->
-                {% assign AnimateTxt = section.settings.heading_text | split: 'Animate--' | last | remove: '</p>' %}
-                {% assign charArr = AnimateTxt | split: '' %}
-                <div class="h1 animation-heading__heading">
-                  {{ section.settings.heading_text | split: 'Animate--' | first }}
-                  <span class="animation-heading__text">
-                    <div class="h1 loading-text ">
-                      {% for i in charArr %}
-                        <span class="char">{{ i }}</span>
-                      {% endfor %}
-                    </div>
-                  </span>
-                </div>
+                {{ block.settings.heading }}
               </h2>
             {%- when 'caption' -%}
               <p
