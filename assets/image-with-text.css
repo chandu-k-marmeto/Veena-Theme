@@ -1,5 +1,6 @@
 .image-with-text-section {
   position: relative;
+  overflow: hidden;
 }
 
 .image-with-text-section__image {
