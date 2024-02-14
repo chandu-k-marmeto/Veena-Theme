@@ -109,6 +109,8 @@
         "collections_ACNaWQ": {
           "type": "collections",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4264.webp",
+            "image_mobile": "shopify:\/\/shop_images\/Rectangle_4264.webp",
             "pre_heading": "Women's collections",
             "block_heading": "<p>Women's Clothing Collections<\/p>",
             "button_label": "Shop Now",
