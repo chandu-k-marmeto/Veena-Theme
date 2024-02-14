@@ -3658,7 +3658,7 @@ a {
   height: 100%;
   background: #000;
   transition: all 0.5s;
-  transition-timing-function: ease;
+  transition-timing-function: ease-out;
 }
 
 .button span {
