@@ -1,4 +1,4 @@
-{{ 'custom-image-with-text-section.css' | asset_url | stylesheet_tag }}
+admin{{ 'custom-image-with-text-section.css' | asset_url | stylesheet_tag }}
 
 {% liquid
   assign cardShape = section.settings.card_shap
@@ -48,6 +48,10 @@
             imageShape: cardShape
           %}
         </div>
+      {% else %}
+        {% for i in (1..2) %}
+          {{ 'image' | append: i | placeholder_svg_tag }}
+        {% endfor %}
       {% endfor %}
     </div>
   </div>
