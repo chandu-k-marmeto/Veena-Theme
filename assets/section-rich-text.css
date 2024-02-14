@@ -88,3 +88,9 @@
   color: #d03c3f !important;
   text-decoration: none;
 }
+
+@media screen and (max-width: 991px) {
+  .rich-text__blocks .rich-text__heading.hxl {
+    font-size: calc(var(--font-heading-scale) * 30px);
+  }
+}
