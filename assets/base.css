@@ -3636,7 +3636,7 @@ a {
   position: relative;
 }
 
-.rich-text__buttons a:after {
+.button:after {
   position: absolute;
   content: "";
   top: 0;
