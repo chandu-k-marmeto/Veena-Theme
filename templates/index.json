@@ -115,7 +115,7 @@
             "block_heading": "<p>Women's Clothing Collections<\/p>",
             "button_label": "Shop Now",
             "button_link": "",
-            "desktop_content_allignment": "top",
+            "desktop_content_allignment": "bottom-center",
             "desktop_text_allignment": "center",
             "color_scheme": "background-1"
           }
