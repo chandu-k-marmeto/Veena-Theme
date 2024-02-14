@@ -90,7 +90,7 @@
   position: relative;
 }
 
-.custom-slideshow__heading a:after {
+.custom-slideshow__heading a::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -101,10 +101,9 @@
   background-color: #d03c3f;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
-  transition: all 0.5s ease;
 }
 
-.custom-slideshow__heading a:hover:after {
+.custom-slideshow__heading a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
