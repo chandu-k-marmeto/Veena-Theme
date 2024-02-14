@@ -18,11 +18,8 @@
 }
 
 .rich-text__heading a {
-  animation: waveText 2s ease-in-out infinite !important;
-  animation-delay: 1s;
   color: #d03c3f !important;
   text-decoration: none;
-  position: relative;
 }
 
 .rich-text__heading a::after {
@@ -41,21 +38,6 @@
 .rich-text__heading a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
-}
-
-@keyframes waveText {
-  0% {
-    transform: translateY(0px);
-  }
-
-  20% {
-    transform: translateY(-20px);
-  }
-
-  40%,
-  100% {
-    transform: translateY(0px);
-  }
 }
 
 @media screen and (min-width: 750px) {
