@@ -8,6 +8,9 @@
   height: 100%;
   object-fit: cover;
   border-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .custom-slideshow {
   position: relative;
@@ -148,5 +151,8 @@
   }
   .custom-slideshow__heading.h1 {
     font-size: calc(var(--font-heading-scale) * 26px);
+  }
+  .custom-slideshow__image {
+    padding-bottom: 100%;
   }
 }
