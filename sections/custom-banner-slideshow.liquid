@@ -35,7 +35,7 @@
                 assign desktopImage = blocks.settings.image
                 assign mobileImage = blocks.settings.image_mobile
                 assign heading = blocks.settings.heading
-                assign subHeading = blocks.settings.sub_heading
+                assign preHeading = blocks.settings.pre_heading
                 assign colorSchema = blocks.settings.color_scheme
                 assign buttonLabel = blocks.settings.button_label
                 assign buttonUrl = blocks.settings.button_url
@@ -54,10 +54,14 @@
 
                 <div class="custom-slideshow__text-content-container {{ desktopContainerAllignment }}">
                   <div class="custom-slideshow__text-content {{ textAllignment }}">
-                    <ul class="custom-slideshow__sub-heading">
-                      <li>{{ subHeading }}</li>
-                    </ul>
-                    <h2 class="h1 custom-slideshow__heading">{{ heading }}</h2>
+                    {% if preHeading != blank %}
+                      <ul class="custom-slideshow__sub-heading">
+                        <li>{{ preHeading }}</li>
+                      </ul>
+                    {% endif %}
+                    {% if heading != blank %}
+                      <h2 class="h1 custom-slideshow__heading">{{ heading }}</h2>
+                    {% endif %}
                     <a
                       class="button"
                       {% if buttonUrl != blank %}
@@ -193,6 +197,29 @@
       "id": "image_mobile",
       "info": "Image For Mobile"
     },
+     {
+      "type": "text",
+      "label": "Pre heading",
+      "id": "pre_heading",
+      "default": "Trendy Classics"
+    },
+    {
+      "type": "richtext",
+      "label": "Heading",
+      "id": "heading",
+      "default": "<p>Discover Signature Look: Fashion Forward and Fabulous!</p> "
+    },
+    {
+      "type": "textarea",
+      "label": "Button Label",
+      "id": "button_label",
+      "default": "Shop Now"
+    },
+    {
+      "type": "url",
+      "label": "Button link",
+      "id": "button_url"
+    },
     {
       "type": "select",
       "label": "Desktop Content Position",
@@ -200,39 +227,39 @@
       "default": "middle-center",
       "options": [
         {
-          "label": "Top Left",
+          "label": "Top left",
           "value": "top-left"
         },
         {
-          "label": "Top Center",
+          "label": "Top center",
           "value": "top-center"
         },
         {
-          "label": "Top Right",
+          "label": "Top right",
           "value": "top-right"
         },
         {
-          "label": "Middle Left",
+          "label": "Middle left",
           "value": "middle-left"
         },
         {
-          "label": "Middle Center",
+          "label": "Middle center",
           "value": "middle-center"
         },
         {
-          "label": "Middle Right",
+          "label": "Middle right",
           "value": "middle-right"
         },
         {
-          "label": "Bottom Left",
+          "label": "Bottom left",
           "value": "bottom-left"
         },
         {
-          "label": "Bottom Center",
+          "label": "Bottom center",
           "value": "bottom-center"
         },
         {
-          "label": "Bottom Right",
+          "label": "Bottom right",
           "value": "bottom-right"
         }
       ]
@@ -261,30 +288,7 @@
         "id":"color_scheme",
         "label":"Color Scheme",
         "default":"background-1"
-      },
-        {
-          "type": "text",
-          "label": "Sub Heading",
-          "id": "sub_heading",
-          "default": "Trendy Classics"
-        },
-        {
-          "type": "richtext",
-          "label": "Heading",
-          "id": "heading",
-          "default": "<p>Discover Signature Look: Fashion Forward and Fabulous!</p> "
-        },
-        {
-          "type": "textarea",
-          "label": "Button Label",
-          "id": "button_label",
-          "default": "Shop Now"
-        },
-        {
-          "type": "url",
-          "label": "Button Url",
-          "id": "button_url"
-        }
+      }
       ]
     }
   ],
