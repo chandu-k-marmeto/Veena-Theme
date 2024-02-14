@@ -18,7 +18,7 @@
 }
 
 .rich-text__heading a {
-  animation: waveText 2s ease-in-out infinite;
+  animation: waveText 2s ease-in-out infinite !important;
   animation-delay: 1s;
   color: #d03c3f !important;
   text-decoration: none;
