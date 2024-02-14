@@ -102,10 +102,54 @@
         "padding_top": 60,
         "padding_bottom": 40
       }
+    },
+    "custom_image_with_text_rkDt8J": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "collections_ACNaWQ": {
+          "type": "collections",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4264.webp",
+            "image_mobile": "shopify:\/\/shop_images\/Rectangle_4264.webp",
+            "pre_heading": "Women's collections",
+            "block_heading": "<p>Women's Clothing Collections<\/p>",
+            "button_label": "Shop Now",
+            "button_link": "",
+            "desktop_content_allignment": "top",
+            "desktop_text_allignment": "center",
+            "color_scheme": "background-1"
+          }
+        },
+        "collections_dWtPpM": {
+          "type": "collections",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4265.webp",
+            "image_mobile": "shopify:\/\/shop_images\/Rectangle_4265.webp",
+            "pre_heading": "Women's collections",
+            "block_heading": "<p>Women's Clothing Collections<\/p>",
+            "button_label": "Shop Now",
+            "button_link": "",
+            "desktop_content_allignment": "top",
+            "desktop_text_allignment": "center",
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "collections_ACNaWQ",
+        "collections_dWtPpM"
+      ],
+      "settings": {
+        "heading": "Collections",
+        "card_shap": "sqaure",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
     }
   },
   "order": [
     "custom_banner_slideshow_w6VMUp",
-    "rich_text_nnnBRT"
+    "rich_text_nnnBRT",
+    "custom_image_with_text_rkDt8J"
   ]
 }
