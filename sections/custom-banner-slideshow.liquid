@@ -54,38 +54,52 @@
               %}
 
               <li class="splide__slide color-{{ colorSchema.id }}">
-                <div class="custom-slideshow__image">
-                  {% if desktopImage != blank or mobileImage != blank %}
-                    {% render 'responsive-image', desktopImage: desktopImage, mobileImage: mobileImage %}
-                  {% else %}
-                    {{ 'hero-apparel-1' | placeholder_svg_tag }}
-                  {% endif %}
-                </div>
-
-                <div class="custom-slideshow__text-content-container {{ desktopContainerAllignment }}">
-                  <div class="custom-slideshow__text-content {{ textAllignment }}">
-                    {% if preHeading != blank %}
-                      <ul class="pre-heading">
-                        <li>{{ preHeading }}</li>
-                      </ul>
-                    {% endif %}
-                    {% if heading != blank %}
-                      <h2 class="h1 custom-slideshow__heading">{{ heading }}</h2>
-                    {% endif %}
-                    {% if buttonLabel != blank %}
-                      <a
-                        class="button"
-                        {% if buttonUrl != blank %}
-                          href="{{ buttonUrl }}"
-                        {% else %}
-                          role="link" aria-disabled="true"
-                        {% endif %}
-                      >
-                        <span>{{- buttonLabel -}}</span>
-                      </a>
+                <!--
+                  <div class="custom-slideshow__image">
+                    {% if desktopImage != blank or mobileImage != blank %}
+                      {% render 'responsive-image', desktopImage: desktopImage, mobileImage: mobileImage %}
+                    {% else %}
+                      {{ 'hero-apparel-1' | placeholder_svg_tag }}
                     {% endif %}
                   </div>
-                </div>
+
+                  <div class="custom-slideshow__text-content-container {{ desktopContainerAllignment }}">
+                    <div class="custom-slideshow__text-content {{ textAllignment }}">
+                      {% if preHeading != blank %}
+                        <ul class="pre-heading">
+                          <li>{{ preHeading }}</li>
+                        </ul>
+                      {% endif %}
+                      {% if heading != blank %}
+                        <h2 class="h1 custom-slideshow__heading">{{ heading }}</h2>
+                      {% endif %}
+                      {% if buttonLabel != blank %}
+                        <a
+                          class="button"
+                          {% if buttonUrl != blank %}
+                            href="{{ buttonUrl }}"
+                          {% else %}
+                            role="link" aria-disabled="true"
+                          {% endif %}
+                        >
+                          <span>{{- buttonLabel -}}</span>
+                        </a>
+                      {% endif %}
+                    </div>
+                  </div>
+                -->
+                {%
+                  render 'image-with-text',
+                  desktopImage: desktopImage,
+                  mobileImage: mobileImage,
+                  desktopContainerAllignment: desktopContainerAllignment,
+                  textAllignment: textAllignment,
+                  heading: heading,
+                  preHeading: preHeading,
+                  buttonLabel: buttonLabel,
+                  buttonLink: buttonUrl,
+                  colorSchema: colorSchema,
+                %}
               </li>
             {% endfor %}
           </ul>
