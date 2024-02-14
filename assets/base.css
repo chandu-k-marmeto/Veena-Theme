@@ -3632,6 +3632,10 @@ details-disclosure > details {
   text-align: right;
 }
 
+a {
+  position: relative;
+}
+
 @media screen and (max-width: 575px) {
   .button:not(.header__icon, .search-modal__close-button, .search__button),
   .shopify-challenge__button,
