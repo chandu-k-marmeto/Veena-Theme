@@ -3653,6 +3653,7 @@ a {
 
 .button:hover:after {
   width: 100%;
+  border-radius: var(--buttons-radius-outset);
 }
 
 .button:not(:hover):after {
