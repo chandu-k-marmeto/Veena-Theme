@@ -3654,7 +3654,6 @@ a {
 .button:hover:after {
   width: 100%;
   border-radius: var(--buttons-radius-outset);
-  z-index: -1;
 }
 
 .button:not(:hover):after {
