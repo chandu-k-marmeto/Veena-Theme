@@ -3632,11 +3632,13 @@ details-disclosure > details {
   text-align: right;
 }
 
-@media screen and (max-width:575px){
-  .button:not(.header__icon,.search-modal__close-button,.search__button), .shopify-challenge__button, .customer button, button.shopify-payment-button__button--unbranded {
-        min-width: calc(10rem + var(--buttons-border-width) * 2);
-        min-height: calc(3.5rem + var(--buttons-border-width) * 2);
-        font-size: calc(var(--font-body-scale) * 14px);
-    }
-}
+@media screen and (max-width: 575px) {
+  .button:not(.header__icon, .search-modal__close-button, .search__button),
+  .shopify-challenge__button,
+  .customer button,
+  button.shopify-payment-button__button--unbranded {
+    min-width: calc(10rem + var(--buttons-border-width) * 2);
+    min-height: calc(3.5rem + var(--buttons-border-width) * 2);
+    font-size: calc(var(--font-body-scale) * 14px);
+  }
 }
