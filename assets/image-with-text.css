@@ -133,7 +133,7 @@
     font-size: calc(var(--font-heading-scale) * 26px);
   }
   .landscape {
-    padding-bottom: 100%;
+    padding-bottom: 85%;
   }
   .sqaure {
     padding-bottom: 120%;
