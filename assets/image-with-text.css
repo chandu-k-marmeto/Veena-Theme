@@ -59,6 +59,7 @@
 
 .image-with-text-section__heading {
   font-size: calc(var(--font-heading-scale) * 22px);
+  margin-bottom: 20px;
 }
 
 .image-with-text-section__heading a::after {
