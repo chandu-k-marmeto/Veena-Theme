@@ -18,13 +18,13 @@
 }
 
 .rich-text__heading a {
-  animation: animate 2s ease-in-out infinite;
+  animation: waveText 2s ease-in-out infinite;
   animation-delay: 1s;
   color: #d03c3f !important;
   text-decoration: none;
 }
 
-@keyframes animate {
+@keyframes waveText {
   0% {
     transform: translateY(0px);
   }
