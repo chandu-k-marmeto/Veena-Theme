@@ -3,6 +3,12 @@
   overflow: hidden;
 }
 
+.image-with-text-section:hover {
+  .image-with-text-section__image img {
+    transform: scale(1.4);
+  }
+}
+
 .image-with-text-section__image {
   position: relative;
   width: 100%;
