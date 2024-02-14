@@ -22,8 +22,8 @@
       {% if buttonLabel != blank %}
         <a
           class="button"
-          {% if buttonUrl != blank %}
-            href="{{ buttonUrl }}"
+          {% if buttonLink != blank %}
+            href="{{ buttonLink }}"
           {% else %}
             role="link" aria-disabled="true"
           {% endif %}
