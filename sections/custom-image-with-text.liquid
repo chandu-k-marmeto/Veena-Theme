@@ -35,17 +35,19 @@
           assign buttonLink = blocks.settings.button_link
           assign colorSchema = blocks.settings.color_scheme
         %}
-        {% render 'image-with-text',
-          desktopImage: desktopImage,
-          mobileImage: mobileImage,
-          desktopContainerAllignment: desktopAllignment,
-          textAllignment: textAllignment,
-          heading: heading,
-          preHeading: preHeading,
-          buttonLabel: buttonLabel,
-          buttonLink: buttonLink,
-          colorScheme: colorSchema
-        %}
+        <div class="grid__item">
+          {% render 'image-with-text',
+            desktopImage: desktopImage,
+            mobileImage: mobileImage,
+            desktopContainerAllignment: desktopAllignment,
+            textAllignment: textAllignment,
+            heading: heading,
+            preHeading: preHeading,
+            buttonLabel: buttonLabel,
+            buttonLink: buttonLink,
+            colorScheme: colorSchema
+          %}
+        </div>
       {% endfor %}
     </div>
   </div>
