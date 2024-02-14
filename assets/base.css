@@ -3679,7 +3679,7 @@ a {
   border: 1px solid;
   border-radius: 30px;
   padding-right: 10px;
-  backdrop-filter: blur(10px);
+  backdrop-filter: none;
   font-size: calc(var(--font-body-scale) * 14px);
 }
 

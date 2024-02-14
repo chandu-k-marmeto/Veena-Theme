@@ -75,10 +75,6 @@
   margin-bottom: 20px;
 }
 
-.image-with-text-section__text-content .pre-heading {
-  backdrop-filter: none;
-}
-
 .image-with-text-section__heading a::after {
   content: "";
   position: absolute;
