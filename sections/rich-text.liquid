@@ -29,16 +29,7 @@
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
-                <!-- {{ block.settings.heading }} -->
-                {{ block.settings.heading | split: 'animate--' | first }}
-                {% assign link = block.settings.heading | split: 'animate--' %}
-                {{ link[1] }}
-                <a>
-                  {% for char in link[2] %}
-                    <span style="--i:{{ i }}">{{ char }}</span>
-                    {% assign i = i | plus: 1 %}
-                  {% endfor %}
-                </a>
+                {{ block.settings.heading }}
               </h2>
             {%- when 'caption' -%}
               <p
