@@ -1,7 +1,7 @@
 {{ 'image-with-text.css' | asset_url | stylesheet_tag }}
 
-<div class="color-{{ colorSchema.id }}">
-  <div class="custom-slideshow__image">
+<div class="image-with-text-section color-{{ colorSchema.id }}">
+  <div class="image-with-text-section__image">
     {% if desktopImage != blank or mobileImage != blank %}
       {% render 'responsive-image', desktopImage: desktopImage, mobileImage: mobileImage %}
     {% else %}
@@ -9,15 +9,15 @@
     {% endif %}
   </div>
 
-  <div class="custom-slideshow__text-content-container {{ desktopContainerAllignment }}">
-    <div class="custom-slideshow__text-content {{ textAllignment }}">
+  <div class="image-with-text-section__text-content-container {{ desktopContainerAllignment }}">
+    <div class="image-with-text-section__text-content {{ textAllignment }}">
       {% if preHeading != blank %}
-        <ul class="custom-slideshow__pre-heading">
+        <ul class="image-with-text-section__pre-heading">
           <li>{{ preHeading }}</li>
         </ul>
       {% endif %}
       {% if heading != blank %}
-        <h2 class="h1 custom-slideshow__heading">{{ heading }}</h2>
+        <h2 class="h1 image-with-text-section__heading">{{ heading }}</h2>
       {% endif %}
       {% if buttonLabel != blank %}
         <a
