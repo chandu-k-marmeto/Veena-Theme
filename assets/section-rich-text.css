@@ -90,7 +90,7 @@
 }
 
 @media screen and (max-width: 991px) {
-  .rich-text__blocks .rich-text__heading {
+  /* .rich-text__blocks .rich-text__heading {
     font-size: calc(var(--font-heading-scale) * 3rem);
-  }
+  } */
 }
