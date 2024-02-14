@@ -127,6 +127,10 @@
   margin: 0px;
 }
 
+.custom-slideshow__heading.h1 {
+  font-size: calc(var(--font-heading-scale) * 26px);
+}
+
 @media screen and (max-width: 768px) {
   .custom-slideshow__text-content {
     width: 100%;
