@@ -1,7 +1,7 @@
 {{ 'image-with-text.css' | asset_url | stylesheet_tag }}
 
 <div class="image-with-text-section color-{{ colorSchema.id }}">
-  <div class="image-with-text-section__image">
+  <div class="image-with-text-section__image {{ imageShape }}">
     {% if desktopImage != blank or mobileImage != blank %}
       {% render 'responsive-image', desktopImage: desktopImage, mobileImage: mobileImage %}
     {% else %}
