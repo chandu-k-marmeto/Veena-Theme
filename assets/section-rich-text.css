@@ -17,6 +17,26 @@
   width: 100%;
 }
 
+.rich-text__heading a {
+  animation: animate 2s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0px);
+  }
+
+  20% {
+    transform: translateY(-20px);
+  }
+
+  40%,
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 @media screen and (min-width: 750px) {
   .rich-text__wrapper {
     width: 100%;
