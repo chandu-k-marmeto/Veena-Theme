@@ -32,8 +32,6 @@
   width: 50%;
   padding: 20px 35px;
   margin-bottom: 75px;
-  display: flex;
-  flex-direction: column;
 }
 .custom-slideshow__text-content a {
   margin-top: 30px;
