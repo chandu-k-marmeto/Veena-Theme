@@ -3,7 +3,7 @@ class SpliderComponent extends HTMLElement{
     super()
     this.element = this.querySelector(".splide")
     console.log("I am custom Splider")
-    this.options=JSON.parse(this.dataset.sliderSettings)
+    this.options=this.dataset
     console.log(this.options)
     this.intializer()
   }
