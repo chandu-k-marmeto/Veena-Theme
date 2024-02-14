@@ -1,6 +1,150 @@
+{{ 'custom-image-with-text-section.css' | asset_url | stylesheet_tag }}
+
+{% liquid
+  assign heading = section.settings.heading
+  assign cardShape = section.settings.card_shap
+%}
+
+<div></div>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Custom Image with Text",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Heading",
+      "id": "heading",
+      "default": "Collections"
+    },
+    {
+      "type": "select",
+      "label": "Card shape",
+      "id": "card_shap",
+      "default": "sqaure",
+      "options": [
+        {
+          "label": "Sqaure ",
+          "value": "sqaure"
+        },
+        {
+          "label": "Landscape",
+          "value": "landscape"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Section Padding"
+    },
+    {
+      "type": "range",
+      "label": "Padding top",
+      "id": "padding_top",
+      "default": 20,
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Padding bottom",
+      "id": "padding_bottom",
+      "default": 20,
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collections",
+      "name": "Collections",
+      "settings": [
+        {
+          "type": "image_picker",
+          "label": "Image ",
+          "id": "image",
+          "info": "Image for Desktop"
+        },
+        {
+          "type": "image_picker",
+          "label": "Image (Mobile)",
+          "id": "image_mobile",
+          "info": "Image for Mobile"
+        },
+        {
+          "type": "text",
+          "label": "Pre heading",
+          "id": "pre_heading",
+          "default": "Women's collections"
+        },
+        {
+          "type": "richtext",
+          "label": "Heading",
+          "id": "block_heading",
+          "default": "<p>&lt;p&gt;Women's Clothing Collections &lt;/p&gt;</p>"
+        },
+        {
+          "type": "text",
+          "label": "Button Label",
+          "id": "button_label",
+          "default": "Shop Now"
+        },
+        {
+          "type": "url",
+          "label": "Button Link",
+          "id": "button_link"
+        },
+        {
+      "type": "select",
+      "label": "Desktop Content Allignment",
+      "id": "desktop_content_allignment",
+      "options": [
+        {
+          "label": "Top",
+          "value": "top"
+        },
+        {
+          "label": "Middle",
+          "value": "center"
+        },
+        {
+          "label": "Bottom",
+          "value": "bottom"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "label": "Desktop Text Allignment",
+      "id": "desktop_text_allignment",
+      "default": "center",
+      "options": [
+        {
+          "label": "Left",
+          "value": "left"
+        },
+        {
+          "label": "Center",
+          "value": "center"
+        },
+        {
+          "label": "Right",
+          "value": "right"
+        }
+      ]
+    }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Image with Text"
+    }
+  ]
+}
 {% endschema %}
