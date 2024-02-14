@@ -1352,6 +1352,17 @@ button.shopify-payment-button__button--unbranded {
   padding: 1.2rem 2.6rem;
 }
 
+@media screen and (max-width: 575px) {
+  .button:not(.header__icon, .search-modal__close-button, .search__button),
+  .shopify-challenge__button,
+  .customer button,
+  button.shopify-payment-button__button--unbranded {
+    min-width: calc(10rem + var(--buttons-border-width) * 2);
+    min-height: calc(3.5rem + var(--buttons-border-width) * 2);
+    font-size: calc(var(--font-body-scale) * 14px);
+  }
+}
+
 /* Button - other */
 
 .button:disabled,
@@ -3636,6 +3647,8 @@ a {
   position: relative;
 }
 
+/* custom animation and transition */
+
 .button:after {
   position: absolute;
   content: "";
@@ -3658,15 +3671,4 @@ a {
 
 .button:not(:hover):after {
   width: 0%;
-}
-
-@media screen and (max-width: 575px) {
-  .button:not(.header__icon, .search-modal__close-button, .search__button),
-  .shopify-challenge__button,
-  .customer button,
-  button.shopify-payment-button__button--unbranded {
-    min-width: calc(10rem + var(--buttons-border-width) * 2);
-    min-height: calc(3.5rem + var(--buttons-border-width) * 2);
-    font-size: calc(var(--font-body-scale) * 14px);
-  }
 }
