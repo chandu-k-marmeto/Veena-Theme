@@ -171,15 +171,58 @@
         "show_pagination": true,
         "show_arrows": true,
         "auto_play_duration": 1000,
-        "slide_type": "loop",
+        "slide_type": "slide",
         "padding_top": 0,
         "padding_bottom": 30
+      }
+    },
+    "rich_text_nnnBRT": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_eHJ9fC": {
+          "type": "heading",
+          "settings": {
+            "heading": "Fashion Emerges As Universal Language",
+            "heading_size": "h1"
+          }
+        },
+        "text_WD7Vcr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>What you ware<\/p>"
+          }
+        },
+        "button_zG8Qk7": {
+          "type": "button",
+          "settings": {
+            "button_label": "Explore More",
+            "button_link": "shopify:\/\/products\/august-rib-wool-oak",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_eHJ9fC",
+        "text_WD7Vcr",
+        "button_zG8Qk7"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
     "slideshow_AFzDeQ",
     "collection_list_PwxrD8",
-    "custom_banner_slideshow_w6VMUp"
+    "custom_banner_slideshow_w6VMUp",
+    "rich_text_nnnBRT"
   ]
 }
