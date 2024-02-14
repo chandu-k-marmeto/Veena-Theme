@@ -136,6 +136,7 @@
     width: 100%;
     padding: 10px;
     text-align: center;
+    margin-bottom: 40px;
   }
   .custom-slideshow .splide__arrow.splide__arrow--prev {
     left: 30%;
