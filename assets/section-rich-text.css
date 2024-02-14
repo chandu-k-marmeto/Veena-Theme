@@ -132,7 +132,7 @@
   }
 }
 
-.rich-text__buttons a:after {
+/* .rich-text__buttons a:after {
   position: absolute;
   content: "";
   top: 0;
@@ -153,4 +153,4 @@
 
 .rich-text__buttons a:not(:hover):after {
   width: 0%;
-}
+} */
