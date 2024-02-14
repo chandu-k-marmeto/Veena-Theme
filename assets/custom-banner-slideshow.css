@@ -30,6 +30,10 @@
   flex-wrap: wrap;
 }
 
+.custom-slideshow__text-content .pre-heading {
+  backdrop-filter: blur(10px);
+}
+
 .custom-slideshow__text-content {
   width: 50%;
   padding: 20px 35px;
