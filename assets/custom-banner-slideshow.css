@@ -45,17 +45,6 @@
   overflow: hidden;
 }
 
-.custom-slideshow__pre-heading {
-  display: inline-block;
-  border: 1px solid;
-  border-radius: 30px;
-  padding-right: 10px;
-  backdrop-filter: blur(10px);
-  font-size: calc(var(--font-body-scale) * 14px);
-}
-.custom-slideshow__pre-heading li {
-  list-style-type: disc;
-}
 .custom-slideshow .splide__arrow {
   background: none;
   top: unset;
