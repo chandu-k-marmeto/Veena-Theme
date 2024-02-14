@@ -22,6 +22,7 @@
   animation-delay: 1s;
   color: #d03c3f !important;
   text-decoration: none;
+  position: relative;
 }
 
 .rich-text__heading a::after {
