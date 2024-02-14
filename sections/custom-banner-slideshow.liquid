@@ -1,7 +1,4 @@
 {{ 'custom-banner-slideshow.css' | asset_url | stylesheet_tag }}
-{{ 'splide.min.css' | asset_url | stylesheet_tag }}
-<script src="{{ "splide.min.js" | asset_url }}" defer></script>
-<script src="{{ "custom-splide-component.js" | asset_url }}" defer></script>
 
 {% liquid
   assign autoPlay = section.settings.auto_play
@@ -18,7 +15,7 @@
     padding-top: {{ paddingTop }}px;
     padding-bottom: {{ paddingBottom }}px;
   }
-  
+
   @media screen and (max-width:768px){
     .padding-{{section.id}}{
       padding-top:{{paddingTop | divided_by:2}}px;
@@ -29,7 +26,7 @@
 
 <div class="custom-slideshow padding-{{ section.id }}">
   <div class="page-width">
-    <splider-component data-slider-settings=''>
+    <splider-component data-slider-settings="">
       <section class="splide" aria-label="Splide Basic HTML Example">
         <div class="splide__track">
           <ul class="splide__list">
@@ -45,7 +42,7 @@
                 assign desktopContainerAllignment = blocks.settings.desktop_content_position
                 assign textAllignment = blocks.settings.desktop_text_allignment
               %}
-              
+
               <li class="splide__slide color-{{ colorSchema.id }}">
                 <div class="custom-slideshow__image">
                   {% if desktopImage != blank or mobileImage != blank %}
@@ -54,7 +51,7 @@
                     {{ 'hero-apparel-1' | placeholder_svg_tag }}
                   {% endif %}
                 </div>
-              
+
                 <div class="custom-slideshow__text-content-container {{ desktopContainerAllignment }}">
                   <div class="custom-slideshow__text-content {{ textAllignment }}">
                     <ul class="custom-slideshow__sub-heading">
@@ -78,7 +75,7 @@
           </ul>
         </div>
       </section>
-      
+
       <script>
         {
           "autoplay":{{autoPlay}},
