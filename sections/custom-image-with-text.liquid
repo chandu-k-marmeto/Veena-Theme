@@ -2,6 +2,7 @@
 
 {% liquid
   assign heading = section.settings.heading
+  assign headingSize = section.settings.heading_size
   assign cardShape = section.settings.card_shap
   assign paddingTop = section.settings.padding_top
   assign paddingBottom = section.settings.padding_bottom
@@ -23,7 +24,7 @@
 <div class="custom-image-with-text padding-{{ section.id }}">
   <div class="page-width">
     {% if heading != blank %}
-      <h2>{{ heading }}</h2>
+      <h2 class="{{ headingSize }}">{{ heading }}</h2>
     {% endif %}
     <div class="grid grid--1-col grid--2-col-tablet grid--2-col-desktop">
       {% for blocks in section.blocks %}
