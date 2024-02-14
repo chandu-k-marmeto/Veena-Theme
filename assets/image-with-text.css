@@ -142,4 +142,10 @@
   .image-with-text-section__heading.h1 {
     font-size: calc(var(--font-heading-scale) * 26px);
   }
+  .landscape {
+    padding-bottom: 60%;
+  }
+  .sqaure {
+    padding-bottom: 120%;
+  }
 }
