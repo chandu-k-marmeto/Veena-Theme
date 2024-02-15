@@ -27,7 +27,6 @@
   transition: transform var(--duration-medium) ease;
   height: 40px;
   width: 40px;
-  /* transform-style: preserve-3d; */
 }
 
 .grid {
