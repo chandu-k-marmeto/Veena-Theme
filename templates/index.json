@@ -210,10 +210,10 @@
             "button_label": "Discover More",
             "button_link": "shopify:\/\/products\/carhartt-coat-black",
             "dot_1_left_position": 30,
-            "dot_1_top_position": 14,
+            "dot_1_top_position": 27,
             "primary_product": "august-rib-wool-oak",
-            "dot_2_left_position": 35,
-            "dot_2_top_position": 46,
+            "dot_2_left_position": 28,
+            "dot_2_top_position": 72,
             "secondary_product": "baume-magique"
           }
         },
@@ -226,11 +226,11 @@
             "description": "<p>welcome to our Men's Winter Clothes Collection, where every piece is a statement in comfort and style.<\/p>",
             "button_label": "Discover More",
             "button_link": "shopify:\/\/products\/columbia-tee-worn-olive",
-            "dot_1_left_position": 31,
-            "dot_1_top_position": 15,
+            "dot_1_left_position": 25,
+            "dot_1_top_position": 20,
             "primary_product": "denim-chore-coat-black",
             "dot_2_left_position": 15,
-            "dot_2_top_position": 43,
+            "dot_2_top_position": 59,
             "secondary_product": "blue-oxford-shirt"
           }
         },
@@ -243,11 +243,11 @@
             "description": "<p>Embrace the beauty of nature with gear that complements your adventurous spirit.<\/p>",
             "button_label": "Discover More",
             "button_link": "shopify:\/\/products\/lean-dean-plain-stone",
-            "dot_1_left_position": 39,
-            "dot_1_top_position": 38,
+            "dot_1_left_position": 35,
+            "dot_1_top_position": 65,
             "primary_product": "carhartt-coat-black",
             "dot_2_left_position": 33,
-            "dot_2_top_position": 5,
+            "dot_2_top_position": 10,
             "secondary_product": "lean-dean-plain-stone"
           }
         }
