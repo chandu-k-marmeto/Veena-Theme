@@ -86,9 +86,9 @@
                           {{- primaryProductDetails.title | truncate: 15 -}}
                         </a>
                         <p class="shop-the-look__price">{{ primaryProductDetails.price | money_with_currency }}</p>
-                        <p class="shop-the-look__compare-at-price">
+                        <s>
                           {{ primaryProductDetails['comapre-at-price'] | money_with_currency }}
-                        </p>
+                        </s>
                       </div>
                     </div>
                   </div>
