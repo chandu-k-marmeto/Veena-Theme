@@ -88,6 +88,7 @@
 
 .shop-the-look__compare-at-price {
   text-decoration: line-through;
+  font-size: calc(var(--font-body-scale) * 12px);
 }
 
 .shop-the-look__dot:hover {
