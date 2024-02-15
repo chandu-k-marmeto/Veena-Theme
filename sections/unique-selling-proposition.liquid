@@ -30,13 +30,13 @@
             assign heading = blocks.settings.heading
             assign description = blocks.settings.description
           %}
-          <div class="grid__item center">
-            <div>
+          <div class="grid__item center usp-section__icon-container">
+            <div class="usp-section__icon">
               {{ svg }}
             </div>
             <div>
-              <h2 class="h3">{{ heading }}</h2>
-              <div>{{ description }}</div>
+              <h2 class="h3 usp-section__heading">{{ heading }}</h2>
+              <div class="usp-section__description">{{ description }}</div>
             </div>
           </div>
         {% else %}
