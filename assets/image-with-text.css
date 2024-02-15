@@ -76,10 +76,10 @@
   margin-bottom: 20px;
 }
 
-.image-with-text-section__heading a:hover {
+/* .image-with-text-section__heading a:hover {
   color: #d03c3f;
   transition: all 0.5s ease;
-}
+} */
 
 .image-with-text-section__heading a:not(:hover) {
   color: inherit;
