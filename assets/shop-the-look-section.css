@@ -66,7 +66,7 @@
   border-radius: 10px;
   width: 120px;
   text-align: center;
-  margin-left: 30px;
+  margin-left: 50px;
 }
 
 .shop-the-look__data {
@@ -94,6 +94,6 @@
   .shop-the-look__product-container {
     visibility: unset;
     opacity: unset;
-    margin-left: 10px;
+    margin-left: 30px;
   }
 }
