@@ -72,7 +72,7 @@
               {% if primaryProduct != blank %}
                 <div class="shop-the-look__dot-{{ blocks.id }} shop-the-look__dot primary-dot">
                   <div class="shop-the-look__product-container">
-                    <div class="shop-the-look__data">
+                    <div class="shop-the-look__data color-{{ colorScheme.id }}">
                       <a href="{{ primaryProductDetails.handle }}" class="shop-the-look__product-link">
                         <img
                           src="{{ primaryProductDetails.featured_image | image_url }}"
