@@ -18,3 +18,7 @@
 .usp-section__container {
   padding: 0px 15px;
 }
+
+.usp-section__heading {
+  font-size: calc(var(--font-heading-scale) * 20px);
+}
