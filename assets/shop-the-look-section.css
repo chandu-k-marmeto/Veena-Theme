@@ -8,6 +8,14 @@
   margin-top: 15px;
 }
 
+.shop-the-look__description * {
+  margin: 0px;
+}
+
+.shop-the-look__text-content-container .button:after {
+  background: #d03c3f;
+}
+
 .shop-the-look__dot {
   position: absolute;
 }
