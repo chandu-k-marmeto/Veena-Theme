@@ -60,6 +60,7 @@
   transition: all var(--duration-medium) ease;
   left: 10%;
   z-index: 2;
+  border-radius: 10px;
 }
 
 ..shop-the-look__product-container * {
