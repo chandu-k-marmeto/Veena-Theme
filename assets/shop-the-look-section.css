@@ -105,6 +105,7 @@
 
 .shop-the-look__text-content-container .h3 {
   font-size: calc(var(--font-body-scale) * 26px);
+  line-height: normal;
 }
 
 @media screen and (max-width: 991px) {
