@@ -26,13 +26,13 @@
       <div class="grid__item center">
         {% for blocks in section.blocks %}
           {% liquid
-            assign image = blocks.settings.svg
+            assign svg = blocks.settings.svg
             assign heading = blocks.settings.heading
             assign description = blocks.settings.description
           %}
           <div class="center">
             <div>
-              {{ image }}
+              {{ svg }}
             </div>
             <h2 class="h3">{{ heading }}</h2>
             <div>{{ description }}</div>
