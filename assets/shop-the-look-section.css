@@ -17,7 +17,7 @@
   overflow: hidden;
 }
 
-.shop-the-look__description * {
+.shop-the-look__description {
   line-height: normal;
   margin: 0px;
   font-size: calc(var(--font-body-scale) * 18px);
