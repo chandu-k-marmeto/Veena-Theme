@@ -72,6 +72,7 @@
 .shop-the-look__product-details * {
   margin: 0px;
   line-height: normal;
+  text-decoration: none;
 }
 
 .shop-the-look__dot:hover {
