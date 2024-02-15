@@ -103,11 +103,18 @@
   }
 }
 
+.shop-the-look__text-content-container .h3 {
+  font-size: calc(var(--font-body-scale) * 26px);
+}
+
 @media screen and (max-width: 991px) {
   .shop-the-look__description {
     font-size: calc(var(--font-body-scale) * 14px);
   }
   .shop-the-look__text-content-container .button {
     margin-top: 10px;
+  }
+  .shop-the-look__text-content-container .h3 {
+    font-size: calc(var(--font-body-scale) * 18px);
   }
 }
