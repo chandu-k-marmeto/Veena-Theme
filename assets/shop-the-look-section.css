@@ -112,12 +112,12 @@
   margin-left: 30px;
 }
 
-.shop-the-look_dot:hover::after {
+.shop-the-look_dot:hover:after {
   width: 10px;
   height: 10px;
 }
 
-.shop-the-look_dot:hover::before {
+.shop-the-look_dot:hover:before {
   width: 32px;
   height: 32px;
 }
