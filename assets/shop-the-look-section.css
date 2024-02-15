@@ -98,12 +98,10 @@
   font-size: calc(var(--font-body-scale) * 12px);
 }
 
-.shop-the-look__dot:hover {
-  .shop-the-look__product-container {
-    visibility: unset;
-    opacity: unset;
-    margin-left: 30px;
-  }
+.shop-the-look__dot:hover .shop-the-look__product-container {
+  visibility: unset;
+  opacity: unset;
+  margin-left: 30px;
 }
 
 .shop-the-look__text-content-container .h3 {
