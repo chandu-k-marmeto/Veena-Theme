@@ -1,6 +1,68 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "USP section",
+  "tag": "section",
+  "settings": [
+    {
+      "type":"color_scheme",
+      "id":"color_scheme",
+      "label":"Color Scheme",
+      "default":"background-1"
+    },
+    {
+      "type": "header",
+      "content": "Section Padding"
+    },
+    {
+      "type": "range",
+      "label": "Padding Top",
+      "id": "padding_top",
+      "default": 20,
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Padding Bottom",
+      "id": "padding_bottom",
+      "default": 20,
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "usp",
+      "name": "USP",
+      "settings": [
+        {
+          "type": "html",
+          "label": "SVG",
+          "id": "svg"
+        },
+        {
+          "type": "text",
+          "label": "Heading",
+          "id": "heading",
+          "default": "Daily deals"
+        },
+        {
+          "type": "richtext",
+          "label": "Description",
+          "id": "description",
+          "default": "<p>return shipping costs unless the item received is damaged, defective, or incorrect.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "USP section"
+    }
+  ]
+}
 {% endschema %}
