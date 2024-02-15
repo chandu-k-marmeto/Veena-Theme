@@ -56,6 +56,21 @@
                 {% if blockHeading != blank %}
                   <h2 class="h2">{{ blockHeading }}</h2>
                 {% endif %}
+                {% if description != blank %}
+                  <div>{{ description }}</div>
+                {% endif %}
+                {% if buttonLabel != blank %}
+                  <a
+                    class="button"
+                    {% if buttonLink != blank %}
+                      href="{{ buttonLink }}"
+                    {% else %}
+                      aria-aria-disabled="true"
+                    {% endif %}
+                  >
+                    {{- buttonLabel -}}
+                  </a>
+                {% endif %}
               </div>
             </div>
           </div>
@@ -127,7 +142,7 @@
           "id": "block_heading"
         },
         {
-          "type": "text",
+          "type": "richtext",
           "label": "Description",
           "id": "description"
         },
