@@ -1287,6 +1287,11 @@ button.shopify-payment-button__button--unbranded {
     0 0 0 var(--buttons-border-width)
       rgba(var(--color-button), var(--alpha-button-background));
   transition: box-shadow var(--duration-short) ease;
+  background: #000;
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+  width: 0%;
+  height: 100%;
 }
 
 .button:not([disabled]):hover::after,
@@ -1298,6 +1303,7 @@ button.shopify-payment-button__button--unbranded {
       rgba(var(--color-button-text), var(--border-opacity)),
     0 0 0 calc(var(--buttons-border-width) + 1px)
       rgba(var(--color-button), var(--alpha-button-background));
+  width: 100%;
 }
 
 .button--secondary:after {
@@ -3650,7 +3656,7 @@ a {
 
 /* custom animation and transition */
 
-.button:after {
+/* .button:after {
   position: absolute;
   content: "";
   top: 0;
@@ -3673,7 +3679,7 @@ a {
 
 .button:not(:hover):after {
   width: 0%;
-}
+} */
 
 .h0 a::after,
 .h1 a::after,
