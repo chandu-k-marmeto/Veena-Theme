@@ -3675,6 +3675,10 @@ a {
   transition: transform 0.25s ease-out;
 }
 
+.button span {
+  z-index: 2;
+}
+
 .h0 a:hover::after,
 .h1 a:hover::after,
 .h2 a:hover::after,
