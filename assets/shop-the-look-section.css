@@ -59,13 +59,14 @@
 }
 
 .shop-the-look__product-container {
-  /* visibility: hidden;
-  opacity: 0; */
+  visibility: hidden;
+  opacity: 0;
   transition: all var(--duration-medium) ease;
   z-index: 2;
   border-radius: 10px;
   width: 120px;
   text-align: center;
+  margin-left: 30px;
 }
 
 .shop-the-look__data {
