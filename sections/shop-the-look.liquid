@@ -21,7 +21,27 @@
   }
 {% endstyle %}
 
-<div class="shop-the-look padding-{{ section.id }}"></div>
+<div class="shop-the-look padding-{{ section.id }}">
+  <div class="page-width color-{{ colorScheme.id }}">
+    {% if heading != blank %}
+      <h2 class="h1">{{ heading }}</h2>
+    {% endif %}
+    <div class="grid grid--1-col grid--3-col-desktop grid--3-col-tablet">
+      {% for blocks in section.blocks %}
+        {% liquid
+          assign image = blocks.settings.image
+          assign imageMobile = blocks.settings.image_mobile
+          assign blockHeading = blocks.settings.block_heading
+          assign description = blocks.settings.description
+          assign buttonLabel = blocks.settings.button_label
+          assign buttonLink = blocks.settings.button_link
+          assign primaryProduct = blocks.settings.primary_product
+          assign seconadryProduct = blocks.settings.secondary_product
+        %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
 
 {% schema %}
 {
@@ -32,6 +52,11 @@
       "type": "text",
       "label": "Heading",
       "id": "heading"
+    },
+    {
+      "type":"color_scheme",
+      "id":"color_scheme",
+      "label":"Color scheme"
     },
     {
       "type":"header",
@@ -56,11 +81,6 @@
       "max": 100,
       "step": 2,
       "unit": "px"
-    },
-    {
-      "type":"color_scheme",
-      "id":"color_scheme",
-      "label":"Color scheme"
     }
   ],
   "blocks": [
@@ -107,7 +127,8 @@
           "min": 0,
           "max": 100,
           "step": 1,
-          "unit": "%"
+          "unit": "%",
+          "info":"These values are usful for postioning the dot"
         },
         {
           "type": "range",
@@ -117,7 +138,8 @@
           "min": 0,
           "max": 100,
           "step": 1,
-          "unit": "%"
+          "unit": "%",
+          "info":"These values are usful for postioning the dot"
         },
         {
           "type": "product",
@@ -132,7 +154,8 @@
           "min": 0,
           "max": 100,
           "step": 1,
-          "unit": "%"
+          "unit": "%",
+          "info":"These values are usful for postioning the dot"
         },
         {
           "type": "range",
@@ -142,7 +165,8 @@
           "min": 0,
           "max": 100,
           "step": 1,
-          "unit": "%"
+          "unit": "%",
+          "info":"These values are usful for postioning the dot"
         },
         {
           "type": "product",
