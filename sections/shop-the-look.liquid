@@ -19,6 +19,20 @@
       padding-bottom: {{ paddingBottom }}px;
     }
   }
+
+  {% for blocks in section.blocks %}
+
+    .shop-the-look__dot-{{ blocks.id }} .primary-dot{
+      top: {{ blocks.settings.dot_1_top_position }}%;
+      left : {{ blocks.settings.dot_1_left_position }}%;
+    }
+
+    .shop-the-look__dot-{{ blocks.id }} .secondary-dot{
+      top: {{ blocks.settings.dot_2_top_position }}%;
+      left : {{ blocks.settings.dot_2_left_position }}%;
+    }
+
+  {% endfor %}}
 {% endstyle %}
 
 <div class="shop-the-look padding-{{ section.id }}">
@@ -56,7 +70,7 @@
                 {% endif %}
               </div>
               {% if primaryProduct != blank %}
-                <div class="shop-the-look__dot-{{ blocks.id }}">
+                <div class="shop-the-look__dot-{{ blocks.id }} primary-dot">
                   <div class="shop-the-look__product-container">
                     <div class="shop-the-look__data">
                       <a href="{{ primaryProductDetails.handle }}" class="shop-the-look__product-link">
@@ -77,7 +91,7 @@
                 </div>
               {% endif %}
               {% if seconadryProduct != blank %}
-                <div class="shop-the-look__dot-{{ blocks.id }}">
+                <div class="shop-the-look__dot-{{ blocks.id }} secondary-dot">
                   <div class="shop-the-look__product-container">
                     <div class="shop-the-look__data">
                       <a href="{{ seconadaryProductDetails.handle }}" class="shop-the-look__product-link">
@@ -203,7 +217,7 @@
         },
         {
           "type": "range",
-          "label": "Dot 1 left position",
+          "label": "Primary dot left position",
           "id": "dot_1_left_position",
           "default": 9,
           "min": 0,
@@ -214,7 +228,7 @@
         },
         {
           "type": "range",
-          "label": "Dot 1 top position",
+          "label": "Primary dot top position",
           "id": "dot_1_top_position",
           "default": 10,
           "min": 0,
@@ -230,7 +244,7 @@
         },
         {
           "type": "range",
-          "label": "Dot 2 left position",
+          "label": "Secondary dot left position",
           "id": "dot_2_left_position",
           "default": 10,
           "min": 0,
@@ -241,7 +255,7 @@
         },
         {
           "type": "range",
-          "label": "Dot 2 top position",
+          "label": "Secondary Dot top position",
           "id": "dot_2_top_position",
           "default": 10,
           "min": 0,
