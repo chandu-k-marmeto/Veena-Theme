@@ -1288,7 +1288,7 @@ button.shopify-payment-button__button--unbranded {
       rgba(var(--color-button), var(--alpha-button-background));
   transition: box-shadow var(--duration-short) ease;
   background: #000;
-  transition: all 0.35s;
+  transition: all var(--duration-short);
   transition-timing-function: ease-out;
   width: 0%;
   height: 100%;
