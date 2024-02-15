@@ -18,6 +18,10 @@
   background: #d03c3f;
 }
 
+.shop-the-look__text-content-container .button {
+  margin-top: 20px;
+}
+
 .shop-the-look__dot {
   position: absolute;
 }
