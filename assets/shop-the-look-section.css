@@ -37,3 +37,10 @@
   visibility: hidden;
   opacity: 0;
 }
+
+.shop-the-look__dot:hover {
+  .shop-the-look__product-container {
+    visibility: unset;
+    opacity: 1;
+  }
+}
