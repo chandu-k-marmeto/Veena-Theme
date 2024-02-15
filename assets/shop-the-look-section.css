@@ -80,6 +80,7 @@
   opacity: 0;
   z-index: 1;
   border-radius: 15px;
+  text-align: center;
 }
 
 .shop-the-look__data {
