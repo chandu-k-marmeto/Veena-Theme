@@ -5,6 +5,10 @@
 .usp-section .usp-section__icon-container {
   padding-right: 15px;
   padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  column-gap: 15px;
+  row-gap: 15px;
 }
 
 .usp-section__description * {
