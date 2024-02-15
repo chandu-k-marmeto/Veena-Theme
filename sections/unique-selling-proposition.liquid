@@ -32,11 +32,17 @@
           %}
           <div class="grid__item center usp-section__icon-container">
             <div class="usp-section__icon">
-              {{ svg }}
+              {% if svg != blank %}
+                {{ svg }}
+              {% endif %}
             </div>
             <div>
-              <h2 class="h3 usp-section__heading">{{ heading }}</h2>
-              <div class="usp-section__description">{{ description }}</div>
+              {% if heading != blank %}
+                <h2 class="h3 usp-section__heading">{{ heading }}</h2>
+              {% endif %}
+              {% if description != blank %}
+                <div class="usp-section__description">{{ description }}</div>
+              {% endif %}
             </div>
           </div>
         {% else %}
