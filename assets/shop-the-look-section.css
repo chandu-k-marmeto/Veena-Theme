@@ -58,9 +58,11 @@
   /* visibility: hidden;
   opacity: 0; */
   transition: all var(--duration-medium) ease;
-  left: 10%;
+  left: 40%;
   z-index: 2;
   border-radius: 10px;
+  position: absolute;
+  top: 30%;
 }
 
 .shop-the-look__data {
