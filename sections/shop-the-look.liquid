@@ -1,6 +1,145 @@
+{{ 'shop-the-look-section.css' | asset_url | stylesheet_tag }}
+
+{% liquid
+  assign heading = section.settings.heading
+  assign colorScheme = section.settings.color_scheme
+  assign paddingTop = section.settings.padding_top
+  assign paddingBottom = section.settings.padding_bottom
+%}
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Shop the look",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Heading",
+      "id": "heading"
+    },
+    {
+      "type":"header",
+      "content":"Section padding"
+    },
+    {
+      "type": "range",
+      "label": "Padding top",
+      "id": "padding_top",
+      "default": 20,
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Padding bottom",
+      "id": "padding_bottom",
+      "default": 20,
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px"
+    },
+    {
+      "type":"color_scheme",
+      "id":"color_scheme",
+      "label":"Color scheme"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "grid",
+      "name": "Grid",
+      "settings": [
+        {
+          "type": "image_picker",
+          "label": "Image",
+          "id": "image",
+          "info": "Image for desktop"
+        },
+        {
+          "type": "image_picker",
+          "label": "Image (Mobile)",
+          "id": "image_mobile"
+        },
+        {
+          "type": "text",
+          "label": "Heading",
+          "id": "block_heading"
+        },
+        {
+          "type": "text",
+          "label": "Description",
+          "id": "description"
+        },
+        {
+          "type": "text",
+          "label": "Button label",
+          "id": "button_label"
+        },
+        {
+          "type": "url",
+          "label": "Button link",
+          "id": "button_link"
+        },
+        {
+          "type": "range",
+          "label": "Dot 1 left position",
+          "id": "dot_1_left_position",
+          "default": 9,
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        },
+        {
+          "type": "range",
+          "label": "Dot 1 top position",
+          "id": "dot_1_top_position",
+          "default": 10,
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        },
+        {
+          "type": "product",
+          "label": "Select Product",
+          "id": "primary_product"
+        },
+        {
+          "type": "range",
+          "label": "Dot 2 left position",
+          "id": "dot_2_left_position",
+          "default": 10,
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        },
+        {
+          "type": "range",
+          "label": "Dot 2 top position",
+          "id": "dot_2_top_position",
+          "default": 10,
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
+        },
+        {
+          "type": "product",
+          "label": "Select Product",
+          "id": "secondary_product"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Shop the look"
+    }
+  ]
+}
 {% endschema %}
