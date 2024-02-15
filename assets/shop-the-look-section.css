@@ -12,6 +12,7 @@
 .shop-the-look__description * {
   line-height: normal;
   margin: 0px;
+  font-size: calc(var(--font-body-scale) * 18px);
 }
 
 .shop-the-look__text-content-container .button:after {
