@@ -586,7 +586,7 @@ details > * {
   --duration-short: 100ms;
   --duration-default: 200ms;
   --duration-announcement-bar: 250ms;
-  --duration-medium: 300ms;
+  --duration-medium: 350ms;
   --duration-long: 500ms;
   --duration-extra-long: 600ms;
   --duration-extended: 3s;
@@ -1288,7 +1288,7 @@ button.shopify-payment-button__button--unbranded {
       rgba(var(--color-button), var(--alpha-button-background));
   transition: box-shadow var(--duration-short) ease;
   background: #000;
-  transition: all var(--duration-short);
+  transition: all var(--duration-medium);
   transition-timing-function: ease-out;
   width: 0%;
   height: 100%;
