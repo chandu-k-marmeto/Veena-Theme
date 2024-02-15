@@ -83,6 +83,7 @@
   border-radius: 15px;
   align-items: center;
   justify-content: center;
+  flex: 1;
 }
 
 .shop-the-look__data {
