@@ -5,6 +5,8 @@
 .usp-section .usp-section__icon-container {
   display: flex;
   flex-direction: column;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .usp-section__description * {
