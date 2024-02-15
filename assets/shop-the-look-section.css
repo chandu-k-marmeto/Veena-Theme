@@ -14,7 +14,7 @@
   background: rgba(var(--color-foreground));
   border-radius: 100%;
   top: 0%;
-  left: 34%;
+  left: 0%;
   cursor: pointer;
   transition: 0.3s ease;
   margin: 10px;
