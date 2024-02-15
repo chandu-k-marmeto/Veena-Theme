@@ -43,7 +43,7 @@
 
 .usp-section__icon-container:hover {
   .usp-section__icon svg {
-    transform: rotateY(90deg);
+    transform: rotateY(360deg);
     transform-origin: 0px 0px;
   }
 }
