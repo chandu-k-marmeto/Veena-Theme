@@ -1,0 +1,9 @@
+.shop-the-look__image-dot-container {
+  position: relative;
+}
+
+.shop-the-look_dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
