@@ -3656,31 +3656,6 @@ a {
 
 /* custom animation and transition */
 
-/* .button:after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: #000;
-  transition: all 0.5s;
-  transition-timing-function: ease-out;
-}
-
-.button span {
-  z-index: 2;
-}
-
-.button:hover:after {
-  width: 100%;
-  border-radius: var(--buttons-radius-outset);
-}
-
-.button:not(:hover):after {
-  width: 0%;
-} */
-
 .h0 a::after,
 .h1 a::after,
 .h2 a::after,
