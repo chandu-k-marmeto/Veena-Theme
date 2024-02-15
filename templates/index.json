@@ -192,12 +192,80 @@
         "padding_top": 38,
         "padding_bottom": 46
       }
+    },
+    "shop_the_look_bGBKyq": {
+      "type": "shop-the-look",
+      "blocks": {
+        "grid_WQjtGc": {
+          "type": "grid",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_86583ec4-835c-45cd-999c-b7e8b1bdc86e.webp",
+            "image_mobile": "shopify:\/\/shop_images\/1_86583ec4-835c-45cd-999c-b7e8b1bdc86e.webp",
+            "block_heading": "Women's Winter Clothes",
+            "description": "<p>Welcome the season in style with our Women's Winter Clothes Collection – where warmth meets sophistication.<\/p>",
+            "button_label": "Discover More",
+            "button_link": "shopify:\/\/products\/carhartt-coat-black",
+            "dot_1_left_position": 80,
+            "dot_1_top_position": 93,
+            "primary_product": "august-rib-wool-oak",
+            "dot_2_left_position": 10,
+            "dot_2_top_position": 10,
+            "secondary_product": "baume-magique"
+          }
+        },
+        "grid_Rbq9rR": {
+          "type": "grid",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_a11b3061-4da9-4c80-ad4a-2ed8e9b0280f.webp",
+            "image_mobile": "shopify:\/\/shop_images\/2_a11b3061-4da9-4c80-ad4a-2ed8e9b0280f.webp",
+            "block_heading": "Our Men's Winter Clothes",
+            "description": "<p>welcome to our Men's Winter Clothes Collection, where every piece is a statement in comfort and style.<\/p>",
+            "button_label": "Discover More",
+            "button_link": "shopify:\/\/products\/columbia-tee-worn-olive",
+            "dot_1_left_position": 9,
+            "dot_1_top_position": 10,
+            "primary_product": "denim-chore-coat-black",
+            "dot_2_left_position": 10,
+            "dot_2_top_position": 10,
+            "secondary_product": "blue-oxford-shirt"
+          }
+        },
+        "grid_XqU4Hh": {
+          "type": "grid",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_e98fbf29-76ef-498a-837a-517c37dafb8d.webp",
+            "image_mobile": "shopify:\/\/shop_images\/3_e98fbf29-76ef-498a-837a-517c37dafb8d.webp",
+            "block_heading": "Women's Outdoor Clothes Collection",
+            "description": "<p>Embrace the beauty of nature with gear that complements your adventurous spirit.<\/p>",
+            "button_label": "Discover More",
+            "button_link": "shopify:\/\/products\/lean-dean-plain-stone",
+            "dot_1_left_position": 9,
+            "dot_1_top_position": 10,
+            "primary_product": "carhartt-coat-black",
+            "dot_2_left_position": 10,
+            "dot_2_top_position": 10,
+            "secondary_product": "lean-dean-plain-stone"
+          }
+        }
+      },
+      "block_order": [
+        "grid_WQjtGc",
+        "grid_Rbq9rR",
+        "grid_XqU4Hh"
+      ],
+      "settings": {
+        "heading": "",
+        "color_scheme": "",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
     }
   },
   "order": [
     "custom_banner_slideshow_w6VMUp",
     "rich_text_nnnBRT",
     "custom_image_with_text_rkDt8J",
-    "unique_selling_proposition_AXkhFD"
+    "unique_selling_proposition_AXkhFD",
+    "shop_the_look_bGBKyq"
   ]
 }
