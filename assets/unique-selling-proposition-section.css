@@ -1,3 +1,9 @@
 .usp-section .page-width {
   padding: 20px;
 }
+
+.usp-section .grid__item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
