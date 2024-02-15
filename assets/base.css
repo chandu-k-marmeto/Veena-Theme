@@ -1287,7 +1287,7 @@ button.shopify-payment-button__button--unbranded {
     0 0 0 var(--buttons-border-width)
       rgba(var(--color-button), var(--alpha-button-background));
   transition: box-shadow var(--duration-short) ease;
-  background: #000;
+  background: var(--color-button-hover);
   transition: all var(--duration-medium);
   transition-timing-function: ease-out;
   width: 0%;
@@ -3673,6 +3673,10 @@ a {
   background-color: #d03c3f;
   transform-origin: bottom right;
   transition: transform var(--duration-medium) ease-out;
+}
+
+.button:hover {
+  color: var(--color-button-text-hover);
 }
 
 .button span {
