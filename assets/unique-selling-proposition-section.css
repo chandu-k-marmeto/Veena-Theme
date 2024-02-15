@@ -24,7 +24,7 @@
   font-size: calc(var(--font-heading-scale) * 20px);
 }
 
-.usp-section__icon {
+.usp-section__icon svg {
   width: 40px;
   height: 40px;
 }
