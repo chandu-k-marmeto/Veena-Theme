@@ -41,8 +41,8 @@
 
 /* Animation */
 
-.usp-section:hover {
-  .usp-section__icon svg {
+.usp-section__icon-container:hover {
+  .usp-section__icon-container svg {
     transform: rotate(360deg);
   }
 }
