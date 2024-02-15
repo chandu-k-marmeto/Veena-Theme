@@ -50,6 +50,7 @@
   cursor: pointer;
   transition: 0.3s ease;
   margin: 10px;
+  transition: all 0.35s ease;
 }
 
 .shop-the-look__dot:before {
@@ -63,6 +64,7 @@
   transition: 0.3s ease;
   left: 3px;
   top: 3px;
+  transition: all 0.35s ease;
 }
 
 .shop-the-look__product-container {
