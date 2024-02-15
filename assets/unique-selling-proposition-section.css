@@ -27,7 +27,7 @@
   transition: transform var(--duration-medium) ease;
   height: 40px;
   width: 40px;
-  transform-style: preserve-3d;
+  /* transform-style: preserve-3d; */
 }
 
 .grid {
@@ -45,6 +45,5 @@
 .usp-section__icon-container:hover {
   .usp-section__icon svg {
     transform: rotateY(-180deg);
-    /* transform-origin: 0px 0px; */
   }
 }
