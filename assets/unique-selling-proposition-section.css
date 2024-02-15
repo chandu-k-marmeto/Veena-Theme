@@ -1,6 +1,5 @@
-.usp-section .page-width {
+.usp-section__main-container {
   padding: 20px 0px;
-  max-width: var(--page-width);
 }
 
 .usp-section .usp-section__icon-container {
@@ -30,8 +29,7 @@
 }
 
 @media screen and (min-width: 750px) {
-  .usp-section .page-width {
+  .usp-section__main-container {
     padding: 40px 0px;
-    max-width: var(--page-width);
   }
 }
