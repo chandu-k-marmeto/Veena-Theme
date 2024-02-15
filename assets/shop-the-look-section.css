@@ -71,6 +71,7 @@
 .shop-the-look__data {
   border-radius: 10px;
   display: grid;
+  height: auto;
 }
 
 .shop-the-look__product-details * {
