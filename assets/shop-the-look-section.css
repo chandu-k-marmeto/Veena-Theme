@@ -1,12 +1,15 @@
 .shop-the-look__image-dot-container {
   position: relative;
-  border-radius: 15px;
-  /* overflow: hidden; */
 }
 
 .shop-the-look__text-content-container {
   margin-top: 15px;
   position: relative;
+}
+
+.shop-the-look__image-container {
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 .shop-the-look__description * {
