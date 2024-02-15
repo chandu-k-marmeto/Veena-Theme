@@ -66,6 +66,7 @@
 
 .shop-the-look__data {
   border-radius: 10px;
+  display: grid;
 }
 
 .shop-the-look__product-details * {
