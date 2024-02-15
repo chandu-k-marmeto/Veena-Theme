@@ -81,8 +81,8 @@
                           width="80"
                         >
                       </a>
-                      <div href="{{ primaryProductDetails.handle }}" class="shop-the-look__product-details">
-                        <a class="h5">{{ primaryProductDetails.title }}</a>
+                      <div class="shop-the-look__product-details">
+                        <a href="{{ primaryProductDetails.handle }}" class="h5">{{ primaryProductDetails.title }}</a>
                         <p>{{ primaryProductDetails.price | money_with_currency }}</p>
                         <p>{{ primaryProductDetails['comapre-at-price'] | money_with_currency }}</p>
                       </div>
@@ -102,8 +102,10 @@
                           width="80"
                         >
                       </a>
-                      <div href="{{ seconadaryProductDetails.handle }}" class="shop-the-look__product-details">
-                        <a class="h5">{{ seconadaryProductDetails.title }}</a>
+                      <div class="shop-the-look__product-details">
+                        <a href="{{ seconadaryProductDetails.handle }}" class="h5">
+                          {{- seconadaryProductDetails.title -}}
+                        </a>
                         <p>{{ seconadaryProductDetails.price | money_with_currency }}</p>
                         <p>{{ seconadaryProductDetails.compare_at_price | money_with_currency }}</p>
                       </div>
