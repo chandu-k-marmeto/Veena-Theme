@@ -32,4 +32,7 @@
   .usp-section__main-container {
     padding: 40px 0px;
   }
+  .grid {
+    row-gap: max(calc(var(--grid-mobile-vertical-spacing) + 10px), 0px);
+  }
 }
