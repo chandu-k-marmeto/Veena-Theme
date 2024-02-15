@@ -1,5 +1,6 @@
 .usp-section .page-width {
   padding: 20px 0px;
+  max-width: var(--page-width);
 }
 
 .usp-section .usp-section__icon-container {
