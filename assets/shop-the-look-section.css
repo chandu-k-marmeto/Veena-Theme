@@ -85,6 +85,10 @@
   color: #000;
 }
 
+.shop-the-look__compare-at-price {
+  text-decoration: line-through;
+}
+
 .shop-the-look__dot:hover {
   .shop-the-look__product-container {
     visibility: unset;
