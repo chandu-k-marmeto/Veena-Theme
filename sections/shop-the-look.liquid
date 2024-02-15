@@ -85,8 +85,10 @@
                         <a href="{{ primaryProductDetails.handle }}" class="h5">
                           {{- primaryProductDetails.title | truncate: 15 -}}
                         </a>
-                        <p>{{ primaryProductDetails.price | money_with_currency }}</p>
-                        <p>{{ primaryProductDetails['comapre-at-price'] | money_with_currency }}</p>
+                        <p class="shop-the-look__price">{{ primaryProductDetails.price | money_with_currency }}</p>
+                        <p class="shop-the-look__compare-at-price">
+                          {{ primaryProductDetails['comapre-at-price'] | money_with_currency }}
+                        </p>
                       </div>
                     </div>
                   </div>
