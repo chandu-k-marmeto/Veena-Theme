@@ -58,7 +58,7 @@
   /* visibility: hidden;
   opacity: 0; */
   transition: all var(--duration-medium) ease;
-  left: 40%;
+  right: 40%;
   z-index: 2;
   border-radius: 10px;
   position: absolute;
