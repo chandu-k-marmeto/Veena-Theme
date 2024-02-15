@@ -39,7 +39,9 @@
           </div>
         {% else %}
           {% for i in (1..4) %}
-            {{ 'product-' | append: i | placeholder_svg_tag }}
+            <div class="grid__item center">
+              {{ 'product-' | append: i | placeholder_svg_tag }}
+            </div>
           {% endfor %}
         {% endfor %}
       </div>
