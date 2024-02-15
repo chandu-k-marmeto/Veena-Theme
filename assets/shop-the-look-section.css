@@ -66,14 +66,19 @@
 }
 
 .shop-the-look__product-container {
+  background: var(--gradient-background);
+  border: 1px solid rgba(var(--color-foreground), 0.08);
+  padding: 6px;
+  opacity: 0;
+  width: 240px;
+  border-radius: calc(var(--bg-radius) * 1 / 2);
+  position: absolute;
+  top: -50%;
+  transition: 0.3s ease;
+  margin-left: 55px;
   visibility: hidden;
   opacity: 0;
-  transition: all var(--duration-medium) ease;
-  z-index: 2;
-  border-radius: 10px;
-  width: 120px;
-  text-align: center;
-  margin-left: 50px;
+  z-index: 1;
 }
 
 .shop-the-look__data {
