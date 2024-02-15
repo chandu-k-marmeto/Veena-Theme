@@ -31,3 +31,8 @@
   left: 3px;
   top: 3px;
 }
+
+.shop-the-look__product-container {
+  display: none;
+  opacity: 0;
+}
