@@ -2,6 +2,32 @@
   position: relative;
 }
 
-.shop-the-look_dot {
+.shop-the-look__dot {
   position: absolute;
+}
+
+.shop-the-look__dot:after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: rgba(var(--color-foreground));
+  border-radius: 100%;
+  top: 34%;
+  left: 34%;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.shop-the-look__dot:before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: var(--gradient-background);
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 0.3s ease;
+  left: 3px;
+  top: 3px;
 }
