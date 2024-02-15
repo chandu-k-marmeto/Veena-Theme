@@ -107,4 +107,7 @@
   .shop-the-look__description {
     font-size: calc(var(--font-body-scale) * 14px);
   }
+  .shop-the-look__text-content-container .button {
+    margin-top: 10px;
+  }
 }
