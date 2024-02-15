@@ -3675,10 +3675,6 @@ a {
   transition: transform var(--duration-medium) ease-out;
 }
 
-.button:hover {
-  color: var(--color-button-text-hover);
-}
-
 .button span {
   z-index: 2;
 }
