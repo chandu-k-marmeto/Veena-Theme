@@ -6,6 +6,7 @@
 
 .shop-the-look__text-content-container {
   margin-top: 15px;
+  position: relative;
 }
 
 .shop-the-look__description * {
