@@ -59,6 +59,7 @@
   opacity: 0;
   transition: all var(--duration-medium) ease;
   left: 10%;
+  z-index: 1;
 }
 
 .shop-the-look__dot:hover {
