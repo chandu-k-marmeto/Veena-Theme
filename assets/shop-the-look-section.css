@@ -4,6 +4,10 @@
   overflow: hidden;
 }
 
+.shop-the-look__text-content-container {
+  margin-top: 15px;
+}
+
 .shop-the-look__dot {
   position: absolute;
 }
