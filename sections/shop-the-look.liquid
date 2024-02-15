@@ -84,7 +84,7 @@
                       <div href="{{ primaryProductDetails.handle }}" class="shop-the-look__product-details">
                         <a class="h5">{{ primaryProductDetails.title }}</a>
                         <p>{{ primaryProductDetails.price | money_with_currency }}</p>
-                        <p>{{ primaryProductDetails.comapre_at_price | money_with_currency }}</p>
+                        <p>{{ primaryProductDetails['comapre-at-price'] | money_with_currency }}</p>
                       </div>
                     </div>
                   </div>
