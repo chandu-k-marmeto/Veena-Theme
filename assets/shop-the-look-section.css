@@ -13,7 +13,7 @@
   height: 8px;
   background: rgba(var(--color-foreground));
   border-radius: 100%;
-  top: 34%;
+  top: 0%;
   left: 34%;
   cursor: pointer;
   transition: 0.3s ease;
