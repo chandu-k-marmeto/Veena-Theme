@@ -17,6 +17,7 @@
   left: 34%;
   cursor: pointer;
   transition: 0.3s ease;
+  margin: 10px;
 }
 
 .shop-the-look__dot:before {
