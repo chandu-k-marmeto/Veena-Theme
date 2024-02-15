@@ -3672,7 +3672,7 @@ a {
   left: 0;
   background-color: #d03c3f;
   transform-origin: bottom right;
-  transition: transform 0.35s ease-out;
+  transition: transform var(--duration-medium) ease-out;
 }
 
 .button span {
