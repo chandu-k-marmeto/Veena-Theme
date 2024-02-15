@@ -42,7 +42,7 @@
 /* Animation */
 
 .usp-section__icon-container:hover {
-  .usp-section__icon-container .usp-section__icon svg {
+  .usp-section__icon svg {
     transform: rotate(360deg);
   }
 }
