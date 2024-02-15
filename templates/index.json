@@ -51,7 +51,6 @@
         "slide_4QMkjQ",
         "slide_GLBUXU"
       ],
-      "disabled": true,
       "settings": {
         "auto_play": false,
         "show_pagination": true,
@@ -95,7 +94,6 @@
         "heading_eHJ9fC",
         "button_zG8Qk7"
       ],
-      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -141,7 +139,6 @@
         "collections_ACNaWQ",
         "collections_dWtPpM"
       ],
-      "disabled": true,
       "settings": {
         "card_shap": "landscape",
         "padding_top": 40,
@@ -190,7 +187,6 @@
         "usp_VnqXXB",
         "usp_zTiRqC"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "inverse",
         "padding_top": 38,
@@ -261,7 +257,7 @@
         "heading": "",
         "color_scheme": "accent-1",
         "padding_top": 60,
-        "padding_bottom": 20
+        "padding_bottom": 60
       }
     }
   },
