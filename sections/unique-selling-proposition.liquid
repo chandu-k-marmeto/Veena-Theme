@@ -19,6 +19,34 @@
     }
   }
 {% endstyle %}
+
+<div class="usp-section padding-{{ section.id }}">
+  <div class="color-{{ colorSheme.id }}">
+    <div class="page-width grid grid--1-col grid--4-col-desktop ">
+      <div class="grid__item center">
+        {% for blocks in section.blocks %}
+          {% liquid
+            assign image = blocks.settings.svg
+            assign heading = blocks.settings.heading
+            assign description = blocks.settings.description
+          %}
+          <div class="center">
+            <div>
+              {{ image }}
+            </div>
+            <h2 class="h3">{{ heading }}</h2>
+            <div>{{ description }}</div>
+          </div>
+        {% else %}
+          {% for i in (1..4) %}
+            {{ 'product-' | append: i | placeholder_svg_tag }}
+          {% endfor %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
 {% schema %}
 {
   "name": "USP section",
