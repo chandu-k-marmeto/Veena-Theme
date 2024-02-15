@@ -63,6 +63,10 @@
   border-radius: 10px;
 }
 
+.shop-the-look__data {
+  border-radius: 10px;
+}
+
 .shop-the-look__product-details * {
   margin: 0px;
 }
