@@ -70,7 +70,7 @@
   border: 1px solid rgba(var(--color-foreground), 0.08);
   padding: 6px;
   opacity: 0;
-  width: 240px;
+  width: 120px;
   border-radius: calc(var(--bg-radius) * 1 / 2);
   position: absolute;
   top: -50%;
@@ -79,6 +79,7 @@
   visibility: hidden;
   opacity: 0;
   z-index: 1;
+  border-radius: 15px;
 }
 
 .shop-the-look__data {
