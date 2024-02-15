@@ -80,6 +80,14 @@
   text-decoration: none;
 }
 
+.shop-the-look__price {
+  font-weight: bold;
+}
+
+.shop-the-look__compare-at-price {
+  text-decoration: line-through;
+}
+
 .shop-the-look__dot:hover {
   .shop-the-look__product-container {
     visibility: unset;
