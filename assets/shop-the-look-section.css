@@ -19,8 +19,11 @@
 
 .shop-the-look__description {
   line-height: normal;
-  margin: 0px;
   font-size: calc(var(--font-body-scale) * 18px);
+}
+
+.shop-the-look__description p {
+  margin: 0px;
 }
 
 .shop-the-look__text-content-container .button:after {
@@ -111,7 +114,6 @@
 @media screen and (max-width: 991px) {
   .shop-the-look__description {
     font-size: calc(var(--font-body-scale) * 14px);
-    margin: 0px;
   }
   .shop-the-look__text-content-container .button {
     margin-top: 10px;
