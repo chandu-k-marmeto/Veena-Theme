@@ -1,5 +1,7 @@
 .shop-the-look__image-dot-container {
   position: relative;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 .shop-the-look__dot {
