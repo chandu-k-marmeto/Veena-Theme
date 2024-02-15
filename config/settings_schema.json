@@ -66,20 +66,8 @@
           },
           {
             "type": "color",
-            "id": "button_bg_hover",
-            "label": "Button hover background",
-            "default": "#121212"
-          },
-          {
-            "type": "color",
             "id": "button_label",
             "label": "t:settings_schema.colors.settings.button_label.label",
-            "default": "#FFFFFF"
-          },
-          {
-            "type": "color",
-            "id": "button_label_hover",
-            "label": "Button hover text",
             "default": "#FFFFFF"
           },
           {
