@@ -144,11 +144,20 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "unique_selling_proposition_AXkhFD": {
+      "type": "unique-selling-proposition",
+      "settings": {
+        "color_scheme": "",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
     }
   },
   "order": [
     "custom_banner_slideshow_w6VMUp",
     "rich_text_nnnBRT",
-    "custom_image_with_text_rkDt8J"
+    "custom_image_with_text_rkDt8J",
+    "unique_selling_proposition_AXkhFD"
   ]
 }
