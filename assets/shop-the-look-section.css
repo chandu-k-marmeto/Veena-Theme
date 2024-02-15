@@ -5,6 +5,7 @@
 .shop-the-look__text-content-container {
   margin-top: 15px;
   position: relative;
+  z-index: 1;
 }
 
 .shop-the-look__image-container {
