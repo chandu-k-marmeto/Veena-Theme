@@ -34,7 +34,7 @@
           {% for tag in tags %}
             {% assign newTag = tag | split: 'tag-' | first %}
             {% if newTag == 'New' %}
-              <div class="badge discount-badge">{{ newTag }}% off</div>
+              <div class="badge discount-badge">{{ newTag }}</div>
             {% endif %}
           {% endfor %}
         </div>
