@@ -3658,11 +3658,7 @@ a {
 
 .h0 a::after,
 .h1 a::after,
-.h2 a::after,
-.h3 a::after,
-.h4 a::after,
-.h5 a::after,
-.h6 a::after {
+.h2 a::after {
   content: "";
   position: absolute;
   width: 100%;
