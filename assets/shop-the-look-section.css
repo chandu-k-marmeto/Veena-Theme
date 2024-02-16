@@ -80,7 +80,7 @@
   visibility: hidden;
   opacity: 0;
   z-index: 1;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .shop-the-look__data {
