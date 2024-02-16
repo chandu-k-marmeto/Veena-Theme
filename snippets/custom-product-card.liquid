@@ -30,6 +30,9 @@
         {% if discountPercentage != blank %}
           <div class="badge discount-badge">{{ discountPercentage }}% off</div>
         {% endif %}
+        {% for tag in tags %}
+          {{ tag }}
+        {% endfor %}
         <a class="button"> <span>Quick Look</span></a>
       </div>
     </div>
