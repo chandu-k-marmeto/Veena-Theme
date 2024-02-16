@@ -50,28 +50,17 @@
                 <ul>
                   {% for option_value in product_option.values %}
                     <li>
-                      <!--
-                        <input
-                          type="hidden"
-                          name="option-{{ product.id }}"
-                          value="{{ option_value }}"
-                          data-type="option"
-                          {% if product_option.selected_value == option_value %}
-                            checked
-                          {% endif %}
-                        >
-                      -->
-                      <label style="background:{{ option_value }};">
-                        <input
-                          type="radio"
-                          name="option-{{ product.id }}"
-                          value="{{ option_value }}"
-                          data-type="option"
-                          {% if product_option.selected_value == option_value %}
-                            checked
-                          {% endif %}
-                        >
-                      </label>
+                      <input
+                        type="hidden"
+                        name="option-{{ product.id }}"
+                        value="{{ option_value }}"
+                        data-type="option"
+                        {% if product_option.selected_value == option_value %}
+                          checked
+                        {% endif %}
+                      >
+
+                      <label style="background:{{ option_value }};"> </label>
                     </li>
                   {% endfor %}
                 </ul>
