@@ -51,7 +51,7 @@
 }
 
 .product-card__tags-container .button:after {
-  background: red;
+  background: #d03c3f;
 }
 
 .product-card__details {
