@@ -32,6 +32,10 @@
   min-height: 0;
 }
 
+.product-card__tags-container .button:after {
+  background: red;
+}
+
 .product-card__details {
   text-align: center;
 }
