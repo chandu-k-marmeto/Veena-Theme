@@ -40,7 +40,7 @@
 .product-card__tags-container div:first-child {
   display: flex;
   flex-direction: column;
-  column-gap: 5px;
+  gap: 5px;
 }
 
 .product-card__tags-container .button {
