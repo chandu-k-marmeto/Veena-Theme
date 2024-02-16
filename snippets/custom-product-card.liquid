@@ -27,12 +27,17 @@
         {% render 'responsive-image', mobileImage: secondaryImage, desktopImage: secondaryImage %}
       </div>
       <div class="product-card__tags-container">
-        {% if discountPercentage != blank %}
-          <div class="badge discount-badge">{{ discountPercentage }}% off</div>
-        {% endif %}
-        {% for tag in tags %}
-          {{ tag }}
-        {% endfor %}
+        <div>
+          {% if discountPercentage != blank %}
+            <div class="badge discount-badge">{{ discountPercentage }}% off</div>
+          {% endif %}
+          {% for tag in tags %}
+            {% assign newTag = tag | split: 'tag-' | first %}
+            {% if newTag == 'New' %}
+              <div class="badge discount-badge">{{ newTag }}% off</div>
+            {% endif %}
+          {% endfor %}
+        </div>
         <a class="button"> <span>Quick Look</span></a>
       </div>
     </div>
