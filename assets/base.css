@@ -3701,4 +3701,5 @@ a {
 .h6:hover a {
   color: red;
   transition: color var(--duration-medium) ease;
+  text-decoration: none;
 }
