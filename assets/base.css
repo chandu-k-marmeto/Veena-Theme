@@ -3646,6 +3646,19 @@ a {
   transition: all var(--duration-medium) ease;
 }
 
+.pre-heading {
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 30px;
+  padding-right: 10px;
+  backdrop-filter: none;
+  font-size: calc(var(--font-body-scale) * 14px);
+}
+
+.pre-heading li {
+  list-style-type: disc;
+}
+
 /* custom animation and transition */
 
 .h0 a::after,
@@ -3672,19 +3685,6 @@ a {
 .h2 a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
-}
-
-.pre-heading {
-  display: inline-block;
-  border: 1px solid;
-  border-radius: 30px;
-  padding-right: 10px;
-  backdrop-filter: none;
-  font-size: calc(var(--font-body-scale) * 14px);
-}
-
-.pre-heading li {
-  list-style-type: disc;
 }
 
 .h3:hover a,
