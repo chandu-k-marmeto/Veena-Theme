@@ -40,3 +40,9 @@
   font-size: calc(var(--font-body-scale) * 14px);
   color: rgba(var(--color-foreground), 0.7);
 }
+
+.product-card__title {
+  font-size: calc(var(--font-body-scale) * 18px);
+  font-weight: var(--font-body-weight-medium);
+  letter-spacing: 0.4px;
+}
