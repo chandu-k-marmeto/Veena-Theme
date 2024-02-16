@@ -1,6 +1,127 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+{{ 'custom-product-list-section.css' | asset_url | stylesheet_tag }}
+
+{% liquid
+  assign heading = section.settings.heading
+  assign headingSize = section.settings.heading_size
+  assign paddingTop = section.settings.padding_top
+  assign paddingBottom = section.settings.padding_bottom
+  assign productList = section.settings.select_products
+  assign colorScehme = section.settings.color_scheme
+  assign buttonLabel = section.settings.button_label
+  assign buttonLink = section.settings.button_link
+%}
+
+{% style %}
+  .padding-{{section.id}}{
+    padding-top: {{ paddingTop |divided_by:2 }}px;
+    padding-bottom: {{ paddingBottom |divided_by:2 }}px;
   }
+
+  @media screen and (min-width:750px){
+    .padding-{{section.id}}{
+      padding-top: {{ paddingTop |divided_by:2 }}px;
+      padding-bottom: {{ paddingBottom |divided_by:2 }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="custom-product-list padding-{{ section.id }} color-{{ colorScehme.id }}">
+  <div class="page-width">
+    <div class="custom-product-list__heading">
+      {% if heading != blank %}
+        <h2 class="{{ headingSize }}">{{ heading }}</h2>
+      {% endif %}
+      {% if buttonLabel != blank %}
+        <a
+          {% if buttonLink != blank %}
+            href="{{ buttonLink }}"
+          {% else %}
+            aria-disabled="true"
+          {% endif %}
+        >
+          {{- buttonLabel -}}
+        </a>
+      {% endif %}
+    </div>
+    <div class=""></div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Custom Product List",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Heading",
+      "id": "heading"
+    },
+    {
+      "type": "select",
+      "label": "Heading size",
+      "id": "heading_size",
+      "options": [
+        {
+          "label": "Large",
+          "value": "h0"
+        },
+        {
+          "label": "Medium",
+          "value": "h1"
+        },
+        {
+          "label": "Small",
+          "value": "h2"
+        }
+      ]
+    },
+    {
+      "type":"text",
+      "label":"Button label",
+      "id":"button_label"
+    },
+    {
+      "type":"url",
+      "label":"Button link",
+      "id":"button_link"
+    },
+    {
+      "type": "product_list",
+      "label": "Select Products",
+      "id": "select_products",
+      "limit": 19
+    },
+    {
+      "type":"color_scheme",
+      "label":"Color Scheme",
+      "id":"color_scheme"
+    },
+    {
+      "type": "range",
+      "label": "Padding top",
+      "id": "padding_top",
+      "default": 20,
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Padding bottom",
+      "id": "padding_bottom",
+      "default": 20,
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Product List"
+    }
+  ]
+}
 {% endschema %}
