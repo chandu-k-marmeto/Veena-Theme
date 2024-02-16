@@ -34,7 +34,32 @@
       </div>
     </div>
     <div class="product-card__details">
-      <div class="product-card__swatches"></div>
+      {% unless product.has_only_default_variant %}
+        <div class="product-card__options">
+          {% for product_option in product.options_with_values %}
+            <div class="product-card__option">
+              <label>{{ product_option.name }}</label>
+
+              <ul>
+                {% for option_value in product_option.values %}
+                  <li>
+                    <input
+                      type="radio"
+                      name="option-{{ product_option.name | handleize }}"
+                      value="{{ option_value }}"
+                      {% if product_option.selected_value == option_value %}
+                        checked
+                      {% endif %}
+                    >
+                    {{ option_value }}
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endfor %}
+        </div>
+      {% endunless %}
+
       <div class="product-card__money-details">
         <p class="product-card__vender-name">{{ venderName }}</p>
         <h3 class="h3 product-card__title">
