@@ -5,10 +5,8 @@
   assign currentProduct = product.selected_or_first_available_variant
   assign primaryImage = currentProduct.featured_image | default: product.featured_image
   assign secondaryImage = product.images[1] | default: product.featured_image
-  assign minimumPrice = currentProduct.price_min
   assign price = currentProduct.price
   assign compareAtPrice = currentProduct.compare_at_price
-  assign variantsOptions = currentProduct.options_with_values
   assign tags = product.tags
   assign venderName = product.vendor
   assign availableQuantity = currentProduct.inventory_quantity
