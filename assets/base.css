@@ -3681,11 +3681,7 @@ a {
 
 .h0 a:hover::after,
 .h1 a:hover::after,
-.h2 a:hover::after,
-.h3 a:hover::after,
-.h4 a:hover::after,
-.h5 a:hover::after,
-.h6 a:hover::after {
+.h2 a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
