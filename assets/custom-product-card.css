@@ -37,6 +37,11 @@
   padding: 15px;
 }
 
+.product-card__tags-container div:first-child {
+  display: flex;
+  flex-direction: column;
+}
+
 .product-card__tags-container .button {
   font-size: calc(var(--font-body-scale) * 14px);
   letter-spacing: 0;
