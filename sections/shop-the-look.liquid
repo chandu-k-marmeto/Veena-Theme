@@ -73,12 +73,14 @@
                 <div class="shop-the-look__dot-{{ blocks.id }} shop-the-look__dot primary-dot">
                   <div class="shop-the-look__product-container">
                     <div class="shop-the-look__data color-{{ colorScheme.id }}">
-                      <a href="{{ primaryProductDetails.handle }}" class="shop-the-look__product-link">
-                        <img
-                          src="{{ primaryProductDetails.featured_image | image_url }}"
-                          class="shop-the-look__product-image"
-                        >
-                      </a>
+                      <h2>
+                        <a href="{{ primaryProductDetails.handle }}" class="shop-the-look__product-link">
+                          <img
+                            src="{{ primaryProductDetails.featured_image | image_url }}"
+                            class="shop-the-look__product-image"
+                          >
+                        </a>
+                      </h2>
                       <div class="shop-the-look__product-details">
                         <a href="{{ primaryProductDetails.handle }}" class="h5">
                           {{- primaryProductDetails.title | truncate: 15 -}}
@@ -103,9 +105,11 @@
                         >
                       </a>
                       <div class="shop-the-look__product-details">
-                        <a href="{{ seconadaryProductDetails.handle }}" class="h5">
-                          {{- seconadaryProductDetails.title | truncate: 15 -}}
-                        </a>
+                        <h2>
+                          <a href="{{ seconadaryProductDetails.handle }}" class="h5">
+                            {{- seconadaryProductDetails.title | truncate: 15 -}}
+                          </a>
+                        </h2>
                         <p class="shop-the-look__price">{{ seconadaryProductDetails.price | money_with_currency }}</p>
                         <p class="shop-the-look__compare-at-price">
                           {{ seconadaryProductDetails.compare_at_price | money_with_currency }}
