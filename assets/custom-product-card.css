@@ -50,6 +50,11 @@
   color: white;
 }
 
+.new-badge {
+  color: green;
+  color: white;
+}
+
 .product-card__tags-container .button:after {
   background: #d03c3f;
 }
