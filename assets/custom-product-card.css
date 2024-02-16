@@ -17,7 +17,7 @@
 
 .product-card__image-container:hover {
   .product-card__secondary-image img {
-    display: block;
+    display: flex;
   }
   .product-card__primary-image img {
     display: none;
