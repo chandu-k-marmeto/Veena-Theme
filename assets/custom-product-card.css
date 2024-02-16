@@ -45,7 +45,7 @@
 
 .product-card__option input[type="radio"]:checked + label:before {
   content: "";
-  box-shadow: 0 0 0 1px rgba(var(--color-link-hover), 1);
+  box-shadow: 0 0 0 1px #000;
   position: absolute;
   left: -3px;
   right: -3px;
