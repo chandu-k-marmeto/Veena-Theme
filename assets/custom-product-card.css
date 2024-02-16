@@ -60,6 +60,9 @@
   width: 100%;
   justify-content: center;
   align-items: center;
+  padding-left: 0px;
+  margin-top: 5px;
+  margin-bottom: 0px;
 }
 
 .product-card__details {
