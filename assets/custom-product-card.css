@@ -58,4 +58,5 @@
   font-size: calc(var(--font-body-scale) * 14px);
   text-decoration: line-through;
   font-weight: var(--font-body-weight-bold);
+  color: rgba(var(--color-foreground), 0.7);
 }
