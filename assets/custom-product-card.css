@@ -49,6 +49,7 @@
   font-weight: var(--font-body-weight-medium);
   padding: 5px 15px;
   min-height: 0;
+  flex-grow: 0;
 }
 
 .discount-badge {
