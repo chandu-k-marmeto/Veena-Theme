@@ -46,6 +46,7 @@
                         type="hidden"
                         name="option-{{ product.id }}"
                         value="{{ option_value }}"
+                        data-type="option"
                         {% if product_option.selected_value == option_value %}
                           checked
                         {% endif %}
