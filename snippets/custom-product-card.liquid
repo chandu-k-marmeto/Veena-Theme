@@ -28,9 +28,7 @@
       </div>
       <div class="product-card__tags-container">
         {% if discountPercentage != blank %}
-          <div class="badge">
-            {{ discountPercentage }}
-          </div>
+          <div class="badge discount-badge">{{ discountPercentage }}% off</div>
         {% endif %}
         <a class="button"> <span>Quick Look</span></a>
       </div>
