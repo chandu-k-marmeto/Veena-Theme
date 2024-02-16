@@ -33,6 +33,7 @@
       {% endif %}
       {% if buttonLabel != blank %}
         <a
+          class="button"
           {% if buttonLink != blank %}
             href="{{ buttonLink }}"
           {% else %}
@@ -43,7 +44,21 @@
         </a>
       {% endif %}
     </div>
-    <div class=""></div>
+    <div class="grid grid--2-col grid--3-col-tablet grid--4-col-desktop">
+      {% for product in productList %}
+        <div class="grid__item">
+          {% render 'custom-product-card', product: product %}
+        </div>
+      {% else %}
+        {% for i in (1..5) %}
+          <div class="grid__item">
+            <div class="media media--square">
+              {{ 'product-' | append: i | placeholder_svg_tag }}
+            </div>
+          </div>
+        {% endfor %}
+      {% endfor %}
+    </div>
   </div>
 </div>
 
