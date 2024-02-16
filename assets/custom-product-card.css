@@ -43,6 +43,17 @@
   gap: 5px;
 }
 
+.product-card__option input[type="radio"]:checked + label:before {
+  content: "";
+  box-shadow: 0 0 0 1px rgba(var(--color-link-hover), 1);
+  position: absolute;
+  left: -3px;
+  right: -3px;
+  top: -3px;
+  bottom: -3px;
+  border-radius: var(--variant-pills-radius);
+}
+
 .product-card__tags-container .button {
   font-size: calc(var(--font-body-scale) * 14px);
   letter-spacing: 0;
