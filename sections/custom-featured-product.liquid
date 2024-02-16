@@ -14,13 +14,13 @@
   assign desktopImage = section.settings.image
   assign showVender = section.settings.show_vender_name
   assign animationEffect = section.settings.animation_on_image_hover
-  assign headingSize=section.settings.heading_size
+  assign headingSize = section.settings.heading_size
   assign blcokHeading = section.settings.block_heading
-  assign preHeading=section.settings.pre_heading
-  assign buttonLabel=section.settings.button_label
-  assign buttonLink=section.settings.button_link
-  assign colorScheme=section.settings.image_block_color_scheme
-  assign enableImageBlock=section.settings.enable_image_block
+  assign preHeading = section.settings.pre_heading
+  assign buttonLabel = section.settings.button_label
+  assign buttonLink = section.settings.button_link
+  assign colorScheme = section.settings.image_block_color_scheme
+  assign enableImageBlock = section.settings.enable_image_block
 %}
 
 {% style %}
@@ -35,7 +35,6 @@
       padding-bottom: {{ paddingBottom |divided_by:2 }}px;
     }
   }
-  
 {% endstyle %}
 
 <div class="custom-featured-product padding-{{ section.id }}">
@@ -45,9 +44,7 @@
     {% endif %}
     <div class="">
       {% if enableImageBlock %}
-        <div class="">
-          
-        </div
+        <div class=""></div>
       {% endif %}
     </div>
   </div>
