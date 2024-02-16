@@ -1,6 +1,102 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Custom featured product",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Heading",
+      "id": "heading"
+    },
+    {
+      "type": "product_list",
+      "label": "Select products",
+      "id": "select_products",
+      "limit": 20
+    },
+    {
+      "type": "header",
+      "content": "Slider settings"
+    },
+    {
+      "type": "checkbox",
+      "label": "Enable arrows",
+      "id": "enable_arrows",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "label": "Enable dots",
+      "id": "enable_dots",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "label": "Enable drag ",
+      "id": "enable_drag",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Product Settings"
+    },
+    {
+      "type": "checkbox",
+      "label": "Show vender name",
+      "id": "show_vender_name",
+      "default": false
+    },
+    {
+      "type": "select",
+      "label": "Animation on image hover",
+      "id": "animation_on_image_hover",
+      "default": "secondary-image",
+      "options": [
+        {
+          "label": "Show secondary image",
+          "value": "secondary-image"
+        },
+        {
+          "label": "Zoom in effect",
+          "value": "zoom-in"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "label": "Enable quick view",
+      "id": "enable_quick_view",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Section Padding"
+    },
+    {
+      "type": "range",
+      "label": "Padding top",
+      "id": "padding_top",
+      "default": 20,
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Padding bottom",
+      "id": "padding_bottom",
+      "default": 20,
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom featured product"
+    }
+  ]
+}
 {% endschema %}
