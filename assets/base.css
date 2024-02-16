@@ -3643,6 +3643,7 @@ details-disclosure > details {
 a {
   position: relative;
   color: var(--color-foreground);
+  transition: all var(--duration-medium) ease;
 }
 
 /* custom animation and transition */
