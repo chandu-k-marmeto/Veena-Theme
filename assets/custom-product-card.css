@@ -53,3 +53,9 @@
   font-weight: var(--font-body-weight-bold);
   font-size: calc(var(--font-body-scale) * 18px);
 }
+
+.product-card__compare-at-price {
+  font-size: calc(var(--font-body-scale) * 14px);
+  text-decoration: line-through;
+  font-weight: var(--font-body-weight-bold);
+}
