@@ -1,5 +1,5 @@
 class CustomProductCard extends HTMLElement{
-  constuctor(){
+  constructor(){
     super()
     this.addEventListener("mouseover", ()=>{console.log("mouseOvered")})
   }
