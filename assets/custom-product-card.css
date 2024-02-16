@@ -95,3 +95,11 @@
   font-weight: var(--font-body-weight-medium);
   margin-top: 6px;
 }
+
+.high {
+  color: #008a00;
+}
+
+.low {
+  color: #ff0000;
+}
