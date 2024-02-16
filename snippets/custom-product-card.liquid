@@ -39,9 +39,9 @@
           {% for product_option in product.options_with_values %}
             <div class="product-card__option">
               {% if product_option.name == 'Color' or product_option.name == 'color' %}
-                <ul>
+                <ul class="unordered-list">
                   {% for option_value in product_option.values %}
-                    <li>
+                    <li class="list">
                       <input
                         type="radio"
                         name="option-{{ product_option.name | handleize }}"
