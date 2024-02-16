@@ -45,6 +45,11 @@
   min-height: 0;
 }
 
+.discount-badge {
+  background-color: dd1d1d;
+  color: white;
+}
+
 .product-card__tags-container .button:after {
   background: red;
 }
