@@ -73,18 +73,18 @@
                 <div class="shop-the-look__dot-{{ blocks.id }} shop-the-look__dot primary-dot">
                   <div class="shop-the-look__product-container">
                     <div class="shop-the-look__data color-{{ colorScheme.id }}">
-                      <h2>
-                        <a href="{{ primaryProductDetails.handle }}" class="shop-the-look__product-link">
-                          <img
-                            src="{{ primaryProductDetails.featured_image | image_url }}"
-                            class="shop-the-look__product-image"
-                          >
-                        </a>
-                      </h2>
+                      <a href="{{ primaryProductDetails.handle }}" class="shop-the-look__product-link">
+                        <img
+                          src="{{ primaryProductDetails.featured_image | image_url }}"
+                          class="shop-the-look__product-image"
+                        >
+                      </a>
                       <div class="shop-the-look__product-details">
-                        <a href="{{ primaryProductDetails.handle }}" class="h5">
-                          {{- primaryProductDetails.title | truncate: 15 -}}
-                        </a>
+                        <h2 class="h5">
+                          <a href="{{ primaryProductDetails.handle }}">
+                            {{- primaryProductDetails.title | truncate: 15 -}}
+                          </a>
+                        </h2>
                         <p class="shop-the-look__price">{{ primaryProductDetails.price | money_with_currency }}</p>
                         <p class="shop-the-look__compare-at-price">
                           {{ primaryProductDetails['comapre-at-price'] | money_with_currency }}
@@ -105,8 +105,8 @@
                         >
                       </a>
                       <div class="shop-the-look__product-details">
-                        <h2>
-                          <a href="{{ seconadaryProductDetails.handle }}" class="h5">
+                        <h2 class="h5">
+                          <a href="{{ seconadaryProductDetails.handle }}">
                             {{- seconadaryProductDetails.title | truncate: 15 -}}
                           </a>
                         </h2>
