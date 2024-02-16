@@ -14,6 +14,7 @@
   assign availableQuantity = currentProduct.inventory_quantity
   assign title = currentProduct.title
   assign handle = currentProduct.url
+  assign discountPercentage = compareAtPrice | minus: price | times: 100 | divided_by: compareAtPrice | times: -1 | round: 2
 %}
 
 <product-card class="product-card-wrapper">
@@ -27,7 +28,7 @@
       </div>
       <div class="product-card__tags-container">
         <div class="badge">
-          {{ price | minus: compareAtPrice | divided_by: compareAtPrice | times: 100 }}
+          {{ discountPercentage }}
         </div>
         <a class="button">Quick Look</a>
       </div>
