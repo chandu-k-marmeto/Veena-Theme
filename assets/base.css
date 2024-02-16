@@ -3644,6 +3644,7 @@ a {
   position: relative;
   color: var(--color-foreground);
   transition: all var(--duration-medium) ease;
+  text-decoration: none;
 }
 
 .pre-heading {
@@ -3693,5 +3694,4 @@ a {
 .h6:hover a {
   color: rgb(208, 60, 63);
   transition: color var(--duration-medium) ease;
-  text-decoration: none;
 }
