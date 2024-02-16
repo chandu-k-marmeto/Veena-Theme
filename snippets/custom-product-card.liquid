@@ -41,7 +41,7 @@
               {% if product_option.name == 'Color' or product_option.name == 'color' %}
                 <ul>
                   {% for option_value in product_option.values %}
-                    <li style="background:{{ option_value }};">
+                    <li>
                       <input
                         type="radio"
                         name="option-{{ product_option.name | handleize }}"
@@ -50,6 +50,7 @@
                           checked
                         {% endif %}
                       >
+                      <label style="background:{{ option_value }};"></label>
                     </li>
                   {% endfor %}
                 </ul>
