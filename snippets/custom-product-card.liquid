@@ -43,8 +43,8 @@
           <a href="{{ handle }}">{{ title }}</a>
         </h3>
         <div class="product-card__price">
-          <h3>{{ price | money_with_currency }}</h3>
-          <s>{{ compareAtPrice | money_with_currency }}</s>
+          <h3 class="product-card__price">{{ price | money_with_currency }}</h3>
+          <small>{{ compareAtPrice | money_with_currency }}</small>
         </div>
         <p>{{ availableQuantity }} in stock</p>
       </div>
