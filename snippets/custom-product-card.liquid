@@ -46,7 +46,9 @@
           <h3 class="product-card__price">{{ price | money_with_currency }}</h3>
           <small class="product-card__compare-at-price">{{ compareAtPrice | money_with_currency }}</small>
         </div>
-        <p class="product-card__availability">{{ availableQuantity }} in stock</p>
+        <p class="product-card__availability {% if availableQuantity >= 20 %}high {% else %}low{% endif %}">
+          {{ availableQuantity }} in stock
+        </p>
       </div>
     </div>
   </a>
