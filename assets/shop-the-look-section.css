@@ -72,7 +72,7 @@
   border: 1px solid rgba(var(--color-foreground), 0.08);
   padding: 6px;
   opacity: 0;
-  width: 190px;
+  width: 180px;
   position: absolute;
   top: -50%;
   transition: 0.35s ease;
@@ -90,6 +90,7 @@
   border-radius: 10px;
   display: flex;
   height: auto;
+  gap: 10px;
 }
 
 .shop-the-look__product-details * {
