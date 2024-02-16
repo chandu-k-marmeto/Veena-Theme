@@ -1,5 +1,23 @@
 {{ 'custom-featured-product-section.css' | asset_url | stylesheet_tag }}
 
+{% liquid
+  assign heading = section.settings.heading
+  assign colorSchema = section.settings.color_scheme
+  assign enableArrows = section.settings.enable_arrows
+  assign enableDrag = section.settings.enable_drag
+  assign enableDots = section.settings.enable_dots
+  assign enableQuickView = section.settings.enable_quick_view
+  assign products = section.settings.select_products
+  assign paddingTop = section.settings.padding_top
+  assign paddingBottom = section.settings.padding_bottom
+  assign mobileImage = section.settings.image_mobile
+  assign desktopImage = section.settings.image
+  assign showVender = section.settings.show_vender_name
+  assign animationEffect = section.settings.animation_on_image_hover
+%}
+
+<div class="custom-featured-product"></div>
+
 {% schema %}
 {
   "name": "Custom featured product",
@@ -15,6 +33,16 @@
       "label": "Select products",
       "id": "select_products",
       "limit": 20
+    },
+    {
+      "type":"image_picker",
+      "label":"Image",
+      "id":"image"
+    },
+    {
+      "type":"image_picker",
+      "label":"Image (Mobile)",
+      "id":"image_mobile"
     },
     {
       "type":"color_scheme",
