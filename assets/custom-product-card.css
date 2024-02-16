@@ -65,12 +65,12 @@
   margin-bottom: 0px;
 }
 
-.product-card__option label {
+/* .product-card__option label {
   width: 5px;
   height: 5px;
   cursor: pointer;
   padding: 1px;
-}
+} */
 
 .product-card__details {
   text-align: center;
