@@ -4,3 +4,7 @@
   justify-content: space-between;
   margin-bottom: 30px;
 }
+
+.custom-product-list__heading .button:after {
+  color: red;
+}
