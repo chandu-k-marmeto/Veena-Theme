@@ -27,9 +27,11 @@
         {% render 'responsive-image', mobileImage: secondaryImage, desktopImage: secondaryImage %}
       </div>
       <div class="product-card__tags-container">
-        <div class="badge">
-          {{ discountPercentage }}
-        </div>
+        {% if discountPercentage != blank %}
+          <div class="badge">
+            {{ discountPercentage }}
+          </div>
+        {% endif %}
         <a class="button">Quick Look</a>
       </div>
     </div>
