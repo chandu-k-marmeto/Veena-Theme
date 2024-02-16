@@ -31,3 +31,12 @@
   padding: 5px 15px;
   min-height: 0;
 }
+
+.product-card__vender-name {
+  margin-top: 8px;
+  margin-bottom: 0;
+  word-wrap: break-word;
+  line-height: normal;
+  font-size: calc(var(--font-body-scale) * 14px);
+  color: rgba(var(--color-foreground), 0.7);
+}
