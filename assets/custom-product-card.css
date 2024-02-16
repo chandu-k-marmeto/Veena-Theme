@@ -28,4 +28,6 @@
   font-size: calc(var(--font-body-scale) * 14px);
   letter-spacing: 0;
   font-weight: var(--font-body-weight-medium);
+  padding: 5px 15px;
+  min-height: 0;
 }
