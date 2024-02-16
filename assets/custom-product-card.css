@@ -4,3 +4,7 @@
   height: auto;
   object-fit: cover;
 }
+
+.product-card__secondary-image img {
+  display: none;
+}
