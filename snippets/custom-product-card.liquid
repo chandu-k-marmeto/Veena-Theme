@@ -2,7 +2,7 @@
 <script src="{{ "custom-product-card.js" | asset_url }}" defer></script>
 
 {% liquid
-  assign currentProduct = product.selected_or_first_available_selling_plan_allocation
+  assign currentProduct = product.selected_or_first_available_variant
   assign primaryImage = currentProduct.featured_image | default: product.featured_image
   assign secondaryImage = product.images[1] | default: product.featured_image
   assign minimumPrice = currentProduct.price_min
@@ -40,8 +40,8 @@
           <a href="{{ handle }}">{{ title }}</a>
         </h3>
         <div class="product-card__price">
-          <h3>{{ price }}</h3>
-          <s>{{ compareAtPrice }}</s>
+          <h3>{{ price | money_with_currency }}</h3>
+          <s>{{ compareAtPrice | money_with_currency }}</s>
         </div>
         <p>{{ availableQuantity }} in stock</p>
       </div>
