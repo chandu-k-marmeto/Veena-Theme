@@ -8,3 +8,17 @@
 .product-card__secondary-image img {
   display: none;
 }
+
+.product-card__image-container {
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.product-card__tags-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
