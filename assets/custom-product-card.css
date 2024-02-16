@@ -85,15 +85,6 @@
   box-shadow: 0 0 0 1px rgba(var(--color-foreground), 0.1);
 }
 
-.product-card__option input {
-  display: block;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-
-  background: transparent;
-}
-
 .product-card__details {
   text-align: center;
 }
