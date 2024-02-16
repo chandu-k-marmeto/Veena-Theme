@@ -77,10 +77,10 @@
 }
 
 .product-card__option label {
-  width: 5px;
-  height: 5px;
-  cursor: pointer;
-  padding: 1px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
 }
 
 .product-card__details {
