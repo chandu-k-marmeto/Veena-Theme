@@ -38,9 +38,7 @@
         <div class="product-card__options">
           {% for product_option in product.options_with_values %}
             <div class="product-card__option">
-              {% if product_option.name == 'Color' %}
-                <label>{{ product_option.name }}</label>
-
+              {% if product_option.name == 'Color' or product_option.name == 'color' %}
                 <ul>
                   {% for option_value in product_option.values %}
                     <li>
