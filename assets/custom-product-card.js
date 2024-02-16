@@ -1,8 +1,8 @@
-class ProductCard extends HTMLElement{
+class CustomProductCard extends HTMLElement{
   constructor(){
     super()
     this.addEventListener("mouseover", ()=>{console.log("mouseOvered")})
   }
 }
 
-customElements.define("product-card",ProductCard)
+customElements.define("product-card",CustomProductCard)
