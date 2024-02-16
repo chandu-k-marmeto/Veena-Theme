@@ -5,4 +5,4 @@ class CustomProductCard extends HTMLElement{
   }
 }
 
-customElements.define("product-card",CustomProductCard)
+customElements.define("product-card", CustomProductCard)
