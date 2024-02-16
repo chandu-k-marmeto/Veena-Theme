@@ -54,6 +54,14 @@
   background: #d03c3f;
 }
 
+.product-card__details ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
 .product-card__details {
   text-align: center;
 }
