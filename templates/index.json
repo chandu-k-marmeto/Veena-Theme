@@ -269,7 +269,7 @@
       "type": "custom-product-list",
       "settings": {
         "heading": "Featured Collection",
-        "heading_size": "h0",
+        "heading_size": "h1",
         "button_label": "See all Products",
         "button_link": "shopify:\/\/collections\/tops",
         "select_products": [
