@@ -3694,3 +3694,11 @@ a {
 .pre-heading li {
   list-style-type: disc;
 }
+
+.h3:hover a,
+.h4:hover a,
+.h5:hover a,
+.h6:hover a {
+  color: red;
+  transition: color var(--duration-medium) ease;
+}
