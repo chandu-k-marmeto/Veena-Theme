@@ -47,6 +47,10 @@
   letter-spacing: 0.4px;
 }
 
+.product-card__price-container {
+  display: flex;
+}
+
 .product-card__price {
   letter-spacing: 0;
   color: rgb(var(--color-foreground));
