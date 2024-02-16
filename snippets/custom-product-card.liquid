@@ -14,7 +14,7 @@
   assign availableQuantity = currentProduct.inventory_quantity
   assign title = currentProduct.title
   assign handle = currentProduct.url
-  assign discountPercentage = compareAtPrice | minus: price | times: 100 | divided_by: compareAtPrice | times: -1 | round: 2
+  assign discountPercentage = compareAtPrice | minus: price | times: 100 | divided_by: compareAtPrice | round: 2
 %}
 
 <product-card class="product-card-wrapper">
