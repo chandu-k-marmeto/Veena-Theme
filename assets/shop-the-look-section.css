@@ -81,9 +81,6 @@
   opacity: 0;
   z-index: 1;
   border-radius: 5px;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
 }
 
 .shop-the-look__data {
