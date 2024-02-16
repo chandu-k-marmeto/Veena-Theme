@@ -1,3 +1,5 @@
+{{ 'custom-featured-product-section.css' | asset_url | stylesheet_tag }}
+
 {% schema %}
 {
   "name": "Custom featured product",
@@ -13,6 +15,11 @@
       "label": "Select products",
       "id": "select_products",
       "limit": 20
+    },
+    {
+      "type":"color_scheme",
+      "id":"color_scheme",
+      "label":"ColorScheme"
     },
     {
       "type": "header",
