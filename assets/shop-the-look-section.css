@@ -80,14 +80,13 @@
   visibility: hidden;
   opacity: 0;
   z-index: 1;
-  border-radius: 15px;
+  border-radius: 5px;
   align-items: center;
   justify-content: center;
   flex: 1;
 }
 
 .shop-the-look__data {
-  border-radius: 10px;
   display: flex;
   height: auto;
   gap: 10px;
