@@ -8,7 +8,7 @@
 }
 
 .product-card__secondary-image img {
-  display: none;
+  visibility: hidden;
 }
 
 .product-card__image-container {
@@ -17,10 +17,10 @@
 
 .product-card__image-container:hover {
   .product-card__secondary-image img {
-    display: flex;
+    visibility: unset;
   }
   .product-card__primary-image img {
-    display: none;
+    visibility: hidden;
   }
 }
 
