@@ -53,6 +53,9 @@
 
 .product-card__price-container {
   display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .product-card__price {
