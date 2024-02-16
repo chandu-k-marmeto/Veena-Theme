@@ -259,6 +259,30 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
+    },
+    "custom_product_list_FTgQDT": {
+      "type": "custom-product-list",
+      "settings": {
+        "heading": "Featured Collection",
+        "heading_size": "h0",
+        "button_label": "See all Products",
+        "button_link": "shopify:\/\/collections\/tops",
+        "select_products": [
+          "full-sleeve-high-neck-t-shirt",
+          "long-casual-hooded-coat",
+          "men-winter-jacket",
+          "mens-half-sleeve-t-shirt",
+          "mens-winter-hooded-jacket",
+          "nylon-waist-bag",
+          "travel-handy-hiking-zip-pouch",
+          "women-shirt-beige-dress",
+          "women-solid-casual-jacket",
+          "womens-casual-jacket"
+        ],
+        "color_scheme": "accent-1",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
     }
   },
   "order": [
@@ -266,6 +290,7 @@
     "rich_text_nnnBRT",
     "custom_image_with_text_rkDt8J",
     "unique_selling_proposition_AXkhFD",
-    "shop_the_look_bGBKyq"
+    "shop_the_look_bGBKyq",
+    "custom_product_list_FTgQDT"
   ]
 }
