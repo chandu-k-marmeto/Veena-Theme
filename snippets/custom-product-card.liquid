@@ -41,7 +41,7 @@
               {% if product_option.name == 'Color' or product_option.name == 'color' %}
                 <ul>
                   {% for option_value in product_option.values %}
-                    <li>
+                    <li style="background:{{ option_value }};">
                       <input
                         type="radio"
                         name="option-{{ product_option.name | handleize }}"
