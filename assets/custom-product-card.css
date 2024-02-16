@@ -46,3 +46,10 @@
   font-weight: var(--font-body-weight-medium);
   letter-spacing: 0.4px;
 }
+
+.product-card__price {
+  letter-spacing: 0;
+  color: rgb(var(--color-foreground));
+  font-weight: var(--font-body-weight-bold);
+  font-size: calc(var(--font-body-scale) * 18px);
+}
