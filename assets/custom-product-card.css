@@ -61,15 +61,14 @@
   letter-spacing: 0;
   font-weight: var(--font-body-weight-medium);
   padding: 5px 15px;
-  height: 0%;
-  display: inline;
+  height: 100%;
 }
 
-.quick-look-button-text {
+.quick-look-button .button:first-child {
   display: block;
 }
 
-.quick-look-eye-button {
+.quick-look-button .button:last-child {
   display: none;
 }
 
@@ -179,10 +178,10 @@
     line-height: normal;
     padding: 4px;
   }
-  .quick-look-button-text {
+  .quick-look-button a:first-child {
     display: none;
   }
-  .quick-look-eye-button {
+  .quick-look-button a:last-child {
     display: block;
   }
 }
