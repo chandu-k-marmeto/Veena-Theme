@@ -5,6 +5,7 @@
   object-fit: cover;
   border-radius: 15px;
   transition: opacity var(--duration-medium) ease;
+  overflow: hidden;
 }
 
 .product-card__secondary-image .media {
