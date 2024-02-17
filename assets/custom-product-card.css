@@ -18,7 +18,7 @@
 
 .product-card__image-container:hover {
   .product-card__secondary-image .media {
-    display: inline;
+    display: block;
     opacity: 0;
   }
   .product-card__primary-image .media {
