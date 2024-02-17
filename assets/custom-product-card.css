@@ -48,8 +48,8 @@
   box-shadow: 0 0 0 1px #d03c3f;
   position: absolute;
   border-radius: var(--variant-pills-radius);
-  width: 24px;
-  height: 24px;
+  width: 110%;
+  height: 110%;
   left: -1px;
   bottom: -1px;
 }
