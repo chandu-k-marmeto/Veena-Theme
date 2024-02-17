@@ -1176,6 +1176,9 @@ summary::-webkit-details-marker {
   .media--cropped {
     padding-bottom: 63%;
   }
+  .media--square {
+    padding-bottom: 125%;
+  }
 }
 
 deferred-media {
