@@ -8,7 +8,7 @@
 }
 
 .product-card__secondary-image img {
-  display: none;
+  display: none !important;
   opacity: 0;
 }
 
