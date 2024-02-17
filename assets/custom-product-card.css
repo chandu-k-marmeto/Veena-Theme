@@ -8,7 +8,7 @@
 }
 
 .product-card__secondary-image .media {
-  display: none !important;
+  display: none;
   opacity: 0;
 }
 
@@ -17,11 +17,11 @@
 }
 
 .product-card__image-container:hover {
-  .product-card__secondary-image img {
+  .product-card__secondary-image .media {
     display: inline;
-    opacity: 1;
+    opacity: 0;
   }
-  .product-card__primary-image img {
+  .product-card__primary-image .media {
     display: none;
     opacity: 0;
   }
