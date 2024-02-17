@@ -56,7 +56,7 @@
   display: none;
 } */
 
-.product-card__tags-container .button {
+.quick-look-button .button {
   font-size: calc(var(--font-body-scale) * 14px);
   letter-spacing: 0;
   font-weight: var(--font-body-weight-medium);
