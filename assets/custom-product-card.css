@@ -48,8 +48,8 @@
   box-shadow: 0 0 0 1px #d03c3f;
   position: absolute;
   border-radius: var(--variant-pills-radius);
-  width: 17px;
-  height: 17px;
+  width: 24px;
+  height: 24px;
   left: -1px;
   bottom: -1px;
 }
@@ -93,10 +93,10 @@
 
 .product-card__option label {
   display: block;
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
-  margin: 5px;
+  margin: 2px;
   box-shadow: 0 0 0 1px rgba(var(--color-foreground), 0.1);
   position: relative;
 }
