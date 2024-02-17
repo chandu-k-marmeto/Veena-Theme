@@ -1144,7 +1144,7 @@ summary::-webkit-details-marker {
 }
 
 .media--square {
-  padding-bottom: 100%;
+  padding-bottom: 125%;
 }
 
 .media--portrait {
@@ -1177,7 +1177,7 @@ summary::-webkit-details-marker {
     padding-bottom: 63%;
   }
   .media--square {
-    padding-bottom: 125%;
+    padding-bottom: 100%;
   }
 }
 
