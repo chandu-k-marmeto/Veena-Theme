@@ -183,6 +183,6 @@
     display: none;
   }
   .quick-look-eye-button {
-    display: block;
+    display: inline;
   }
 }
