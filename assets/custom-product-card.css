@@ -64,14 +64,6 @@
   height: 0%;
 }
 
-.quick-look-button .button:first-child {
-  display: block;
-}
-
-.quick-look-button .button:last-child {
-  display: none;
-}
-
 .quick-look-button .button svg {
   fill: rgb(var(--color-button-text));
   z-index: 2;
@@ -177,11 +169,5 @@
     word-break: unset;
     line-height: normal;
     padding: 4px;
-  }
-  .quick-look-button a:first-child {
-    display: none;
-  }
-  .quick-look-button a:last-child {
-    display: block;
   }
 }
