@@ -64,11 +64,11 @@
   height: 100%;
 }
 
-.quick-look-button a:first-child {
+.quick-look-button .button:first-child {
   display: block;
 }
 
-.quick-look-button a:last-child {
+.quick-look-button .button:last-child {
   display: none;
 }
 
