@@ -54,9 +54,9 @@
   top: 0;
 }
 
-.product-card__option input[type="radio"] {
+/* .product-card__option input[type="radio"] {
   display: none;
-}
+} */
 
 .product-card__tags-container .button {
   font-size: calc(var(--font-body-scale) * 14px);
