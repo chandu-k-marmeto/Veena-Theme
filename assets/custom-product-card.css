@@ -64,7 +64,7 @@
   height: 0%;
 }
 
-.quick-look-button .button:first-child {
+.quick-look-button-text {
   display: block;
 }
 
@@ -178,7 +178,7 @@
     line-height: normal;
     padding: 4px;
   }
-  .quick-look-button a:first-child {
+  .quick-look-button-text {
     display: none;
   }
   .quick-look-eye-button {
