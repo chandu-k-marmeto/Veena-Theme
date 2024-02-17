@@ -156,3 +156,13 @@
 .low {
   color: #ff0000;
 }
+
+@media screen and (max-width: 768px) {
+  .product-card__tags-container .badge {
+    font-size: calc(var(--font-body-scale) * 10px);
+    letter-spacing: 0.3px;
+    word-break: unset;
+    line-height: normal;
+    padding: 4px;
+  }
+}
