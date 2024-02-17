@@ -15,7 +15,7 @@
   assign discountPercentage = compareAtPrice | minus: price | times: 100 | divided_by: compareAtPrice | round: 2
 %}
 
-<product-card class="product-card-wrapper">
+<product-card class="product-card-wrapper" data-product-handle="{{ product.handle }}" data-section-id="{{ section_id}}">
   <a href="{{ handle }}">
     <div class="product-card__image-container">
       <div class="product-card__primary-image">

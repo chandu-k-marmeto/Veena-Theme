@@ -47,7 +47,7 @@
     <div class="grid grid--2-col grid--3-col-tablet grid--4-col-desktop">
       {% for product in productList %}
         <div class="grid__item">
-          {% render 'custom-product-card', product: product %}
+          {% render 'custom-product-card', product: product, section_id: section.id %}
         </div>
       {% else %}
         {% for i in (1..5) %}
