@@ -1,8 +1,5 @@
 .product-card__primary-image .media,
 .product-card__secondary-image .media {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   border-radius: 15px;
   transition: opacity var(--duration-medium) ease;
   overflow: hidden;
