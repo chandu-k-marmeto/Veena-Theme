@@ -70,6 +70,8 @@
 
 .quick-look-button a:last-child {
   display: none;
+  fill: rgb(var(--color-button-text));
+  z-index: 2;
 }
 
 .discount-badge {
