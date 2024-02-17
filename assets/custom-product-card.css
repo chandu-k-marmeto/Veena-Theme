@@ -1,5 +1,5 @@
-.product-card__primary-image img,
-.product-card__secondary-image img {
+.product-card__primary-image .media,
+.product-card__secondary-image .media {
   width: 100%;
   height: 100%;
   object-fit: cover;
