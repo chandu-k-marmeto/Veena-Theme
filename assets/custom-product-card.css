@@ -54,6 +54,10 @@
   bottom: -1px;
 }
 
+.product-card__option input[type="radio"] {
+  display: none;
+}
+
 .product-card__tags-container .button {
   font-size: calc(var(--font-body-scale) * 14px);
   letter-spacing: 0;
