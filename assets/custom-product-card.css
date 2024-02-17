@@ -22,7 +22,7 @@
     opacity: 0;
   }
   .product-card__primary-image .media {
-    display: none;
+    display: block;
     opacity: 0;
   }
 }
