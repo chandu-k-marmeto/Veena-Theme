@@ -64,6 +64,14 @@
   height: 100%;
 }
 
+.quick-look-button a:first-child {
+  display: block;
+}
+
+.quick-look-button a:last-child {
+  display: none;
+}
+
 .discount-badge {
   background-color: #dd1d1d;
   color: white;
@@ -162,5 +170,11 @@
     word-break: unset;
     line-height: normal;
     padding: 4px;
+  }
+  .quick-look-button a:first-child {
+    display: none;
+  }
+  .quick-look-button a:last-child {
+    display: block;
   }
 }
