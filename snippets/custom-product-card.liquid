@@ -19,10 +19,18 @@
   <a href="{{ handle }}">
     <div class="product-card__image-container">
       <div class="product-card__primary-image">
-        {% render 'responsive-image', mobileImage: primaryImage, desktopImage: primaryImage %}
+        {% render 'responsive-image',
+          class: 'media media--square',
+          mobileImage: primaryImage,
+          desktopImage: primaryImage
+        %}
       </div>
       <div class="product-card__secondary-image">
-        {% render 'responsive-image', mobileImage: secondaryImage, desktopImage: secondaryImage %}
+        {% render 'responsive-image',
+          class: 'media media--square',
+          mobileImage: secondaryImage,
+          desktopImage: secondaryImage
+        %}
       </div>
       <div class="product-card__tags-container">
         <div>
