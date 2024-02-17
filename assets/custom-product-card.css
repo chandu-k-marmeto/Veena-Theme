@@ -68,7 +68,7 @@
   display: block;
 }
 
-.quick-look-button .button:last-child {
+.quick-look-eye-button {
   display: none;
 }
 
@@ -181,7 +181,7 @@
   .quick-look-button a:first-child {
     display: none;
   }
-  .quick-look-button a:last-child {
+  .quick-look-eye-button {
     display: block;
   }
 }
