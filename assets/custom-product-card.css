@@ -70,6 +70,9 @@
 
 .quick-look-button a:last-child {
   display: none;
+}
+
+.quick-look-button .button svg {
   fill: rgb(var(--color-button-text));
   z-index: 2;
   width: 19px;
