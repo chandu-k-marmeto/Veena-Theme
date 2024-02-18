@@ -333,6 +333,36 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "custom_testimonial_cQepbA": {
+      "type": "custom-testimonial",
+      "blocks": {
+        "testimonia_blocks_fCpLU9": {
+          "type": "testimonia-blocks",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_2db38707-707e-4fd6-ab12-35397e8935de.webp",
+            "heading": "Person Name",
+            "designation": "Add designation",
+            "comment": "<p>Absolutely love the trendy collection! The quality is unmatched, and each piece tells a unique style story.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "testimonia_blocks_fCpLU9"
+      ],
+      "settings": {
+        "section_heading": "Our Customers Review",
+        "slider_autoplay": true,
+        "slide_dots": true,
+        "slide_arrows": true,
+        "infinite_scroll": true,
+        "slide_animation": "loop",
+        "slider_autoplay_duration": 3000,
+        "text_alignment": "center",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -342,6 +372,7 @@
     "unique_selling_proposition_AXkhFD",
     "shop_the_look_bGBKyq",
     "custom_product_list_FTgQDT",
-    "custom_collections_list_pMiy8K"
+    "custom_collections_list_pMiy8K",
+    "custom_testimonial_cQepbA"
   ]
 }
