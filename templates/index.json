@@ -51,11 +51,10 @@
         "slide_4QMkjQ",
         "slide_GLBUXU"
       ],
-      "disabled": true,
       "settings": {
         "auto_play": false,
-        "show_pagination": true,
-        "show_arrows": true,
+        "show_pagination": false,
+        "show_arrows": false,
         "auto_play_duration": 1000,
         "slide_type": "slide",
         "padding_top": 0,
@@ -345,17 +344,26 @@
             "designation": "Add designation",
             "comment": "<p>Absolutely love the trendy collection! The quality is unmatched, and each piece tells a unique style story.<\/p>"
           }
+        },
+        "testimonia_blocks_yDHwgC": {
+          "type": "testimonia-blocks",
+          "settings": {
+            "heading": "Person Name",
+            "designation": "Add designation",
+            "comment": "<p>Absolutely love the trendy collection! The quality is unmatched, and each piece tells a unique style story.<\/p>"
+          }
         }
       },
       "block_order": [
-        "testimonia_blocks_fCpLU9"
+        "testimonia_blocks_fCpLU9",
+        "testimonia_blocks_yDHwgC"
       ],
       "settings": {
         "section_heading": "Our Customers Review",
-        "slider_autoplay": true,
-        "slide_dots": true,
-        "slide_arrows": true,
-        "infinite_scroll": true,
+        "slider_autoplay": false,
+        "slide_dots": false,
+        "slide_arrows": false,
+        "infinite_scroll": false,
         "slide_animation": "loop",
         "slider_autoplay_duration": 3000,
         "text_alignment": "center",
