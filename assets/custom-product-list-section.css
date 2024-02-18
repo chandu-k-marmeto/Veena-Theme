@@ -1,0 +1,10 @@
+.custom-product-list__heading {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.custom-product-list__heading .button:after {
+  background: #d03c3f;
+}

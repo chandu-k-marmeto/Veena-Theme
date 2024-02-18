@@ -1,0 +1,222 @@
+{{ 'custom-featured-product-section.css' | asset_url | stylesheet_tag }}
+
+{% liquid
+  assign heading = section.settings.section_heading
+  assign colorSchemaProduct = section.settings.color_scheme
+  assign enableArrows = section.settings.enable_arrows
+  assign enableDrag = section.settings.enable_drag
+  assign enableDots = section.settings.enable_dots
+  assign enableQuickView = section.settings.enable_quick_view
+  assign products = section.settings.select_products
+  assign paddingTop = section.settings.padding_top
+  assign paddingBottom = section.settings.padding_bottom
+  assign mobileImage = section.settings.image_mobile
+  assign desktopImage = section.settings.image
+  assign showVender = section.settings.show_vender_name
+  assign animationEffect = section.settings.animation_on_image_hover
+  assign headingSize = section.settings.heading_size
+  assign blcokHeading = section.settings.block_heading
+  assign preHeading = section.settings.pre_heading
+  assign buttonLabel = section.settings.button_label
+  assign buttonLink = section.settings.button_link
+  assign colorScheme = section.settings.image_block_color_scheme
+  assign enableImageBlock = section.settings.enable_image_block
+%}
+
+{% style %}
+  .padding-{{section.id}}{
+    padding-top: {{ paddingTop |divided_by:2 }}px;
+    padding-bottom: {{ paddingBottom |divided_by:2 }}px;
+  }
+
+  @media screen and (min-width:750px){
+    .padding-{{section.id}}{
+      padding-top: {{ paddingTop |divided_by:2 }}px;
+      padding-bottom: {{ paddingBottom |divided_by:2 }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="custom-featured-product padding-{{ section.id }}">
+  <div class="page-width">
+    {% if heading != blank %}
+      <h2 class="{{ headingSize }}">{{ heading }}</h2>
+    {% endif %}
+    <div class="">
+      {% if enableImageBlock %}
+        <div class=""></div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Custom featured product",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Section heading",
+      "id": "section_heading"
+    },
+    {
+      "type":"select",
+      "label":"Heading size",
+      "id":"heading_size",
+      "options":[
+        {
+          "label":"Large",
+          "value":"h0"
+        },
+        {
+          "label":"Medium",
+          "value":"h1"
+        },
+        {
+          "label":"Small",
+          "value":"h2"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content":"Image block settings"
+    },
+    {
+      "type":"checkbox",
+      "label":"Enable image block",
+      "id":"enable_image_block"
+    },
+    {
+      "type":"image_picker",
+      "label":"Image",
+      "id":"image"
+    },
+    {
+      "type":"image_picker",
+      "label":"Image (Mobile)",
+      "id":"image_mobile"
+    },
+    {
+      "type":"richtext",
+      "label":"Heading",
+      "id":"block_heading"
+    },
+    {
+      "type":"text",
+      "label":"Preheading",
+      "id":"pre_heading"
+    },
+    {
+      "type":"text",
+      "label":"Button label",
+      "id":"button_label"
+    },
+    {
+      "type":"url",
+      "id":"button_link",
+      "label":"Button link"
+    },
+    {
+      "type":"color_scheme",
+      "label":"Color scheme for image block",
+      "id":"image_block_color_scheme"
+    },
+    {
+      "type": "header",
+      "content": "Slider settings"
+    },
+    {
+      "type": "checkbox",
+      "label": "Enable arrows",
+      "id": "enable_arrows",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "label": "Enable dots",
+      "id": "enable_dots",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "label": "Enable drag ",
+      "id": "enable_drag",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Product Settings"
+    },
+    {
+      "type": "product_list",
+      "label": "Select products",
+      "id": "select_products",
+      "limit": 20
+    },
+    {
+      "type": "checkbox",
+      "label": "Show vender name",
+      "id": "show_vender_name",
+      "default": false
+    },
+    {
+      "type": "select",
+      "label": "Animation on image hover",
+      "id": "animation_on_image_hover",
+      "default": "secondary-image",
+      "options": [
+        {
+          "label": "Show secondary image",
+          "value": "secondary-image"
+        },
+        {
+          "label": "Zoom in effect",
+          "value": "zoom-in"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "label": "Enable quick view",
+      "id": "enable_quick_view",
+      "default": true
+    },
+    {
+      "type":"color_scheme",
+      "id":"color_scheme_product",
+      "label":"Color scheme for products"
+    },
+    {
+      "type": "header",
+      "content": "Section Padding"
+    },
+    {
+      "type": "range",
+      "label": "Padding top",
+      "id": "padding_top",
+      "default": 20,
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Padding bottom",
+      "id": "padding_bottom",
+      "default": 20,
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom featured product"
+    }
+  ]
+}
+{% endschema %}

@@ -1,20 +1,20 @@
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/CANOPY_Chado_Logo-02-01_320x_592862de-5f43-4088-a339-6ee4c2d5d392.png",
-    "logo_width": 160,
-    "type_header_font": "assistant_n4",
-    "heading_scale": 135,
-    "type_body_font": "assistant_n4",
-    "body_scale": 115,
-    "page_width": 1600,
+    "logo": "shopify:\/\/shop_images\/n_Veena.webp",
+    "logo_width": 100,
+    "type_header_font": "harmonia_sans_n6",
+    "heading_scale": 100,
+    "type_body_font": "harmonia_sans_n4",
+    "body_scale": 100,
+    "page_width": 1750,
     "spacing_sections": 28,
-    "spacing_grid_horizontal": 8,
-    "spacing_grid_vertical": 8,
+    "spacing_grid_horizontal": 20,
+    "spacing_grid_vertical": 20,
     "animations_reveal_on_scroll": true,
     "animations_hover_elements": "none",
-    "buttons_border_thickness": 1,
+    "buttons_border_thickness": 0,
     "buttons_border_opacity": 100,
-    "buttons_radius": 40,
+    "buttons_radius": 30,
     "buttons_shadow_opacity": 0,
     "buttons_shadow_horizontal_offset": 4,
     "buttons_shadow_vertical_offset": 4,
@@ -146,31 +146,31 @@
     "color_schemes": {
       "background-1": {
         "settings": {
-          "background": "rgba(0,0,0,0)",
+          "background": "#ffffff",
           "background_gradient": "",
           "text": "#ffffff",
-          "button": "#e76f51",
-          "button_label": "#ffffff",
+          "button": "#ffffff",
+          "button_label": "#000000",
           "secondary_button_label": "rgba(0,0,0,0)",
           "shadow": "#121212"
         }
       },
       "background-2": {
         "settings": {
-          "background": "#f3f3f3",
+          "background": "#ffffff",
           "background_gradient": "",
           "text": "#121212",
-          "button": "#121212",
-          "button_label": "#f3f3f3",
+          "button": "#d03c3f",
+          "button_label": "#ffffff",
           "secondary_button_label": "#121212",
           "shadow": "#121212"
         }
       },
       "inverse": {
         "settings": {
-          "background": "#e76f51",
+          "background": "#f5f5f5",
           "background_gradient": "",
-          "text": "#ffffff",
+          "text": "#000000",
           "button": "#ffffff",
           "button_label": "#000000",
           "secondary_button_label": "#ffffff",
@@ -179,11 +179,11 @@
       },
       "accent-1": {
         "settings": {
-          "background": "#fbf9f7",
+          "background": "#ffffff",
           "background_gradient": "",
           "text": "#343434",
-          "button": "#ffffff",
-          "button_label": "#121212",
+          "button": "#000000",
+          "button_label": "#ffffff",
           "secondary_button_label": "#ffffff",
           "shadow": "#121212"
         }
