@@ -2,7 +2,7 @@ class SpliderComponent extends HTMLElement{
   constructor(){
     super()
     this.element = this.querySelector(".splide")
-    this.options=this.dataset.sliderSettings
+    this.options = JSON.parse(this.splideEl.dataset.sliderOptions);
     this.intializer()
     console.log("Splider section")
   }
