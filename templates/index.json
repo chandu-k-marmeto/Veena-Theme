@@ -52,9 +52,9 @@
         "slide_GLBUXU"
       ],
       "settings": {
-        "auto_play": false,
-        "show_pagination": false,
-        "show_arrows": false,
+        "auto_play": true,
+        "show_pagination": true,
+        "show_arrows": true,
         "auto_play_duration": 1000,
         "slide_type": "slide",
         "padding_top": 0,
