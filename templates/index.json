@@ -56,7 +56,7 @@
         "show_pagination": true,
         "show_arrows": true,
         "auto_play_duration": 1000,
-        "slide_type": "slide",
+        "slide_type": "loop",
         "padding_top": 0,
         "padding_bottom": 30
       }
