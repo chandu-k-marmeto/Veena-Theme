@@ -36,7 +36,7 @@
 <div class="faq-section padding-{{ section.id }}">
   <div class="faq-section__container">
     <div class="page-width">
-      <div class="faq-secttion_title-and-description color-{{ section.settings.color_scheme }}">
+      <div class="faq-secttion_title-and-description color-{{ section.settings.color_scheme.id }}">
         {% if section.settings.section_title != blank or section.settings.section_title != blank %}
           <h2 class="h1 faq-section__title">{{ section.settings.section_title }}</h2>
           <p class="h4 faq-section__description">{{ section.settings.section_description }}</p>
@@ -68,12 +68,6 @@
     "name":"Custom faq",
     "tag":"section",
     "settings":[
-        {
-            "type": "color",
-            "id": "background_color",
-            "label": "Background color",
-            "default": "#F5F5F5"
-        },
         {
             "type": "richtext",
             "id": "section_title",
