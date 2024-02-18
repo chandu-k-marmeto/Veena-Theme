@@ -5,12 +5,12 @@ class SpliderComponent extends HTMLElement{
     this.options = this.dataset.sliderSettings;
     this.intializer()
     console.log("Splider section")
-    console.log(this.options)
   }
 
   intializer(){
    const splide=new Splide(this.element,this.options)
     splide.mount()
+     console.log(this.options)
   }
 }
 
