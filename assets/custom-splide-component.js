@@ -5,7 +5,7 @@ class SpliderComponent extends HTMLElement{
     this.options = this.dataset.sliderSettings;
     this.intializer()
     console.log("Splider section")
-    console.log(options)
+    console.log(this.options)
   }
 
   intializer(){
