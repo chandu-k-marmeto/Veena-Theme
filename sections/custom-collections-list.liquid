@@ -52,8 +52,8 @@
         {% endif %}
       </div>
     </div>
-    <splider-component data-slider-settings="{{ slider-options-data }}">
-      <section class="splide" aria-label="Testimonial Splide">
+    <splider-component>
+      <section class="splide" aria-label="Testimonial Splide" data-slider-settings="{{ slider-options-data }}">
         <div class="splide__track">
           <ul class="splide__list">
             {% for block in section.blocks %}
