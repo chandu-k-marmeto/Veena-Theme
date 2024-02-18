@@ -56,7 +56,7 @@
         "show_pagination": true,
         "show_arrows": true,
         "auto_play_duration": 1000,
-        "slide_type": "loop",
+        "slide_type": "fade",
         "padding_top": 0,
         "padding_bottom": 30
       }
@@ -324,7 +324,7 @@
         "color_scheme": "",
         "slider_autoplay": false,
         "slide_dots": false,
-        "slide_arrows": false,
+        "slide_arrows": true,
         "infinite_scroll": false,
         "slider_autoplay_duration": 3,
         "text_alignment": "center",
@@ -362,7 +362,7 @@
         "section_heading": "Our Customers Review",
         "slider_autoplay": false,
         "slide_dots": false,
-        "slide_arrows": false,
+        "slide_arrows": true,
         "infinite_scroll": false,
         "slide_animation": "loop",
         "slider_autoplay_duration": 3000,
