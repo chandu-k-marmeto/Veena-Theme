@@ -371,6 +371,37 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "custom_faq_section_3BtxT7": {
+      "type": "custom-faq-section",
+      "blocks": {
+        "faq_with_ans_B9iXCJ": {
+          "type": "faq-with-ans",
+          "settings": {
+            "block_heading": "<p> How can I track my order ?<\/p>",
+            "block_description": "Once your order has been processed and shipped, you will receive a confirmation email with a tracking number. You can use this tracking number to monitor the status and location of your package through our shipping carrier's website."
+          }
+        },
+        "faq_with_ans_nCiUYV": {
+          "type": "faq-with-ans",
+          "settings": {
+            "block_heading": "<p> How can I track my order ?<\/p>",
+            "block_description": "Once your order has been processed and shipped, you will receive a confirmation email with a tracking number. You can use this tracking number to monitor the status and location of your package through our shipping carrier's website."
+          }
+        }
+      },
+      "block_order": [
+        "faq_with_ans_B9iXCJ",
+        "faq_with_ans_nCiUYV"
+      ],
+      "settings": {
+        "background_color": "#F5F5F5",
+        "section_title": "<p>FAQ<\/p>",
+        "section_description": "Ensure that your FAQs are regularly updated based on common customer queries and changes in your business operations.",
+        "color_scheme": "",
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
     }
   },
   "order": [
@@ -381,6 +412,7 @@
     "shop_the_look_bGBKyq",
     "custom_product_list_FTgQDT",
     "custom_collections_list_pMiy8K",
-    "custom_testimonial_cQepbA"
+    "custom_testimonial_cQepbA",
+    "custom_faq_section_3BtxT7"
   ]
 }
