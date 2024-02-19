@@ -34,11 +34,8 @@ admin{{ 'custom-image-with-text-section.css' | asset_url | stylesheet_tag }}
           assign buttonLink = blocks.settings.button_link
           assign colorSchema = blocks.settings.color_scheme
         %}
-<<<<<<< HEAD
         <div class="grid__item">
-=======
         <div class="grid__item animate--zoom-in">
->>>>>>> 06a5bba4e57337bd5a241caebe79bd63bf5c4d1e
           {% render 'image-with-text',
             desktopImage: desktopImage,
             mobileImage: mobileImage,
