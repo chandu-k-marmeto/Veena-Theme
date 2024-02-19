@@ -171,4 +171,8 @@
     line-height: normal;
     padding: 4px;
   }
+
+  .quick-look-button svg {
+    display: none;
+  }
 }
