@@ -177,6 +177,6 @@
   }
 
   .qucik-look-button .button span:only-child {
-    display: none;
+    display: none !important;
   }
 }
