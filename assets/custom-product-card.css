@@ -176,7 +176,7 @@
     display: inline-block;
   }
 
-  .qucik-look-button .button span {
+  .qucik-look-button .button span:only-child {
     display: none;
   }
 }
