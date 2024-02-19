@@ -9,7 +9,7 @@
   assign venderName = product.vendor
   assign availableQuantity = currentProduct.inventory_quantity
   assign title = product.title
-  assign handle = currentProduct.url
+  assign handle = product.url
   assign discountPercentage = compareAtPrice | minus: price | times: 100 | divided_by: compareAtPrice | round: 2
 %}
 
