@@ -173,6 +173,6 @@
   }
 
   .quick-look-button svg {
-    display: none;
+    display: inline-block;
   }
 }
