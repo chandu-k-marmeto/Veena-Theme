@@ -441,6 +441,26 @@
         "color_scheme": "accent-1",
         "padding_top": 16,
         "padding_bottom": 16
+<<<<<<< HEAD
+=======
+      }
+    },
+    "featured_blog_WbRr8B": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Blog posts",
+        "heading_size": "h1",
+        "blog": "press-coverage",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "inverse",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+>>>>>>> ac686a3d40a93ed2896fe50996420eefed1fee7a
       }
     }
   },
@@ -453,6 +473,11 @@
     "unique_selling_proposition_AXkhFD",
     "shop_the_look_bGBKyq",
     "custom_testimonial_cQepbA",
+<<<<<<< HEAD
     "custom_faq_section_3BtxT7"
+=======
+    "custom_faq_section_3BtxT7",
+    "featured_blog_WbRr8B"
+>>>>>>> ac686a3d40a93ed2896fe50996420eefed1fee7a
   ]
 }
