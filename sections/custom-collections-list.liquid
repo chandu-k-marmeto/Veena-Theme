@@ -1,16 +1,25 @@
 {{ 'section-custom-collections-list.css' | asset_url | stylesheet_tag }}
 <script src="{{ "custom-splide-component.js" | asset_url }}" defer></script>
 
+{% liquid
+  assign paddingTop = section.settings.padding_top
+  assign paddingBottom = section.settings.padding_bottom
+  assign colorScheme = section.settings.color_scheme
+  assign buttonLabel = section.settings.section_button_text
+  assign buttonLink = section.settings.section_button_link
+  assign heading = section.settings.section_heading
+%}
+
 {% style %}
   .padding-{{ section.id }} {
-      padding-top: {{ section.settings.padding_top | divided_by: 2  }}px;
-      padding-bottom: {{ section.settings.padding_bottom | divided_by: 2 }}px;
+      padding-top: {{ paddingTop | divided_by: 2  }}px;
+      padding-bottom: {{ paddingBottom | divided_by: 2 }}px;
     }
 
     @media (min-width: 750px) {
       .padding-{{ section.id }} {
-        padding-top: {{ section.settings.padding_top }}px;
-        padding-bottom: {{ section.settings.padding_bottom }}px;
+        padding-top: {{ paddingTop }}px;
+        padding-bottom: {{ paddingBottom }}px;
       }
     }
 {% endstyle %}
@@ -35,54 +44,64 @@
 
 <div class="collections-list padding-{{ section.id }}">
   <div class="page-width">
-    <div class="collections-list__heading-section color-{{ section.settings.color_scheme }}">
-      <h2 class="h1">{{ section.settings.section_heading }}</h2>
+    <div class="collections-list__heading-section color-{{ colorScheme.id }}">
+      <h2 class="h1">{{ heading }}</h2>
       <div>
-        {% if section.settings.section_button_text %}
+        {% if buttonLabel %}
           <a
             class="custom-button-secondary"
-            {% if section.settings.section_button_link == blank %}
+            {% if buttonLink == blank %}
               role="link" aria-disabled="true"
             {% else %}
-              href="{{ section.settings.section_button_link }}"
+              href="{{ buttonLink }}"
             {% endif %}
           >
-            {{ section.settings.section_button_text }}
+            {{ buttonLabel }}
           </a>
         {% endif %}
       </div>
     </div>
     <splider-component>
-      <section class="splide" aria-label="Testimonial Splide" data-slider-settings='{{ slider-options-data }}'>
+      <section class="splide" aria-label="Testimonial Splide" data-slider-settings="{{ slider-options-data }}">
         <div class="splide__track">
           <ul class="splide__list">
             {% for block in section.blocks %}
-              <li class="splide__slide collections-list__slide cutom-border-radius">
-                {% if block.settings.desktop_image != blank %}
+              {% liquid
+                assign desktopImage = block.settings.desktop_image
+                assign mobileImage = block.settings.mobile_image
+                assign textAllignment = block.settings.text_allignment
+                assign contentAllignment = block.settings.allignment_position
+                assign blockHeading = block.settings.heading
+                assign blockButtonLabel = block.settings.button_text
+                assign blockButtonLink = block.settings.button_link
+              %}
+
+              <li class="splide__slide collections-list__slide">
+                {% if desktopImage != blank %}
                   <div class="collections-list__image">
                     {% render 'responsive-image',
-                      desktopImage: block.settings.desktop_image,
-                      mobileImage: block.settings.mobile_image,
+                      desktopImage: desktopImage,
+                      mobileImage: mobileImage,
                       class: 'media media--portrait'
                     %}
                   </div>
                 {% endif %}
-                <div class="collections-list__content {{ section.settings.alignment_position }}">
-                  <div class="{{ section.settings.text_alignment }}">
-                    {% if block.settings.heading != blank %}
-                      <h2 class="h2 collections-list__heading">{{ block.settings.heading }}</h2>
+                <div class="collections-list__content {{ contentAllignment}}">
+                  <div class="{{ textAllignment }}">
+                    {% if blockHeading != blank %}
+                      <h2 class="h2 collections-list__heading">{{ blockHeading }}</h2>
                     {% endif %}
 
-                    {% if block.settings.section_button_text %}
+                    {% if blockButtonLabel %}
                       <a
                         class="custom-button-primary-transparent"
-                        {% if block.settings.section_button_link == blank %}
+                        {% if blockButtonLink == blank %}
                           role="link" aria-disabled="true"
                         {% else %}
-                          href="{{ block.settings.section_button_link }}"
+                          href="{{ blockButtonLink }}"
                         {% endif %}
                       >
-                        {{ block.settings.section_button_text }}
+                        {{ blockButtonLabel }}
                       </a>
                     {% endif %}
                   </div>
@@ -160,6 +179,25 @@
       "max" : 10,
       "default": 3,
       "unit": "sec"
+    },
+    {
+      "type" : "select",
+      "id": "slide_animation",
+      "label" : "Slide animation",
+      "options" : [
+        {
+          "value" : "loop",
+          "label" : "Loop"
+        },
+        {
+          "value" : "fade",
+          "label" : "Fade"
+        },
+        {
+          "value" : "slide",
+          "label" : "Slide"
+        }
+      ]
     },
     {
       "type" : "header",
@@ -253,33 +291,14 @@
         },
         {
           "type": "text",
-          "id": "section_button_text",
+          "id": "button_text",
           "label": "Section button text",
           "default": "View All"
         },
         {
           "type": "url",
-          "id": "section_button_link",
+          "id": "button_link",
           "label": "Section button link"
-        },
-        {
-          "type" : "select",
-          "id": "slide_animation",
-          "label" : "Slide animation",
-          "options" : [
-            {
-              "value" : "loop",
-              "label" : "Loop"
-            },
-            {
-              "value" : "fade",
-              "label" : "Fade"
-            },
-            {
-              "value" : "slide",
-              "label" : "Slide"
-            }
-          ]
         }
       ]
     }
