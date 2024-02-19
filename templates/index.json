@@ -151,8 +151,8 @@
         "collection_blocks_P8TG4i": {
           "type": "collection-blocks",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/14_50b1fff3-a249-4b29-975c-6181c4d1ab16.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/14_50b1fff3-a249-4b29-975c-6181c4d1ab16.jpg",
+            "desktop_image": "shopify:\/\/shop_images\/hand-bag-collection.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/hand-bag-collection.jpg",
             "heading": "Person Name",
             "button_text": "View All",
             "button_link": ""
@@ -161,7 +161,48 @@
         "collection_blocks_zMmrD7": {
           "type": "collection-blocks",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/8_64ea1b33-5a61-4167-844c-49185570104e.jpg",
+            "desktop_image": "shopify:\/\/shop_images\/4.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/4.jpg",
+            "heading": "Person Name",
+            "button_text": "View All",
+            "button_link": ""
+          }
+        },
+        "collection_blocks_zaBJU9": {
+          "type": "collection-blocks",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/8.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/8.jpg",
+            "heading": "Person Name",
+            "button_text": "View All",
+            "button_link": ""
+          }
+        },
+        "collection_blocks_zkRVgN": {
+          "type": "collection-blocks",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/6.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/6.jpg",
+            "heading": "Person Name",
+            "button_text": "View All",
+            "button_link": ""
+          }
+        },
+        "collection_blocks_47y4KM": {
+          "type": "collection-blocks",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/5.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/5.jpg",
+            "heading": "Person Name",
+            "button_text": "View All",
+            "button_link": ""
+          }
+        },
+        "collection_blocks_kWfyVU": {
+          "type": "collection-blocks",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/1.jpg",
             "heading": "Person Name",
             "button_text": "View All",
             "button_link": ""
@@ -170,7 +211,11 @@
       },
       "block_order": [
         "collection_blocks_P8TG4i",
-        "collection_blocks_zMmrD7"
+        "collection_blocks_zMmrD7",
+        "collection_blocks_zaBJU9",
+        "collection_blocks_zkRVgN",
+        "collection_blocks_47y4KM",
+        "collection_blocks_kWfyVU"
       ],
       "settings": {
         "section_heading": "Our Customers Review",
