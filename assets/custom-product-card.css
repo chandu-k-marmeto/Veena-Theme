@@ -172,11 +172,11 @@
     padding: 4px;
   }
 
-  .quick-look-button svg {
+  .quick-look-button .button svg {
     display: inline-block;
   }
 
-  .qucik-look-button span {
+  .qucik-look-button .button span {
     display: none;
   }
 }
