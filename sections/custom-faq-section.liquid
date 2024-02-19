@@ -1,18 +1,27 @@
 {{ 'section-custom-faq.css' | asset_url | stylesheet_tag }}
 
+{% liquid
+  assign paddingTop = section.settings.padding_top
+  assign paddingBottom = section.settings.padding_bottom
+  assign backgroundColor = section.settings.background_color
+  assign colorScheme = section.settings.color_scheme
+  assign heading = section.settings.section_title
+  assign description = section.settings.section_description
+%}
+
 {% style %}
       .padding-{{ section.id }}{
-          padding-top:{{section.settings.padding_top}}px;
-          padding-bottom:{{section.settings.padding_bottom}}px;
+          padding-top:{{paddingTop}}px;
+          padding-bottom:{{paddingBottom}}px;
       }
       .faq-section__container{
-          background:{{section.settings.background_color}};
+          background:{{backgroundColor}};
           padding:30px 0px;
       }
       @media screen and (min-width:749px){
       .padding-{{ section.id }}{
-          padding-top:{{section.settings.padding_top}}px;
-          padding-bottom:{{section.settings.padding_bottom}}px;
+          padding-top:{{paddingTop}}px;
+          padding-bottom:{{paddingBottom}}px;
       }
       .faq-section__container{
           padding:60px 0px;
@@ -33,13 +42,13 @@
       }
   {% endfor %}
 {% endstyle %}
-<div class="faq-section padding-{{ section.id }} color-{{ section.settings.color_scheme.id }}">
+<div class="faq-section padding-{{ section.id }} color-{{ colorScheme.id }}">
   <div class="faq-section__container">
     <div class="page-width">
       <div class="faq-secttion_title-and-description">
-        {% if section.settings.section_title != blank or section.settings.section_title != blank %}
-          <h2 class="h1 faq-section__title">{{ section.settings.section_title }}</h2>
-          <p class="h4 faq-section__description">{{ section.settings.section_description }}</p>
+        {% if heading!= blank or description!= blank %}
+          <h2 class="h1 faq-section__title">{{ heading }}</h2>
+          <p class="h4 faq-section__description">{{ description }}</p>
         {% endif %}
       </div>
       <div class="faq-section__block-container">
@@ -84,6 +93,12 @@
       "type": "color_scheme",
       "id": "color_scheme",
       "label": "Color Scheme"
+    },
+    {
+      "type":"color",
+      "id":"background_color",
+      "label":"Background Color",
+      "default":"#f5f5f5"
     },
     {
       "type": "header",
@@ -137,4 +152,3 @@
   ]
 }
 {% endschema %}
-
