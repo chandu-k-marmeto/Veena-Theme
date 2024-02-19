@@ -138,6 +138,11 @@
         "settings": {
           "color_scheme": "background-1"
         }
+      },
+      "color-swatches": {
+        "type": "color-swatches",
+        "settings": {
+        }
       }
     },
     "content_for_index": [
@@ -162,7 +167,7 @@
           "text": "#121212",
           "button": "#d03c3f",
           "button_label": "#ffffff",
-          "secondary_button_label": "#121212",
+          "secondary_button_label": "rgba(0,0,0,0)",
           "shadow": "#121212"
         }
       },
