@@ -51,13 +51,12 @@
         "slide_4QMkjQ",
         "slide_GLBUXU"
       ],
-      "disabled": true,
       "settings": {
-        "auto_play": false,
+        "auto_play": true,
         "show_pagination": true,
-        "show_arrows": true,
+        "show_arrows": false,
         "auto_play_duration": 1000,
-        "slide_type": "slide",
+        "slide_type": "loop",
         "padding_top": 0,
         "padding_bottom": 30
       }
@@ -95,7 +94,6 @@
         "heading_eHJ9fC",
         "button_zG8Qk7"
       ],
-      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -141,11 +139,123 @@
         "collections_ACNaWQ",
         "collections_dWtPpM"
       ],
-      "disabled": true,
       "settings": {
         "card_shap": "landscape",
         "padding_top": 40,
         "padding_bottom": 44
+      }
+    },
+    "custom_collections_list_pMiy8K": {
+      "type": "custom-collections-list",
+      "blocks": {
+        "collection_blocks_P8TG4i": {
+          "type": "collection-blocks",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/hand-bag-collection.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/hand-bag-collection.jpg",
+            "heading": "Person Name",
+            "button_text": "View All",
+            "button_link": ""
+          }
+        },
+        "collection_blocks_zMmrD7": {
+          "type": "collection-blocks",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/4.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/4.jpg",
+            "heading": "Person Name",
+            "button_text": "View All",
+            "button_link": ""
+          }
+        },
+        "collection_blocks_zaBJU9": {
+          "type": "collection-blocks",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/8.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/8.jpg",
+            "heading": "Person Name",
+            "button_text": "View All",
+            "button_link": ""
+          }
+        },
+        "collection_blocks_zkRVgN": {
+          "type": "collection-blocks",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/6.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/6.jpg",
+            "heading": "Person Name",
+            "button_text": "View All",
+            "button_link": ""
+          }
+        },
+        "collection_blocks_47y4KM": {
+          "type": "collection-blocks",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/5.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/5.jpg",
+            "heading": "Person Name",
+            "button_text": "View All",
+            "button_link": ""
+          }
+        },
+        "collection_blocks_kWfyVU": {
+          "type": "collection-blocks",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/1.jpg",
+            "heading": "Person Name",
+            "button_text": "View All",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_blocks_P8TG4i",
+        "collection_blocks_zMmrD7",
+        "collection_blocks_zaBJU9",
+        "collection_blocks_zkRVgN",
+        "collection_blocks_47y4KM",
+        "collection_blocks_kWfyVU"
+      ],
+      "settings": {
+        "section_heading": "Our Customers Review",
+        "section_button_text": "View All",
+        "section_button_link": "",
+        "color_scheme": "background-2",
+        "slider_autoplay": false,
+        "slide_dots": false,
+        "slide_arrows": true,
+        "infinite_scroll": false,
+        "slider_autoplay_duration": 3,
+        "slide_animation": "loop",
+        "text_alignment": "center",
+        "alignment_position": "align-center justify-center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_product_list_FTgQDT": {
+      "type": "custom-product-list",
+      "settings": {
+        "heading": "Featured Collection",
+        "heading_size": "h1",
+        "button_label": "See all Products",
+        "button_link": "shopify:\/\/collections\/tops",
+        "select_products": [
+          "full-sleeve-high-neck-t-shirt",
+          "long-casual-hooded-coat",
+          "men-winter-jacket",
+          "mens-half-sleeve-t-shirt",
+          "mens-winter-hooded-jacket",
+          "nylon-waist-bag",
+          "travel-handy-hiking-zip-pouch",
+          "women-shirt-beige-dress",
+          "women-solid-casual-jacket",
+          "womens-casual-jacket"
+        ],
+        "color_scheme": "accent-1",
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     },
     "unique_selling_proposition_AXkhFD": {
@@ -190,7 +300,6 @@
         "usp_VnqXXB",
         "usp_zTiRqC"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "inverse",
         "padding_top": 38,
@@ -257,7 +366,6 @@
         "grid_Rbq9rR",
         "grid_XqU4Hh"
       ],
-      "disabled": true,
       "settings": {
         "heading": "",
         "color_scheme": "accent-1",
@@ -265,28 +373,74 @@
         "padding_bottom": 60
       }
     },
-    "custom_product_list_FTgQDT": {
-      "type": "custom-product-list",
+    "custom_testimonial_cQepbA": {
+      "type": "custom-testimonial",
+      "blocks": {
+        "testimonia_blocks_fCpLU9": {
+          "type": "testimonia-blocks",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_2db38707-707e-4fd6-ab12-35397e8935de.webp",
+            "heading": "Person Name",
+            "designation": "Add designation",
+            "comment": "<p>Absolutely love the trendy collection! The quality is unmatched, and each piece tells a unique style story.<\/p>"
+          }
+        },
+        "testimonia_blocks_yDHwgC": {
+          "type": "testimonia-blocks",
+          "settings": {
+            "heading": "Person Name",
+            "designation": "Add designation",
+            "comment": "<p>Absolutely love the trendy collection! The quality is unmatched, and each piece tells a unique style story.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "testimonia_blocks_fCpLU9",
+        "testimonia_blocks_yDHwgC"
+      ],
       "settings": {
-        "heading": "Featured Collection",
-        "heading_size": "h1",
-        "button_label": "See all Products",
-        "button_link": "shopify:\/\/collections\/tops",
-        "select_products": [
-          "full-sleeve-high-neck-t-shirt",
-          "long-casual-hooded-coat",
-          "men-winter-jacket",
-          "mens-half-sleeve-t-shirt",
-          "mens-winter-hooded-jacket",
-          "nylon-waist-bag",
-          "travel-handy-hiking-zip-pouch",
-          "women-shirt-beige-dress",
-          "women-solid-casual-jacket",
-          "womens-casual-jacket"
-        ],
+        "section_heading": "Our Customers Review",
+        "slider_autoplay": false,
+        "slide_dots": false,
+        "slide_arrows": true,
+        "infinite_scroll": false,
+        "slide_animation": "loop",
+        "slider_autoplay_duration": 3000,
+        "text_alignment": "center",
         "color_scheme": "accent-1",
-        "padding_top": 40,
-        "padding_bottom": 40
+        "background-color": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_faq_section_3BtxT7": {
+      "type": "custom-faq-section",
+      "blocks": {
+        "faq_with_ans_B9iXCJ": {
+          "type": "faq-with-ans",
+          "settings": {
+            "block_heading": "<p> How can I track my order ?<\/p>",
+            "block_description": "Once your order has been processed and shipped, you will receive a confirmation email with a tracking number. You can use this tracking number to monitor the status and location of your package through our shipping carrier's website."
+          }
+        },
+        "faq_with_ans_nCiUYV": {
+          "type": "faq-with-ans",
+          "settings": {
+            "block_heading": "<p> How can I track my order ?<\/p>",
+            "block_description": "Once your order has been processed and shipped, you will receive a confirmation email with a tracking number. You can use this tracking number to monitor the status and location of your package through our shipping carrier's website."
+          }
+        }
+      },
+      "block_order": [
+        "faq_with_ans_B9iXCJ",
+        "faq_with_ans_nCiUYV"
+      ],
+      "settings": {
+        "section_title": "<p>FAQ<\/p>",
+        "section_description": "Ensure that your FAQs are regularly updated based on common customer queries and changes in your business operations.",
+        "color_scheme": "accent-1",
+        "padding_top": 16,
+        "padding_bottom": 16
       }
     }
   },
@@ -294,8 +448,11 @@
     "custom_banner_slideshow_w6VMUp",
     "rich_text_nnnBRT",
     "custom_image_with_text_rkDt8J",
+    "custom_collections_list_pMiy8K",
+    "custom_product_list_FTgQDT",
     "unique_selling_proposition_AXkhFD",
     "shop_the_look_bGBKyq",
-    "custom_product_list_FTgQDT"
+    "custom_testimonial_cQepbA",
+    "custom_faq_section_3BtxT7"
   ]
 }

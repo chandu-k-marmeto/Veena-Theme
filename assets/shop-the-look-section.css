@@ -142,4 +142,10 @@
   .shop-the-look__text-content-container .h3 {
     font-size: calc(var(--font-body-scale) * 18px);
   }
+  .shop-the-look__data{
+    flex-direction: column;
+  }
+  .shop-the-look__product-container{
+    width:110px;
+  }
 }

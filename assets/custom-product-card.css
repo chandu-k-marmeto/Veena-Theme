@@ -69,6 +69,7 @@
   z-index: 2;
   width: 19px;
   height: 19px;
+  display: none;
 }
 
 .discount-badge {
@@ -169,5 +170,13 @@
     word-break: unset;
     line-height: normal;
     padding: 4px;
+  }
+
+  .quick-look-button .button svg {
+    display: inline-block;
+  }
+
+  .qucik-look-button .button span:only-child {
+    display: none !important;
   }
 }

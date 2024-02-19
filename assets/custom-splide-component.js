@@ -1,15 +1,15 @@
-class SpliderComponent extends HTMLElement{
-  constructor(){
-    super()
-    this.element = this.querySelector(".splide")
-    this.options=this.dataset.sliderSettings
-    this.intializer()
+
+class CustomSlider extends HTMLElement {
+  constructor() {
+    super();
+    this.element = this.querySelector(".splide");
+    this.options = JSON.parse(this.element.dataset.sliderSettings);
+    this.mountSplider()
   }
 
-  intializer(){
-   const splide=new Splide(this.element,this.options)
-    splide.mount()
+  mountSplider() {
+    new Splide(this.element,this.options).mount();
   }
 }
 
-customElements.define("splider-component",SpliderComponent)
+customElements.define("splider-component", CustomSlider);
