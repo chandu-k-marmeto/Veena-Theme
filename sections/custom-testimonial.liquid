@@ -52,22 +52,34 @@
         <div class="splide__track">
           <ul class="splide__list">
             {% for block in section.blocks %}
-              <li class="splide__slide testimonial__slide global-media-settings {{ section.settings.text_alignment }} color-{{ section.settings.color_scheme }}">
+              <li class="splide__slide testimonial__slide global-media-settings {{ textAllignment }}">
                 {% if block.settings.image != blank %}
+
+                  {% liquid
+                    assign desktopImage = block.settings.image
+                    assign blockHeading = block.settings.heading
+                    assign designation = block.settings.designation
+                    assign comment = block.settings.comment
+                  %}
+                
                   <div class="testimonial__image">
-                    {% render 'responsive-image', desktopImage: block.settings.image %}
+                  {% if desktopImage != blank %}
+                    {% render 'responsive-image', desktopImage: desktopImage %}
+                  {% else %}
+                    {{ "image-1" | placeholder_svg_tag }}
+                  {% endif %}
                   </div>
                 {% endif %}
-                {% if block.settings.heading != blank %}
-                  <h2 class="h4 testimonial__heading">{{ block.settings.heading }}</h2>
+                {% if blockHeading != blank %}
+                  <h2 class="h4 testimonial__heading">{{blockHeading }}</h2>
                 {% endif %}
 
-                {% if block.settings.designation != blank %}
-                  <h2 class="h4 testimonial__designation">{{ block.settings.designation }}</h2>
+                {% if designation!= blank %}
+                  <h2 class="h4 testimonial__designation">{{designation }}</h2>
                 {% endif %}
 
-                {% if block.settings.comment != blank %}
-                  <div class="testimonial__comment">{{ block.settings.comment }}</div>
+                {% if comment != blank %}
+                  <div class="testimonial__comment">{{ comment }}</div>
                 {% endif %}
               </li>
             {% endfor %}
