@@ -175,4 +175,8 @@
   .quick-look-button svg {
     display: inline-block;
   }
+
+  .qucik-look-button span {
+    display: none;
+  }
 }
