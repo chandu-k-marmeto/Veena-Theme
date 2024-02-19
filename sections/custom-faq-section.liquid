@@ -3,7 +3,6 @@
 {% liquid
   assign paddingTop = section.settings.padding_top
   assign paddingBottom = section.settings.padding_bottom
-  assign backgroundColor = section.settings.background_color
   assign colorScheme = section.settings.color_scheme
   assign heading = section.settings.section_title
   assign description = section.settings.section_description
@@ -15,7 +14,6 @@
           padding-bottom:{{paddingBottom}}px;
       }
       .faq-section__container{
-          background:{{backgroundColor}};
           padding:30px 0px;
       }
       @media screen and (min-width:749px){
@@ -93,12 +91,6 @@
       "type": "color_scheme",
       "id": "color_scheme",
       "label": "Color Scheme"
-    },
-    {
-      "type":"color",
-      "id":"background_color",
-      "label":"Background Color",
-      "default":"#f5f5f5"
     },
     {
       "type": "header",
