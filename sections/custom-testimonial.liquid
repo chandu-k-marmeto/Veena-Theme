@@ -1,16 +1,23 @@
 {{ 'section-custom-testimonial.css' | asset_url | stylesheet_tag }}
-<script src="{{ "custom-slider.js" | asset_url }}" defer></script>
+
+{% liquid
+  assign paddingTop = section.settings.padding_top
+  assign paddingBottom = section.settings.padding_bottom
+  assign colorScheme = section.settings.color_scheme
+  assign textAllignment = section.settings.text_alignment
+  assign heading = section.settings.section_heading
+%}
 
 {% style %}
   .padding-{{ section.id }} {
-      padding-top: {{ section.settings.padding_top | divided_by: 2  }}px;
-      padding-bottom: {{ section.settings.padding_bottom | divided_by: 2 }}px;
+      padding-top: {{ paddingTop | divided_by: 2  }}px;
+      padding-bottom: {{paddingBottom| divided_by: 2 }}px;
     }
 
     @media (min-width: 750px) {
       .padding-{{ section.id }} {
-        padding-top: {{ section.settings.padding_top }}px;
-        padding-bottom: {{ section.settings.padding_bottom }}px;
+        padding-top: {{ paddingTop }}px;
+        padding-bottom: {{ paddingBottom }}px;
       }
     }
 {% endstyle %}
@@ -35,8 +42,10 @@
 
 <div class="testimonial padding-{{ section.id }}">
   <div class="page-width">
-    <div class="testimonial__heading-section color-{{ section.settings.color_scheme }}">
-      <h2 class="h1 testimonial__section-heading">{{ section.settings.section_heading }}</h2>
+    <div class="testimonial__heading-section color-{{ colorScheme.id }}">
+      {% if heading != blank %}
+        <h2 class="h1 testimonial__section-heading">{{ heading }}</h2>
+      {% endif %}
     </div>
     <splider-component>
       <section class="splide" aria-label="Testimonial Splide" data-slider-settings='{{ slider-options-data }}'>
