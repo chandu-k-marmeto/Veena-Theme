@@ -154,9 +154,8 @@
             "desktop_image": "shopify:\/\/shop_images\/14_50b1fff3-a249-4b29-975c-6181c4d1ab16.jpg",
             "mobile_image": "shopify:\/\/shop_images\/14_50b1fff3-a249-4b29-975c-6181c4d1ab16.jpg",
             "heading": "Person Name",
-            "section_button_text": "View All",
-            "section_button_link": "",
-            "slide_animation": "loop"
+            "button_text": "View All",
+            "button_link": ""
           }
         },
         "collection_blocks_zMmrD7": {
@@ -164,9 +163,8 @@
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/8_64ea1b33-5a61-4167-844c-49185570104e.jpg",
             "heading": "Person Name",
-            "section_button_text": "View All",
-            "section_button_link": "",
-            "slide_animation": "loop"
+            "button_text": "View All",
+            "button_link": ""
           }
         }
       },
@@ -178,12 +176,13 @@
         "section_heading": "Our Customers Review",
         "section_button_text": "View All",
         "section_button_link": "",
-        "color_scheme": "",
+        "color_scheme": "background-2",
         "slider_autoplay": false,
         "slide_dots": false,
         "slide_arrows": true,
         "infinite_scroll": false,
         "slider_autoplay_duration": 3,
+        "slide_animation": "loop",
         "text_alignment": "center",
         "alignment_position": "align-center justify-center",
         "padding_top": 36,
