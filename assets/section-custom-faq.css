@@ -33,3 +33,6 @@
 .faq-section__block-container div:last-child {
   border-bottom-width: 0px;
 }
+.plus-and-minus {
+  display: block;
+}
