@@ -1,5 +1,6 @@
 {{ 'custom-product-list-section.css' | asset_url | stylesheet_tag }}
 {{ 'custom-product-card.css' | asset_url | stylesheet_tag }}
+<script src="{{ "custom-product-card.js" | asset_url }}" defer></script>
 
 {% liquid
   assign heading = section.settings.heading
