@@ -94,7 +94,6 @@
         "heading_eHJ9fC",
         "button_zG8Qk7"
       ],
-      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -140,11 +139,79 @@
         "collections_ACNaWQ",
         "collections_dWtPpM"
       ],
-      "disabled": true,
       "settings": {
         "card_shap": "landscape",
         "padding_top": 40,
         "padding_bottom": 44
+      }
+    },
+    "custom_collections_list_pMiy8K": {
+      "type": "custom-collections-list",
+      "blocks": {
+        "collection_blocks_P8TG4i": {
+          "type": "collection-blocks",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/14_50b1fff3-a249-4b29-975c-6181c4d1ab16.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/14_50b1fff3-a249-4b29-975c-6181c4d1ab16.jpg",
+            "heading": "Person Name",
+            "section_button_text": "View All",
+            "section_button_link": "",
+            "slide_animation": "loop"
+          }
+        },
+        "collection_blocks_zMmrD7": {
+          "type": "collection-blocks",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/8_64ea1b33-5a61-4167-844c-49185570104e.jpg",
+            "heading": "Person Name",
+            "section_button_text": "View All",
+            "section_button_link": "",
+            "slide_animation": "loop"
+          }
+        }
+      },
+      "block_order": [
+        "collection_blocks_P8TG4i",
+        "collection_blocks_zMmrD7"
+      ],
+      "settings": {
+        "section_heading": "Our Customers Review",
+        "section_button_text": "View All",
+        "section_button_link": "",
+        "color_scheme": "",
+        "slider_autoplay": false,
+        "slide_dots": false,
+        "slide_arrows": true,
+        "infinite_scroll": false,
+        "slider_autoplay_duration": 3,
+        "text_alignment": "center",
+        "alignment_position": "align-center justify-center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_product_list_FTgQDT": {
+      "type": "custom-product-list",
+      "settings": {
+        "heading": "Featured Collection",
+        "heading_size": "h1",
+        "button_label": "See all Products",
+        "button_link": "shopify:\/\/collections\/tops",
+        "select_products": [
+          "full-sleeve-high-neck-t-shirt",
+          "long-casual-hooded-coat",
+          "men-winter-jacket",
+          "mens-half-sleeve-t-shirt",
+          "mens-winter-hooded-jacket",
+          "nylon-waist-bag",
+          "travel-handy-hiking-zip-pouch",
+          "women-shirt-beige-dress",
+          "women-solid-casual-jacket",
+          "womens-casual-jacket"
+        ],
+        "color_scheme": "accent-1",
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     },
     "unique_selling_proposition_AXkhFD": {
@@ -189,7 +256,6 @@
         "usp_VnqXXB",
         "usp_zTiRqC"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "inverse",
         "padding_top": 38,
@@ -256,81 +322,11 @@
         "grid_Rbq9rR",
         "grid_XqU4Hh"
       ],
-      "disabled": true,
       "settings": {
         "heading": "",
         "color_scheme": "accent-1",
         "padding_top": 60,
         "padding_bottom": 60
-      }
-    },
-    "custom_product_list_FTgQDT": {
-      "type": "custom-product-list",
-      "settings": {
-        "heading": "Featured Collection",
-        "heading_size": "h1",
-        "button_label": "See all Products",
-        "button_link": "shopify:\/\/collections\/tops",
-        "select_products": [
-          "full-sleeve-high-neck-t-shirt",
-          "long-casual-hooded-coat",
-          "men-winter-jacket",
-          "mens-half-sleeve-t-shirt",
-          "mens-winter-hooded-jacket",
-          "nylon-waist-bag",
-          "travel-handy-hiking-zip-pouch",
-          "women-shirt-beige-dress",
-          "women-solid-casual-jacket",
-          "womens-casual-jacket"
-        ],
-        "color_scheme": "accent-1",
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
-    },
-    "custom_collections_list_pMiy8K": {
-      "type": "custom-collections-list",
-      "blocks": {
-        "collection_blocks_P8TG4i": {
-          "type": "collection-blocks",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/14_50b1fff3-a249-4b29-975c-6181c4d1ab16.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/14_50b1fff3-a249-4b29-975c-6181c4d1ab16.jpg",
-            "heading": "Person Name",
-            "section_button_text": "View All",
-            "section_button_link": "",
-            "slide_animation": "loop"
-          }
-        },
-        "collection_blocks_zMmrD7": {
-          "type": "collection-blocks",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/8_64ea1b33-5a61-4167-844c-49185570104e.jpg",
-            "heading": "Person Name",
-            "section_button_text": "View All",
-            "section_button_link": "",
-            "slide_animation": "loop"
-          }
-        }
-      },
-      "block_order": [
-        "collection_blocks_P8TG4i",
-        "collection_blocks_zMmrD7"
-      ],
-      "settings": {
-        "section_heading": "Our Customers Review",
-        "section_button_text": "View All",
-        "section_button_link": "",
-        "color_scheme": "",
-        "slider_autoplay": false,
-        "slide_dots": false,
-        "slide_arrows": true,
-        "infinite_scroll": false,
-        "slider_autoplay_duration": 3,
-        "text_alignment": "center",
-        "alignment_position": "align-center justify-center",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "custom_testimonial_cQepbA": {
@@ -395,7 +391,6 @@
         "faq_with_ans_nCiUYV"
       ],
       "settings": {
-        "background_color": "#F5F5F5",
         "section_title": "<p>FAQ<\/p>",
         "section_description": "Ensure that your FAQs are regularly updated based on common customer queries and changes in your business operations.",
         "color_scheme": "",
@@ -408,10 +403,10 @@
     "custom_banner_slideshow_w6VMUp",
     "rich_text_nnnBRT",
     "custom_image_with_text_rkDt8J",
+    "custom_collections_list_pMiy8K",
+    "custom_product_list_FTgQDT",
     "unique_selling_proposition_AXkhFD",
     "shop_the_look_bGBKyq",
-    "custom_product_list_FTgQDT",
-    "custom_collections_list_pMiy8K",
     "custom_testimonial_cQepbA",
     "custom_faq_section_3BtxT7"
   ]
