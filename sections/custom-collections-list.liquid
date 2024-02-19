@@ -94,14 +94,14 @@
 
                     {% if blockButtonLabel %}
                       <a
-                        class="custom-button-primary-transparent"
+                        class="button"
                         {% if blockButtonLink == blank %}
                           role="link" aria-disabled="true"
                         {% else %}
                           href="{{ blockButtonLink }}"
                         {% endif %}
                       >
-                        {{ blockButtonLabel }}
+                        <span>{{ blockButtonLabel }}</span>
                       </a>
                     {% endif %}
                   </div>
