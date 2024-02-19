@@ -44,7 +44,7 @@
 
 <div class="testimonial padding-{{ section.id }}">
   <div class="page-width">
-    <div class="testimonial__heading-section color-{{ colorScheme.id }}">
+    <div class="testimonial__heading-section">
       {% if heading != blank %}
         <h2 class="h1 testimonial__section-heading">{{ heading }}</h2>
       {% endif %}
@@ -54,7 +54,7 @@
         <div class="splide__track">
           <ul class="splide__list">
             {% for block in section.blocks %}
-              <li class="splide__slide testimonial__slide global-media-settings {{ textAllignment }}">
+              <li class="splide__slide testimonial__slide global-media-settings {{ textAllignment }} color-{{ colorScheme.id }}">
                 {% if block.settings.image != blank %}
 
                   {% liquid
