@@ -33,14 +33,14 @@
 {% style %}
 
 	.padding-{{section.id}}{
-		padding-top: {{ padding_top |  divided_by: 2 }}px;
-		padding-bottom: {{ padding_bottom |  divided_by: 2 }}px;
+		padding-top: {{ paddingTop |  divided_by: 2 }}px;
+		padding-bottom: {{ paddingBottom |  divided_by: 2 }}px;
 	}
 
 	@media screen and (min-width:768px){
 		.padding-{{section.id}}{
-			padding-top: {{ padding_top |  divided_by: 2 }}px;
-			padding-bottom: {{ padding_bottom |  divided_by: 2 }}px;
+			padding-top: {{ paddingTop  }}px;
+			padding-bottom: {{ paddingBottom }}px;
 		}
 	}
 
