@@ -54,7 +54,7 @@
       "settings": {
         "auto_play": true,
         "show_pagination": true,
-        "show_arrows": false,
+        "show_arrows": true,
         "auto_play_duration": 1000,
         "slide_type": "loop",
         "padding_top": 0,
@@ -218,20 +218,62 @@
         "collection_blocks_kWfyVU"
       ],
       "settings": {
-        "section_heading": "Our Customers Review",
+        "section_heading": "Captivating Collection",
         "section_button_text": "View All",
-        "section_button_link": "",
+        "section_button_link": "shopify:\/\/pages\/contact",
         "color_scheme": "background-2",
-        "slider_autoplay": false,
+        "slider_autoplay": true,
         "slide_dots": false,
         "slide_arrows": true,
-        "infinite_scroll": false,
+        "infinite_scroll": true,
         "slider_autoplay_duration": 3,
         "slide_animation": "loop",
         "text_alignment": "center",
-        "alignment_position": "align-center justify-center",
+        "alignment_position": "bottom-center",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "custom_image_with_text_kdVfCP": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "collections_pKeF7d": {
+          "type": "collections",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_55.webp",
+            "image_mobile": "shopify:\/\/shop_images\/Rectangle_55.webp",
+            "pre_heading": "Women's collections",
+            "block_heading": "<p>Women's Clothing Collections<\/p>",
+            "button_label": "Shop Now",
+            "button_link": "",
+            "desktop_content_allignment": "bottom-center",
+            "desktop_text_allignment": "center",
+            "color_scheme": "background-1"
+          }
+        },
+        "collections_e73NBd": {
+          "type": "collections",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_56.webp",
+            "image_mobile": "shopify:\/\/shop_images\/Rectangle_56.webp",
+            "pre_heading": "Women's collections",
+            "block_heading": "<p>Women's Clothing Collections<\/p>",
+            "button_label": "Shop Now",
+            "button_link": "",
+            "desktop_content_allignment": "bottom-center",
+            "desktop_text_allignment": "center",
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "collections_pKeF7d",
+        "collections_e73NBd"
+      ],
+      "settings": {
+        "card_shap": "sqaure",
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     },
     "custom_product_list_FTgQDT": {
@@ -254,6 +296,11 @@
           "womens-casual-jacket"
         ],
         "color_scheme": "accent-1",
+        "image_ratio": "portrait",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_quick_add": true,
         "padding_top": 40,
         "padding_bottom": 40
       }
@@ -413,6 +460,24 @@
         "padding_bottom": 36
       }
     },
+    "custom_blog_post_YWe3zf": {
+      "type": "custom-blog-post",
+      "settings": {
+        "heading": "Let You Know",
+        "button_label": "See All",
+        "button_link": "shopify:\/\/blogs\/news",
+        "select_blog": "news",
+        "color_scheme": "accent-1",
+        "slider_autoplay": true,
+        "slide_dots": false,
+        "slide_arrows": true,
+        "infinite_scroll": true,
+        "slider_autoplay_duration": 1000,
+        "slide_animation": "slide",
+        "padding_top": 84,
+        "padding_bottom": 80
+      }
+    },
     "custom_faq_section_3BtxT7": {
       "type": "custom-faq-section",
       "blocks": {
@@ -442,24 +507,6 @@
         "padding_top": 16,
         "padding_bottom": 16
       }
-    },
-    "custom_blog_post_YWe3zf": {
-      "type": "custom-blog-post",
-      "settings": {
-        "heading": "Let You Know",
-        "button_label": "See All",
-        "button_link": "shopify:\/\/blogs\/news",
-        "select_blog": "news",
-        "color_scheme": "accent-1",
-        "slider_autoplay": true,
-        "slide_dots": false,
-        "slide_arrows": true,
-        "infinite_scroll": true,
-        "slider_autoplay_duration": 1000,
-        "slide_animation": "slide",
-        "padding_top": 84,
-        "padding_bottom": 80
-      }
     }
   },
   "order": [
@@ -467,11 +514,12 @@
     "rich_text_nnnBRT",
     "custom_image_with_text_rkDt8J",
     "custom_collections_list_pMiy8K",
+    "custom_image_with_text_kdVfCP",
     "custom_product_list_FTgQDT",
     "unique_selling_proposition_AXkhFD",
     "shop_the_look_bGBKyq",
     "custom_testimonial_cQepbA",
-    "custom_faq_section_3BtxT7",
-    "custom_blog_post_YWe3zf"
+    "custom_blog_post_YWe3zf",
+    "custom_faq_section_3BtxT7"
   ]
 }
