@@ -1,11 +1,11 @@
 .faq-section__block-count {
-  color: #000000;
+  color: var(--color-foreground);
 }
 .faq-section__title p {
   margin: 0px 0px 8px;
 }
 .faq-section__description {
-  color: #000000cc;
+  color: var(--color-foreground);
   font-weight: 500;
   margin: 0px;
 }
