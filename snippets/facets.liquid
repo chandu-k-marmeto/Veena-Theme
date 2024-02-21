@@ -27,23 +27,24 @@
 -%}
 
 <div class="facets-container{% if filter_type == 'drawer' %} facets-container-drawer{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-  <ul class="small-hide">
-          {% for childLink in section.settings.menu.links %}
-            {% if childLink.links != blank %}
-              <details>
-                <summary>{{link.title}}</summary>
-                <ul>
-                  {% for grandChild in collection %}
-                    <li>{{ grandChild.title | link_to: link.url }}</li>
-                  {% endfor %}
-                </ul>
-              </details>
-
-              {% else %}
-              <li>{{ childLink.title | link_to: link.url }}</li>
-            {% endif %}
-          {% endfor %}
-        </ul>
+<ul class="small-hide {% unless filter_type == 'vertical' %} medium-hide large-up-hide{% endunless %}">
+    {% for childLink in section.settings.menu.links %}
+      {% if childLink.links != blank %}
+        <li>
+        <details>
+          <summary>{{childLink.title}}</summary>
+          <ul>
+            {% for grandChild in childLink.links %}
+              <li>{{ grandChild.title | link_to: grandChild.url }}</li>
+            {% endfor %}
+          </ul>
+        </details>
+        </li>
+        {% else %}
+        <li>{{ childLink.title | link_to: childLink.url }}</li>
+      {% endif %}
+    {% endfor %}
+  </ul>
   {%- if filter_type == 'vertical' or filter_type == 'horizontal' -%}
     <facet-filters-form class="facets small-hide">
       <form
@@ -671,23 +672,6 @@
               </div>
             </div>
             <div class="mobile-facets__main has-submenu gradient">
-              <ul>
-          {% for childLink in section.settings.menu.links %}
-            {% if childLink.links != blank %}
-              <details>
-                <summary>{{link.title}}</summary>
-                <ul>
-                  {% for grandChild in collection %}
-                    <li>{{ grandChild.title | link_to: link.url }}</li>
-                  {% endfor %}
-                </ul>
-              </details>
-
-              {% else %}
-              <li>{{ childLink.title | link_to: link.url }}</li>
-            {% endif %}
-          {% endfor %}
-        </ul>
               {%- if enable_filtering -%}
                 {%- for filter in results.filters -%}
                   {% liquid

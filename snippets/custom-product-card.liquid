@@ -2,7 +2,11 @@
 {% liquid
   assign currentProduct = product.selected_or_first_available_variant
   assign primaryImage = currentProduct.featured_image | default: product.featured_image
+  if show_secondary_image
   assign secondaryImage = product.images[1] | default: product.featured_image
+  else 
+  assign secondaryImage = currentProduct.featured_image | default: product.featured_image
+  endif
   assign price = currentProduct.price
   assign compareAtPrice = currentProduct.compare_at_price
   assign tags = product.tags
@@ -11,21 +15,26 @@
   assign title = product.title
   assign handle = product.url
   assign discountPercentage = compareAtPrice | minus: price | times: 100 | divided_by: compareAtPrice | round: 2
+  if media_aspect_ratio == "square"  
+  assign className = "media media--square" 
+  else 
+  assign className = "media media--portrait" 
+  endif
 %}
 
-<product-card class="product-card-wrapper" data-product-handle="{{ product.handle }}" data-section-id="{{ section_id}}">
+<product-card class="product-card-wrapper animate--fade-in" data-product-handle="{{ product.handle }}" data-section-id="{{ section_id}}">
   <a href="{{ handle }}">
     <div class="product-card__image-container">
       <div class="product-card__primary-image">
         {% render 'responsive-image',
-          class: 'media media--square',
+          class:className ,
           mobileImage: primaryImage,
           desktopImage: primaryImage
         %}
       </div>
       <div class="product-card__secondary-image">
         {% render 'responsive-image',
-          class: 'media media--square',
+          class: className,
           mobileImage: secondaryImage,
           desktopImage: secondaryImage
         %}
@@ -42,7 +51,8 @@
             {% endif %}
           {% endfor %}
         </div>
-        <div class="quick-look-button">
+        {% if show_quick_add %}
+          <div class="quick-look-button">
           <a class="button">
             <span>Quick Look</span>
             <svg viewBox="0 0 511.999 511.999">
@@ -57,6 +67,7 @@
             </svg>
           </a>
         </div>
+        {% endif %}
       </div>
     </div>
     <div class="product-card__details">
@@ -67,8 +78,8 @@
               {% if product_option.name == 'Color' or product_option.name == 'color' %}
                 <ul>
                   {% for option_value in product_option.values %}
-                    <li>
-                      <label style="background:{{ option_value }};">
+                    <li class="item-swatch">
+                      <label data-value="{{ option_value }}">
                         <input
                         type="radio"
                         name="option-{{ product.id }}"
@@ -89,13 +100,17 @@
       {% endunless %}
 
       <div class="product-card__money-details">
-        <p class="product-card__vender-name">{{ venderName }}</p>
+        {% if show_vendor %}
+          <p class="product-card__vender-name">{{ venderName }}</p>
+        {% endif %}
         <h3 class="h3 product-card__title">
           <a href="{{ handle }}">{{ title }}</a>
         </h3>
-        <div class='jdgm-widget jdgm-preview-badge'>
+        {% if show_rating %}
+          <div class='jdgm-widget jdgm-preview-badge'>
           {{ product.metafields.judgeme.badge }}
         </div>
+        {% endif %}
         <div class="product-card__price-container">
           <h3 class="product-card__price">{{ price | money_with_currency }}</h3>
           <small class="product-card__compare-at-price">{{ compareAtPrice | money_with_currency }}</small>

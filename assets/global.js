@@ -1264,3 +1264,25 @@ class ProductRecommendations extends HTMLElement {
 }
 
 customElements.define('product-recommendations', ProductRecommendations);
+
+// class GridViewButton extends HTMLElement{
+//   constructor(){
+//     super()
+//     this.addEventListener("click",this.changeGridView)
+//     this.productGrid = document.getElementById("product-grid")
+//   }
+
+//   changeGridView(){
+//     this.allButtons = document.querySelectorAll(".change-button").forEach(element => element.addEventListener("click",function (e) {
+//       e.preventDefault()
+//       this.productGrid.classList.forEach(function(className) {
+//       if (className.endsWith('desktop')) {
+//         // Replace the class name
+//         this.productGrid.classList.replace(className, `grid--${element.dataset.index}-col-desktop`);
+//       }
+//     })}
+//     ))
+//   }
+// }
+
+// customElements.define("grid-view-button" , GridViewButton)

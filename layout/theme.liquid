@@ -280,9 +280,11 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
-    {{ 'splide.min.css' | asset_url | stylesheet_tag }}
     <script src="{{ "splide.min.js" | asset_url }}" defer></script>
     <script src="{{ "custom-splide-component.js" | asset_url }}" defer></script>
+    <script src="{{ "custom-product-card.js" | asset_url }}" defer></script>
+    {{ 'splide.min.css' | asset_url | stylesheet_tag }}
+    {{ "custom-product-card.css" |  asset_url |  stylesheet_tag }}
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
