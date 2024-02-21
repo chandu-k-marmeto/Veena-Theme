@@ -141,6 +141,66 @@
       },
       "color-swatches": {
         "type": "color-swatches",
+        "blocks": {
+          "color_settings_aB4jiQ": {
+            "type": "colorSettings",
+            "settings": {
+              "title": "transparent",
+              "color_code": "#ffffff"
+            }
+          },
+          "color_settings_hcr7Rx": {
+            "type": "colorSettings",
+            "settings": {
+              "title": "ardiose",
+              "color_code": "#de5151"
+            }
+          },
+          "color_settings_czcFRk": {
+            "type": "colorSettings",
+            "settings": {
+              "title": "burn",
+              "color_code": "#1773b0"
+            }
+          },
+          "color_settings_ACPMWk": {
+            "type": "colorSettings",
+            "settings": {
+              "title": "candy",
+              "color_code": "#334fb4"
+            }
+          },
+          "color_settings_erCizA": {
+            "type": "colorSettings",
+            "settings": {
+              "title": "clear",
+              "color_code": "#4bd177"
+            }
+          },
+          "color_settings_9tybzx": {
+            "type": "colorSettings",
+            "settings": {
+              "title": "natural",
+              "color_code": "#5823ac"
+            }
+          },
+          "color_settings_9Vi6zJ": {
+            "type": "colorSettings",
+            "settings": {
+              "title": "taupe",
+              "color_code": "#d35fea"
+            }
+          }
+        },
+        "block_order": [
+          "color_settings_aB4jiQ",
+          "color_settings_hcr7Rx",
+          "color_settings_czcFRk",
+          "color_settings_ACPMWk",
+          "color_settings_erCizA",
+          "color_settings_9tybzx",
+          "color_settings_9Vi6zJ"
+        ],
         "settings": {
         }
       }
