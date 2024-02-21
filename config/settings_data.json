@@ -241,12 +241,12 @@
       },
       "inverse": {
         "settings": {
-          "background": "#f5f5f5",
+          "background": "#ffffff",
           "background_gradient": "",
           "text": "#000000",
-          "button": "#ffffff",
+          "button": "rgba(0,0,0,0)",
           "button_label": "#000000",
-          "secondary_button_label": "#ffffff",
+          "secondary_button_label": "#000000",
           "shadow": "#121212"
         }
       },
