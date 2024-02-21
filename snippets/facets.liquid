@@ -279,10 +279,11 @@
                           role="list"
                         >
                           {%- for value in filter.values -%}
-                            <li class="list-menu__item facets__item">
+                            <li class="list-menu__item facets__item item-swatch">
                               <label
                                 for="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}-no-js"
                                 class="facet-checkbox{% if value.count == 0 and value.active == false %} facet-checkbox--disabled{% endif %}"
+                                data-value="{{ value.value }}"
                               >
                                 <input
                                   type="checkbox"

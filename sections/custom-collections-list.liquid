@@ -1,19 +1,5 @@
 {{ 'section-custom-collections-list.css' | asset_url | stylesheet_tag }}
-<<<<<<< HEAD
-=======
 <script src="{{ "custom-splide-component.js" | asset_url }}" defer></script>
->>>>>>> ac686a3d40a93ed2896fe50996420eefed1fee7a
-
-{% liquid
-  assign paddingTop = section.settings.padding_top
-  assign paddingBottom = section.settings.padding_bottom
-  assign colorScheme = section.settings.color_scheme
-  assign buttonLabel = section.settings.section_button_text
-  assign buttonLink = section.settings.section_button_link
-  assign heading = section.settings.section_heading
-  assign contentAllignment = section.settings.alignment_position
-  assign textAllignment = section.settings.text_alignment
-%}
 
 {% liquid
   assign paddingTop = section.settings.padding_top
@@ -138,11 +124,7 @@
       "type": "text",
       "id": "section_heading",
       "label": "Section heading",
-<<<<<<< HEAD
-      "default": "Captivative Collection"
-=======
       "default": "Our Customers Review"
->>>>>>> ac686a3d40a93ed2896fe50996420eefed1fee7a
     },
     {
       "type": "text",
