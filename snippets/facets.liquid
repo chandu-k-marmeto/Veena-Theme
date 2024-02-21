@@ -27,12 +27,21 @@
 -%}
 
 <div class="facets-container{% if filter_type == 'drawer' %} facets-container-drawer{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-<ul class="small-hide {% unless filter_type == 'vertical' %} medium-hide large-up-hide{% endunless %}">
+  <ul class="facets-menu__link-container small-hide {% unless filter_type == 'vertical' %} medium-hide large-up-hide{% endunless %}">
     {% for childLink in section.settings.menu.links %}
       {% if childLink.links != blank %}
         <li>
         <details>
-          <summary>{{childLink.title}}</summary>
+          <summary
+              class="facets__summary caption-large focus-offset"
+            >
+              <div>
+                <span class="facets__summary-label">
+                  {{- childLink.title | escape }}
+                </span>
+                {% render 'icon-caret' %}
+              </div>
+            </summary>
           <ul>
             {% for grandChild in childLink.links %}
               <li>{{ grandChild.title | link_to: grandChild.url }}</li>

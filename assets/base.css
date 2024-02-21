@@ -3698,3 +3698,7 @@ a {
   color: rgb(208, 60, 63);
   transition: color var(--duration-medium) ease;
 }
+
+.icon{
+  transition: all var(--duration-medium) ease;
+}

@@ -123,6 +123,7 @@
   font-size: calc(var(--font-body-scale) * 18px);
   font-weight: var(--font-body-weight-medium);
   letter-spacing: 0.4px;
+  margin-top: 8px;
 }
 
 .product-card__price-container {
@@ -130,6 +131,7 @@
   width: 100%;
   justify-content: center;
   align-items: center;
+  margin-top: 8px;
 }
 
 .product-card__price {
@@ -198,8 +200,6 @@ span.product-card__swatch {
   .product-card__tags-container .badge {
     font-size: calc(var(--font-body-scale) * 10px);
     letter-spacing: 0.3px;
-    word-break: unset;
-    line-height: normal;
     padding: 4px;
   }
 
@@ -207,7 +207,24 @@ span.product-card__swatch {
     display: inline-block;
   }
 
-  .qucik-look-button .button span:only-child {
+  .qucik-look-button .button span {
     display: none !important;
+  }
+  .product-card__title{
+    font-size: calc(var(--font-body-scale) * 14px);
+    margin-top: 8px;
+    margin-bottom: 0px;
+  }
+  
+  .product-card__price{
+    font-size: calc(var(--font-body-scale) * 16px);
+    margin: 0px;
+  }
+  .product-card__compare-at-price{
+    font-size: calc(var(--font-body-scale) * 12px);
+  }
+  .product-card__price-container{
+    margin: 0px;
+    margin-top: 8px;
   }
 }

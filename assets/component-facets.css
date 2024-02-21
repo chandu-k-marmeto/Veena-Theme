@@ -190,8 +190,8 @@
 
 .facets__heading {
   display: block;
-  color: rgba(var(--color-foreground), 0.85);
-  font-size: 1.4rem;
+  color: rgba(var(--color-foreground));
+  font-size: calc(var(--font-body-scale) * 22px);
   margin: -1.5rem 2rem 0 0;
 }
 
@@ -204,10 +204,11 @@
 }
 
 .facets__summary {
-  color: rgba(var(--color-foreground), 0.75);
-  font-size: 1.4rem;
+  color: rgba(var(--color-foreground));
+  font-size: 1.6rem;
   padding: 0 1.75rem 0 0;
   margin-bottom: 1.5rem;
+  text-transform: uppercase;
 }
 
 .facets__disclosure fieldset {
@@ -216,23 +217,10 @@
   border: 0;
 }
 
-.facets__disclosure[open] .facets__summary,
-.facets__summary:hover {
-  color: rgb(var(--color-foreground));
-}
 
 .facets__disclosure[open] .facets__display,
 .facets__disclosure-vertical[open] .facets__display-vertical {
   animation: animateMenuOpen var(--duration-default) ease;
-}
-
-.facets__summary span {
-  transition: text-decoration var(--duration-short) ease;
-}
-
-.facets__summary:hover .facets__summary-label {
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
 }
 
 .facets__and-helptext {
@@ -1081,12 +1069,8 @@ input.mobile-facets__checkbox {
 
   .facets__heading--vertical {
     margin: 0 0 1.5rem 0;
-    font-size: 1.5rem;
-  }
-
-  .facets__header-vertical {
+    font-size: calc(var(--font-body-scale) * 22px);
     padding: 1.5rem 2rem 1.5rem 0;
-    font-size: 1.4rem;
   }
 
   .facets__display-vertical {
@@ -1243,4 +1227,13 @@ input.mobile-facets__checkbox {
   .facets-vertical .active-facets__button-remove {
     padding: 0 1rem 1rem;
   }
+}
+
+
+/* Menu links styles */
+
+.facets-menu__link-container{
+  padding-left: 0px;
+  list-style: none;
+  width: 26rem;
 }
