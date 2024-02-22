@@ -1,10 +1,10 @@
 .breadcrumbs__list {
     margin: 0;
-    padding: 15px 0px;
     display: flex;
     list-style-type: none;
-    padding-left: 50px;
+    padding: 0px;
     max-width: var(--page-width);
+    margin-bottom: 10px;
   }
 
   .breadcrumbs__listitem {
@@ -20,9 +20,3 @@
     color: inherit;
     text-decoration: none;
   }
-
-@media screen and (max-width:750px){
-    .breadcrumbs__list{
-        padding-left: 15px;
-    }
-}

@@ -31,9 +31,9 @@
     {% for childLink in section.settings.menu.links %}
       {% if childLink.links != blank %}
         <li>
-        <details>
+        <details class="facets__disclosure-vertical">
           <summary
-              class="facets__summary caption-large focus-offset"
+              class="facets__summary caption-large focus-offset facets-menu__link-summary"
             >
               <div>
                 <span class="facets__summary-label">
@@ -44,13 +44,13 @@
             </summary>
           <ul>
             {% for grandChild in childLink.links %}
-              <li>{{ grandChild.title | link_to: grandChild.url }}</li>
+              <li class="caption-large link link-text focus-inset facets-menu__link-summary">{{ grandChild.title | link_to: grandChild.url }}</li>
             {% endfor %}
           </ul>
         </details>
         </li>
         {% else %}
-        <li>{{ childLink.title | link_to: childLink.url }}</li>
+        <li class="facets-menu__link-summary facets__summary">{{ childLink.title | link_to: childLink.url }}</li>
       {% endif %}
     {% endfor %}
   </ul>
