@@ -12,9 +12,10 @@ class CustomProductCard extends HTMLElement{
   onOptionChange() {
     this.selectedOptions = Array.from(this.querySelectorAll('input[type="radio"]:checked'), input => input.value);
     this.currentVariant = this.variantData.find(item => JSON.stringify(item.options) == JSON.stringify(this.selectedOptions))
-    console.log(this.currentVariant)
-    const url = `/products/${this.productHandle}?variant=${this.currentVariant.id}&section_id=${this.sectionId}`;
-    console.log(url)
+    
+    // const url = `/products/${this.productHandle}?variant=${this.currentVariant.id}&section_id=${this.sectionId}`;
+    const url = `/products/${this.productHandle}?variant=${this.currentVariant.id}&section_id=product-card`;
+    
     fetch(url)
       .then((response) => response.text())
       .then((responseText) => {
