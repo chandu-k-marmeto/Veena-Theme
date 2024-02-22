@@ -1081,7 +1081,7 @@ class VariantSelects extends HTMLElement {
       .then((responseText) => {
         // prevent unnecessary ui changes from abandoned selections
         if (this.currentVariant.id !== requestedVariantId) return;
-
+        
         const html = new DOMParser().parseFromString(responseText, 'text/html');
         const destination = document.getElementById(`price-${this.dataset.section}`);
         const source = html.getElementById(
@@ -1105,6 +1105,10 @@ class VariantSelects extends HTMLElement {
           `Price-Per-Item-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`
         );
 
+        
+        const metaDataVariant = html.querySelector("#changeMetaFieldChandu")
+        const metaDataVariantDestination = document.querySelector("#changeMetaFieldChandu")
+    
         const volumePricingDestination = document.getElementById(`Volume-${this.dataset.section}`);
         const qtyRules = document.getElementById(`Quantity-Rules-${this.dataset.section}`);
         const volumeNote = document.getElementById(`Volume-Note-${this.dataset.section}`);
@@ -1127,6 +1131,10 @@ class VariantSelects extends HTMLElement {
         if (pricePerItemSource && pricePerItemDestination) {
           pricePerItemDestination.innerHTML = pricePerItemSource.innerHTML;
           pricePerItemDestination.classList.toggle('hidden', pricePerItemSource.classList.contains('hidden'));
+        }
+
+        if (metaDataVariant && metaDataVariantDestination){
+          metaDataVariantDestination.innerHTML = metaDataVariant.innerHTML
         }
 
         const price = document.getElementById(`price-${this.dataset.section}`);

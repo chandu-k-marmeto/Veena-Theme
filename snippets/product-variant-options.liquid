@@ -46,7 +46,9 @@
   -%}
 
   {%- if block.settings.picker_type == 'button' -%}
-    <input
+    {% if option.name == "Color" or option.name == "color" %}
+
+      <input
       type="radio"
       id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
       name="{{ option.name }}"
@@ -58,13 +60,37 @@
       {% if option_disabled %}
         class="disabled"
       {% endif %}
-    >
-    <div class="item-swatch">
-      <label data-value="{{- value -}}" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-        {{ value -}}
-        <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
-      </label>
-    </div>
+      >
+      <div class="item-swatch">
+        <label class="product__color-swatch" data-value="{{- value -}}" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+          {{ value -}}
+          <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
+        </label>
+      </div>
+
+    {% else %}
+    
+      <input
+        type="radio"
+        id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+        name="{{ option.name }}"
+        value="{{ value | escape }}"
+        form="{{ product_form_id }}"
+        {% if option.selected_value == value %}
+          checked
+        {% endif %}
+        {% if option_disabled %}
+          class="disabled"
+        {% endif %}
+        >
+        <div>
+          <label class="product__size-swatch"  for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+            {{ value |  slice: 0 |  capitalize  }}
+            <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
+          </label>
+        </div> 
+    
+    {% endif %}
   {%- elsif block.settings.picker_type == 'dropdown' -%}
     <option
       value="{{ value | escape }}"
