@@ -42,7 +42,7 @@
           "type": "icon-with-text",
           "settings": {
             "layout": "horizontal",
-            "icon_1": "heart",
+            "icon_1": "eye",
             "image_1": "shopify:\/\/shop_images\/1.svg",
             "heading_1": "Daily deals",
             "icon_2": "return",
