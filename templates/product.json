@@ -50,7 +50,10 @@
             "heading_2": "Return policy",
             "icon_3": "truck",
             "image_3": "shopify:\/\/shop_images\/3.svg",
-            "heading_3": "secure payment"
+            "heading_3": "secure payment",
+            "icon_4": "return",
+            "image_4": "shopify:\/\/shop_images\/4_1.svg",
+            "heading_4": "Help center 24\/7"
           }
         },
         "description": {
