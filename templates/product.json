@@ -3,15 +3,13 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title": {
           "type": "title",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
           "settings": {
           }
         },
@@ -21,13 +19,16 @@
             "picker_type": "button"
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
+        "inventory_6hjKt8": {
+          "type": "inventory",
           "settings": {
+            "text_style": "body",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true
           }
         },
-        "price": {
-          "type": "price",
+        "quantity_selector": {
+          "type": "quantity_selector",
           "settings": {
           }
         },
@@ -61,23 +62,36 @@
           "settings": {
           }
         },
-        "share": {
-          "type": "share",
+        "collapsible_tab_F8DAm9": {
+          "type": "collapsible_tab",
           "settings": {
-            "share_label": "Share"
+            "heading": "Product details",
+            "icon": "lightning_bolt",
+            "content": "<p><strong>Women's Floral Maxi Dress:<\/strong><br\/>Elevate your summer style with our exquisite Floral Maxi Dress. Crafted with lightweight, breathable fabric, this dress effortlessly combines comfort with elegance.<\/p><p><strong>Men's Classic Leather Sneakers:<\/strong><br\/>Step into style with our Classic Leather Sneakers for men. These timeless kicks are crafted from premium leather, providing durability and a polished look.<\/p><p><strong>Cozy Knit Oversized Sweater:<\/strong><br\/>Embrace the chill in style with our Cozy Knit Oversized Sweater. Knitted from a blend of soft, warm fabrics, this sweater combines comfort with fashion effortlessly.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_nbUeFM": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping And Return",
+            "icon": "check_mark",
+            "content": "<p>For all orders exceeding a value of 100USD shipping is offered for free.<\/p><p>Returns will be accepted for up to 10 days of Customer’s receipt or tracking number on unworn items. You, as a Customer, are obliged to inform us via email before you return the item.<\/p><p>Otherwise, standard shipping charges apply. Check out our delivery Terms & Conditions for more details.<\/p>",
+            "page": ""
           }
         }
       },
       "block_order": [
-        "vendor",
         "title",
-        "variant_picker",
-        "quantity_selector",
         "price",
+        "variant_picker",
+        "inventory_6hjKt8",
+        "quantity_selector",
         "buy_buttons",
         "icon_with_text_NxCJwx",
         "description",
-        "share"
+        "collapsible_tab_F8DAm9",
+        "collapsible_tab_nbUeFM"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -125,6 +139,7 @@
       "block_order": [
         "judge_me_reviews_review_widget_aDmTew"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
