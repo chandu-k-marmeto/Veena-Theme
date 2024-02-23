@@ -38,6 +38,21 @@
             "show_gift_card_recipient": true
           }
         },
+        "icon_with_text_NxCJwx": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "heart",
+            "image_1": "shopify:\/\/shop_images\/1.svg",
+            "heading_1": "Daily deals",
+            "icon_2": "return",
+            "image_2": "shopify:\/\/shop_images\/2.svg",
+            "heading_2": "Return policy",
+            "icon_3": "truck",
+            "image_3": "shopify:\/\/shop_images\/3.svg",
+            "heading_3": "secure payment"
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -57,6 +72,7 @@
         "quantity_selector",
         "price",
         "buy_buttons",
+        "icon_with_text_NxCJwx",
         "description",
         "share"
       ],
@@ -69,7 +85,7 @@
         "gallery_layout": "stacked",
         "media_position": "left",
         "image_zoom": "lightbox",
-        "mobile_thumbnails": "hide",
+        "mobile_thumbnails": "show",
         "hide_variants": true,
         "enable_video_looping": false,
         "padding_top": 36,
