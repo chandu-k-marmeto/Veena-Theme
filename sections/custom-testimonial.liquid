@@ -54,24 +54,22 @@
         <div class="splide__track">
           <ul class="splide__list">
             {% for block in section.blocks %}
-              <li class="splide__slide testimonial__slide global-media-settings {{ textAllignment }} color-{{ colorScheme.id }}">
-                {% if block.settings.image != blank %}
-
+              <li class="splide__slide testimonial__slide {{ textAllignment }} color-{{ colorScheme.id }}">
+                
                   {% liquid
                     assign desktopImage = block.settings.image
                     assign blockHeading = block.settings.heading
                     assign designation = block.settings.designation
-                    assign comment = block.settings.comment
+                    assign comment = block.settings.description
                   %}
                 
                   <div class="testimonial__image">
                   {% if desktopImage != blank %}
-                    {% render 'responsive-image', desktopImage: desktopImage %}
+                    <img src="{{ desktopImage |  image_url: width:"60px" , height :"60px"  }}" alt="{{ desktopImage.alt }}"/>
                   {% else %}
-                    {{ "image-1" | placeholder_svg_tag }}
+                    {% render "icon-account" %}
                   {% endif %}
                   </div>
-                {% endif %}
                 {% if blockHeading != blank %}
                   <h2 class="h4 testimonial__heading">{{blockHeading }}</h2>
                 {% endif %}
@@ -244,7 +242,7 @@
         },
         {
           "type": "richtext",
-          "id": "comment",
+          "id": "description",
           "label": "Comment",
           "default": "<p>Absolutely love the trendy collection! The quality is unmatched, and each piece tells a unique style story.</p>"
         }

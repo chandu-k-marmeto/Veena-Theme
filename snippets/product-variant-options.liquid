@@ -45,6 +45,17 @@
     endfor
   -%}
 
+  {% liquid
+    assign variantAvailable = true
+    if option.avaialibilty
+      assign variantAvailable = true
+    elsif option.inventory_quantity > 0
+      assign variantAvailable = true
+    else 
+      assign variantAvailable = false
+    endif 
+  %}
+
   {%- if block.settings.picker_type == 'button' -%}
     {% if option.name == "Color" or option.name == "color" %}
 
@@ -65,6 +76,9 @@
         <label class="product__color-swatch" data-value="{{- value -}}" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
           {{ value -}}
           <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
+          {% if variantAvailable %}
+            <span class="variant-disabled"></span>
+          {% endif %}
         </label>
       </div>
 
@@ -83,12 +97,10 @@
           class="disabled"
         {% endif %}
         >
-        <div>
           <label class="product__size-swatch"  for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
             {{ value |  slice: 0 |  capitalize  }}
             <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
           </label>
-        </div> 
     
     {% endif %}
   {%- elsif block.settings.picker_type == 'dropdown' -%}

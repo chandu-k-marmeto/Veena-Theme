@@ -119,11 +119,31 @@
   background-color: rgba(var(--color-button-text), 0.3);
 }
 
-.shopify-payment-button__button--unbranded:hover,
-.shopify-payment-button__button--unbranded:hover:not([disabled]) {
-  background-color: rgba(var(--color-button), var(--alpha-button-background));
+.button:before,
+.shopify-challenge__button:before,
+.customer button:before,
+.shopify-payment-button__button--unbranded:before,
+.shopify-payment-button [role="button"]:before,
+.cart__dynamic-checkout-buttons [role="button"]:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: var(--buttons-radius-outset);
+  box-shadow: var(--shadow-horizontal-offset) var(--shadow-vertical-offset)
+    var(--shadow-blur-radius) rgba(var(--color-shadow), var(--shadow-opacity));
 }
 
+.shopify-payment-button [role="button"]:before,
+.shopify-payment-button__button:before,
+.shopify-payment-button__button--unbranded:before{
+  background: linear-gradient(to right, transparent 50%, #D03C3F 50%);
+  background-size: 200% 100%;
+  transition: background-position .3s ease-in-out;
+}
 .shopify-payment-button__more-options {
   margin: 1.6rem 0 1rem;
   font-size: 1.2rem;
@@ -252,17 +272,6 @@ fieldset.product-form__input .form__label {
   background-color: rgba(var(--color-background), 0.3);
 }
 
-.product-form__input input[type='radio']:disabled + label,
-.product-form__input input[type='radio'].disabled + label {
-  border-color: rgba(var(--color-foreground), 0.1);
-  color: rgba(var(--color-foreground), 0.6);
-  text-decoration: line-through;
-}
-
-.product-form__input input[type='radio'].disabled:checked + label,
-.product-form__input input[type='radio']:disabled:checked + label {
-  color: rgba(var(--color-background), 0.6);
-}
 .product-form__input input[type='radio']:focus-visible + label {
   box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0 0.5rem rgba(var(--color-foreground), 0.55);
 }
@@ -284,6 +293,10 @@ fieldset.product-form__input .form__label {
 
 .product-form__submit {
   margin-bottom: 1rem;
+}
+
+.product-form__submit.button::after{
+  background: #d03c3f;
 }
 
 .no-js .product-form__submit.button--secondary {
@@ -475,6 +488,8 @@ a.product__text {
 .product-form__buttons {
   max-width: 44rem;
 }
+
+.product-form__buttons .payment-button 
 
 .product--no-media .product__info-container > modal-opener {
   display: block;
@@ -1622,7 +1637,36 @@ a.product__text {
   border: var(--variant-pills-border-width) solid rgba(var(--color-foreground),var(--variant-pills-border-opacity));
 }
 
-.product__size-swatch{
+.product-variant__container input[type="radio"].disabled+.item-swatch label:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 12px;
+  transform: rotate(45deg);
+  border: none;
+  border-left: 1px solid rgba(var(--color-foreground));
+  opacity: .8;
+  border-radius: 0;
+  box-shadow: none;
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+
+.product-variant__container input[type=radio]:checked+.item-swatch label:before {
+  content: "";
+  box-shadow: 0 0 0 1px #D03C3F;
+  position: absolute;
+  left: -3px;
+  right: -3px;
+  top: -3px;
+  bottom: -3px;
+  border-radius: 50%;
+}
+
+.product-form__input input[type=radio]+.product__size-swatch{
   display: inline-block;
   position: relative;
   padding: 7px 8px;
@@ -1640,6 +1684,29 @@ a.product__text {
   color: rgba(var(--color-foreground));
   border-radius: var(--variant-pills-radius);
   z-index: 0;
+}
+
+.product-variant__container input[type="radio"].disabled+ label:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: rotate(45deg);
+  border: none;
+  border-left: 1px solid rgba(var(--color-foreground));
+  opacity: .8;
+  border-radius: 0;
+  box-shadow: none;
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+
+.product-form__input input[type=radio]:checked+.product__size-swatch{
+  border:#D03C3F solid 1px;
+  background-color: transparent;
+  color: rgb(var(--color-foreground));
 }
 
 .product-variant__container{
