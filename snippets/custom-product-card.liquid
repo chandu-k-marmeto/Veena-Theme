@@ -80,17 +80,17 @@
                 <ul>
                   {% for option_value in product_option.values %}
                     <li class="item-swatch">
-                      <label data-value="{{ option_value }}">
-                        <input
+                      <input
                         type="radio"
                         name="option-{{ product.id }}"
                         value="{{ option_value }}"
                         data-type="option"
+                        id="{{ handle |  handleize }}-{{ option_value }}"
                         {% if product_option.selected_value == option_value %}
                           checked
                         {% endif %}
                       >
-                    </label>
+                      <label data-value="{{ option_value }}" for="{{ handle |  handleize }}-{{ option_value }}">{{ option_value }}</label>
                     </li>
                   {% endfor %}
                 </ul>

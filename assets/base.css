@@ -96,7 +96,7 @@ html.no-js .no-js-hidden {
 .page-width {
   max-width: var(--page-width);
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 4rem;
 }
 
 body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
@@ -117,9 +117,9 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   padding-right: 3rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (max-width: 990px) {
   .page-width {
-    padding: 0 5rem;
+    padding: 0 1.5rem;
   }
 
   .header.page-width,
@@ -143,8 +143,8 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
 @media screen and (min-width: 990px) {
   .header:not(.drawer-menu).page-width {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .page-width--narrow {
@@ -154,7 +154,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
   .page-width-desktop {
     max-width: var(--page-width);
-    padding: 0 5rem;
+    padding: 0 4rem;
   }
 }
 
@@ -2283,8 +2283,8 @@ product-info .loading__spinner:not(.hidden) ~ *,
 
 @media screen and (min-width: 990px) {
   body:has(.section-header .header:not(.drawer-menu)) .utility-bar .page-width {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .announcement-bar-slider {
@@ -3658,10 +3658,11 @@ a {
 .pre-heading {
   display: inline-block;
   border: 1px solid;
-  border-radius: 30px;
+  border-radius: var(--inputs-radius);
   padding-right: 10px;
   backdrop-filter: none;
   font-size: calc(var(--font-body-scale) * 14px);
+  margin: 0px 0px 10px 0px;
 }
 
 .pre-heading li {

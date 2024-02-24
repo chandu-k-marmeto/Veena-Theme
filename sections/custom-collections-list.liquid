@@ -76,16 +76,20 @@
                 assign blockButtonLink = block.settings.button_link
               %}
 
-              <li class="splide__slide collections-list__slide">
-                {% if desktopImage != blank %}
-                  <div class="collections-list__image">
+              <li class="splide__slide collections-list__slide color-{{ colorScheme.id }}">
+                <div class="collections-list__image">
+                  {% if desktopImage != blank %}
                     {% render 'responsive-image',
                       desktopImage: desktopImage,
                       mobileImage: mobileImage,
                       class: 'media media--portrait'
                     %}
+                  {% else %}
+                    <div class="media media--portait">
+                      {{ 'collection-1' | placeholder_svg_tag }}
+                    </div>
+                  {% endif %}
                   </div>
-                {% endif %}
                 <div class="collections-list__content {{ contentAllignment}}">
                   <div class="{{ textAllignment }}">
                     {% if blockHeading != blank %}
@@ -94,7 +98,7 @@
 
                     {% if blockButtonLabel %}
                       <a
-                        class="button"
+                        class="button button--secondary"
                         {% if blockButtonLink == blank %}
                           role="link" aria-disabled="true"
                         {% else %}

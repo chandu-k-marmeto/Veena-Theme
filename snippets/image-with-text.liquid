@@ -25,14 +25,23 @@
     - imageShape: shape of the whole container like square landscape
 {% endcomment %}
 
-{{ 'image-with-text.css' | asset_url | stylesheet_tag }}
+{% liquid
+  if imageShape == "square"
+    assign className = "media media--square"
+  elsif imageShape == "landscape"
+    assign className = "media media--landscape"
+  endif
+%}
+
 
 <div class="image-with-text-section color-{{ colorSchema.id }}">
-  <div class="image-with-text-section__image {{ imageShape }}">
-    {% if desktopImage != blank or mobileImage != blank %}
-      {% render 'responsive-image', desktopImage: desktopImage, mobileImage: mobileImage %}
+  <div class="image-with-text-section__image">
+    {% if desktopImage != blank  %}
+      {% render 'responsive-image', desktopImage: desktopImage, mobileImage: mobileImage, class:className %}
     {% else %}
+    <div class="{{ className }}">
       {{ 'hero-apparel-1' | placeholder_svg_tag }}
+    </div>
     {% endif %}
   </div>
 

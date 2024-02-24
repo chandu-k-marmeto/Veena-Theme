@@ -1083,6 +1083,12 @@ class VariantSelects extends HTMLElement {
         if (this.currentVariant.id !== requestedVariantId) return;
         
         const html = new DOMParser().parseFromString(responseText, 'text/html');
+
+        const cartButtonPriceDestination = document.querySelector("#cartButtonPrice")
+        const cartButtonPriceSource = html.querySelector("#cartButtonPrice")
+
+        cartButtonPriceDestination.innerHTML = cartButtonPriceSource.innerHTML
+
         const destination = document.getElementById(`price-${this.dataset.section}`);
         const source = html.getElementById(
           `price-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`
@@ -1112,6 +1118,8 @@ class VariantSelects extends HTMLElement {
         const volumePricingDestination = document.getElementById(`Volume-${this.dataset.section}`);
         const qtyRules = document.getElementById(`Quantity-Rules-${this.dataset.section}`);
         const volumeNote = document.getElementById(`Volume-Note-${this.dataset.section}`);
+
+        
 
         if (volumeNote) volumeNote.classList.remove('hidden');
         if (volumePricingDestination) volumePricingDestination.classList.remove('hidden');

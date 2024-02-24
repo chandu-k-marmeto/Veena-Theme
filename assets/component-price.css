@@ -19,12 +19,19 @@
 }
 
 .price .price-item {
+  font-size: calc(var(--font-body-scale)* 26px);
+  font-weight: 700;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: normal;
   display: inline-block;
-  margin: 0 1rem 0 0;
+  margin: 0;
 }
 
 .price__regular .price-item--regular {
   margin-right: 0;
+  font-size: calc(var(--font-body-scale)* 18px);
+  font-weight: 500;
 }
 
 .price:not(.price--show-badge) .price-item--last:last-of-type {
@@ -87,7 +94,6 @@
 .price--on-sale .price-item--regular {
   text-decoration: line-through;
   color: rgba(var(--color-foreground), 0.75);
-  font-size: 1.3rem;
 }
 
 .unit-price {
