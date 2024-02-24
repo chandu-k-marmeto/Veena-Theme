@@ -3672,8 +3672,7 @@ a {
 /* custom animation and transition */
 
 .h0 a::after,
-.h1 a::after,
-.h2 a::after {
+.h1 a::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -3697,6 +3696,7 @@ a {
   transform-origin: bottom left;
 }
 
+.h2:hover a,
 .h3:hover a,
 .h4:hover a,
 .h5:hover a,

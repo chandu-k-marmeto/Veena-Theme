@@ -1,6 +1,6 @@
 .product-card__primary-image .media,
 .product-card__secondary-image .media {
-  border-radius: 15px;
+  border-radius: var(--media-radius);
   transition: opacity var(--duration-medium) ease;
   overflow: hidden;
 }
@@ -31,6 +31,7 @@
   left: 0;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   width: 100%;
   padding: 15px;
 }
@@ -210,7 +211,7 @@ span.product-card__swatch {
     display: inline-block;
   }
 
-  .qucik-look-button .button span {
+  .quick-look-button_span {
     display: none !important;
   }
   .product-card__title{

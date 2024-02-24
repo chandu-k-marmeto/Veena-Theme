@@ -9,7 +9,7 @@
 .testimonial__slide{
   background: #fff;
   padding: 25px;
-  border-radius: 15px;
+  border-radius: var(--media-radius);
 }
 
 .testimonial__image img,
@@ -44,9 +44,9 @@
 
 
 .testimonial .splide__arrow svg {
-    fill: #fff;
-    height: 1.2em;
-    width: 1.2em;
+  fill: #fff;
+  height: 1.2em;
+  width: 1.2em;
   z-index:2;
 }
 

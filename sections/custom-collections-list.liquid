@@ -38,7 +38,8 @@
     "rewind" : {{ section.settings.infinite_scroll }},
     "breakpoints": {
     "750": {
-      "perPage": 2
+      "perPage": 2,
+      "gap":"10px"
     }
     }
   }
@@ -46,7 +47,7 @@
 
 <div class="collections-list padding-{{ section.id }}">
   <div class="page-width">
-    <div class="collections-list__heading-section color-{{ colorScheme.id }}">
+    <div class="collections-list__heading-section color-{{ colorScheme }}">
       <h2 class="h1">{{ heading }}</h2>
       <div>
         {% if buttonLabel %}
@@ -93,7 +94,9 @@
                 <div class="collections-list__content {{ contentAllignment}}">
                   <div class="{{ textAllignment }}">
                     {% if blockHeading != blank %}
-                      <h2 class="h2 collections-list__heading">{{ blockHeading }}</h2>
+                      <h2 class="h2 collections-list__heading">
+                        <a href="{{ blockButtonLink }}">{{ blockHeading }}</a>
+                      </h2>
                     {% endif %}
 
                     {% if blockButtonLabel %}
