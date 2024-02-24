@@ -221,7 +221,7 @@
         "section_heading": "Captivating Collection",
         "section_button_text": "View All",
         "section_button_link": "shopify:\/\/pages\/contact",
-        "color_scheme": "background-2",
+        "color_scheme": "scheme-12697df8-8dad-47ed-8625-9907fd8377c1",
         "slider_autoplay": true,
         "slide_dots": false,
         "slide_arrows": true,
@@ -229,7 +229,7 @@
         "slider_autoplay_duration": 3,
         "slide_animation": "loop",
         "text_alignment": "center",
-        "alignment_position": "bottom-center",
+        "alignment_position": "middle-center",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -348,7 +348,7 @@
         "usp_zTiRqC"
       ],
       "settings": {
-        "color_scheme": "inverse",
+        "color_scheme": "scheme-4e625029-4a95-4228-be1f-b58d57bc0727",
         "padding_top": 38,
         "padding_bottom": 46
       }
@@ -429,7 +429,7 @@
             "image": "shopify:\/\/shop_images\/1_2db38707-707e-4fd6-ab12-35397e8935de.webp",
             "heading": "Person Name",
             "designation": "Add designation",
-            "comment": "<p>Absolutely love the trendy collection! The quality is unmatched, and each piece tells a unique style story.<\/p>"
+            "description": "<p>Absolutely love the trendy collection! The quality is unmatched, and each piece tells a unique style story.<\/p>"
           }
         },
         "testimonia_blocks_yDHwgC": {
@@ -437,7 +437,7 @@
           "settings": {
             "heading": "Person Name",
             "designation": "Add designation",
-            "comment": "<p>Absolutely love the trendy collection! The quality is unmatched, and each piece tells a unique style story.<\/p>"
+            "description": "<p>Absolutely love the trendy collection! The quality is unmatched, and each piece tells a unique style story.<\/p>"
           }
         }
       },
