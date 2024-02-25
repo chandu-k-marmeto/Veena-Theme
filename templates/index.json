@@ -234,6 +234,13 @@
         "padding_bottom": 36
       }
     },
+    "custom_scrolling_banner_XaXNA9": {
+      "type": "custom-scrolling-banner",
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
     "custom_image_with_text_kdVfCP": {
       "type": "custom-image-with-text",
       "blocks": {
@@ -274,6 +281,20 @@
         "card_shap": "sqaure",
         "padding_top": 20,
         "padding_bottom": 20
+      }
+    },
+    "custom_timer_bqF9Fj": {
+      "type": "custom-timer",
+      "settings": {
+        "heading": "Timer Heading",
+        "description": "<p>Timer Description<\/p>",
+        "button_text": "View All",
+        "button_link": "",
+        "button_bg": "#ffffff",
+        "button_color": "#000000",
+        "text_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "custom_product_list_FTgQDT": {
@@ -420,6 +441,13 @@
         "padding_bottom": 60
       }
     },
+    "custom_featured_brands_BgQMYU": {
+      "type": "custom-featured-brands",
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
     "custom_testimonial_cQepbA": {
       "type": "custom-testimonial",
       "blocks": {
@@ -514,10 +542,13 @@
     "rich_text_nnnBRT",
     "custom_image_with_text_rkDt8J",
     "custom_collections_list_pMiy8K",
+    "custom_scrolling_banner_XaXNA9",
     "custom_image_with_text_kdVfCP",
+    "custom_timer_bqF9Fj",
     "custom_product_list_FTgQDT",
     "unique_selling_proposition_AXkhFD",
     "shop_the_look_bGBKyq",
+    "custom_featured_brands_BgQMYU",
     "custom_testimonial_cQepbA",
     "custom_blog_post_YWe3zf",
     "custom_faq_section_3BtxT7"
