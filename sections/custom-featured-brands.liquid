@@ -1,27 +1,28 @@
 {{ "section-custom-featured-brands.css" | asset_url | stylesheet_tag }}
 
 {%  style  %} 
+  .padding-{{section.id}} {
+    padding-top: {{ section.settings.padding_top | divided_by: 2 }};
+    padding-bottom: {{ section.settings.padding_bottom | divided_by: 2 }};
+    background: {{ section.settings.background_color }};
+  }
+
+  @media screen and (min-width: 750px) {
     .padding-{{section.id}} {
-        padding-top: calc({{ section.settings.padding_top | divided_by: 2 }} );
-        padding-bottom: calc({{ section.settings.padding_bottom | divided_by: 2 }});
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
     }
-  
-    @media screen and (min-width: 750px) {
-        .padding-{{section.id}} {
-            padding-top: {{ section.settings.padding_top }}px;
-            padding-bottom: {{ section.settings.padding_bottom }}px;
-        }
-    }
+  }
 {% endstyle %}
 
 <div class="featured-brands padding-{{section.id}} ">
   <div class="featured-brands__section">
-    <div class="page-vidth">
+    <div class="page-width">
       <div class="featured-brands__grid">
         {% for block in section.blocks %}
           <div class="featured-brands__image">
             {% if block.settings.image != blank %}
-              {% render "responsive-picture" , desktopImage: block.settings.image %}
+              <img src="{{ block.settings.image |  image_url: width:"85px" , height :"50px"  }}" alt="{{ block.settings.image.alt }}"/> 
             {% endif %}  
           </div>
         {% endfor %}  
@@ -39,6 +40,11 @@
       {
         "type": "header",
         "content": "Section padding"
+      },
+      {
+        "type":"color",
+        "label":"Background color",
+        "id":"background_color"
       },
       {
         "type": "range",

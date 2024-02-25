@@ -15,6 +15,7 @@
   flex-wrap: nowrap;
   white-space: nowrap;
   animation: scroll-left 16s linear infinite;
+  animation-delay: 2s;
 }
 
 .scrolling-banner__scrolling-wrapper:hover
@@ -86,5 +87,8 @@
 
   .scrolling-banner__scrolling-text p {
     font-size: 35px;
+  }
+  .scrolling-banner__scrolling-items-wrapper{
+    animation-duration: 10s;
   }
 }
