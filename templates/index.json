@@ -477,6 +477,31 @@
     },
     "custom_featured_brands_BgQMYU": {
       "type": "custom-featured-brands",
+      "blocks": {
+        "featured_brands_g9yNq7": {
+          "type": "featured-brands",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_26caca81-ef1b-413a-b2e8-dacb4042a47f_1.webp"
+          }
+        },
+        "featured_brands_gatnqf": {
+          "type": "featured-brands",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/8.webp"
+          }
+        },
+        "featured_brands_DKaJ4z": {
+          "type": "featured-brands",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7_2.webp"
+          }
+        }
+      },
+      "block_order": [
+        "featured_brands_g9yNq7",
+        "featured_brands_gatnqf",
+        "featured_brands_DKaJ4z"
+      ],
       "settings": {
         "padding_top": 20,
         "padding_bottom": 20
