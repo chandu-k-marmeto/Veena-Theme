@@ -244,10 +244,6 @@
             "scrolling_text": "<p>Women's clothing collection<\/p>",
             "display_button": "display-as-button",
             "button_text": "Button text",
-            "button_color": "#000000",
-            "button_background_color": "",
-            "button_hover_color": "",
-            "button_hover_background_color": "",
             "button_link": "shopify:\/\/products\/carson-chore-jacket-black-hole"
           }
         },
@@ -258,10 +254,6 @@
             "scrolling_text": "<p>New Collection<\/p>",
             "display_button": "display-as-button",
             "button_text": "Button text",
-            "button_color": "#000000",
-            "button_background_color": "",
-            "button_hover_color": "",
-            "button_hover_background_color": "",
             "button_link": "shopify:\/\/blogs\/news"
           }
         }
@@ -271,6 +263,7 @@
         "scrolling_item_kze9c7"
       ],
       "settings": {
+        "color_scheme": "",
         "padding_top": 20,
         "padding_bottom": 20
       }
@@ -324,9 +317,8 @@
         "description": "<p>where fashion meets flair, and every outfit becomes a statement.<\/p>",
         "button_text": "View All",
         "button_link": "shopify:\/\/products\/brow-boost-eyebrow-pencil",
-        "button_bg": "#ffffff",
-        "button_color": "#000000",
-        "text_alignment": "left",
+        "color_scheme": "accent-1",
+        "no_of_days": 2,
         "padding_top": 44,
         "padding_bottom": 36
       }
@@ -503,6 +495,7 @@
         "featured_brands_DKaJ4z"
       ],
       "settings": {
+        "background_color": "",
         "padding_top": 20,
         "padding_bottom": 20
       }
