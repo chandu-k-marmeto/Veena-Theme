@@ -2,26 +2,41 @@
 
 {% liquid
   assign heading = section.settings.section_heading
-  assign colorSchemaProduct = section.settings.color_scheme
-  assign enableArrows = section.settings.enable_arrows
-  assign enableDrag = section.settings.enable_drag
-  assign enableDots = section.settings.enable_dots
-  assign enableQuickView = section.settings.enable_quick_view
-  assign products = section.settings.select_products
   assign paddingTop = section.settings.padding_top
   assign paddingBottom = section.settings.padding_bottom
   assign mobileImage = section.settings.image_mobile
   assign desktopImage = section.settings.image
-  assign showVender = section.settings.show_vender_name
-  assign animationEffect = section.settings.animation_on_image_hover
   assign headingSize = section.settings.heading_size
-  assign blcokHeading = section.settings.block_heading
+  assign blockHeading = section.settings.block_heading
   assign preHeading = section.settings.pre_heading
   assign buttonLabel = section.settings.button_label
   assign buttonLink = section.settings.button_link
-  assign colorScheme = section.settings.image_block_color_scheme
+  assign colorSchemePrimary = section.settings.image_block_color_scheme
   assign enableImageBlock = section.settings.enable_image_block
+  assign textAllignment = section.settings.text_allignment 
+  assign desktopContainerAllignment = section.settings.desktop_content_allignment
+  assign imageShape = section.settings.image_shape
+  assign colorShemeSecondary = section.settings.color_scheme_product
+  assign productList = section.settings.product_list
 %}
+
+{% capture sliderSettings %}
+  {
+    "autoplay":{{ section.settings.auto_play }},
+    "pagination":{{ section.settings.show_pagination }},
+    "speed":{{ section.settings.auto_play_duration }},
+    "type":"{{ section.settings.slide_type }}",
+    "arrows":{{ section.settings.show_arrows }},
+    "perpage":{{ section.settings.per_page_desktop }},
+    "gap":"20px",
+    "breakpoints": {
+      "750": {
+        "perPage": 2,
+        "gap":"10px"
+      }
+    }
+  }
+{% endcapture %}
 
 {% style %}
   .padding-{{section.id}}{
@@ -42,10 +57,46 @@
     {% if heading != blank %}
       <h2 class="{{ headingSize }}">{{ heading }}</h2>
     {% endif %}
-    <div class="">
-      {% if enableImageBlock %}
-        <div class=""></div>
-      {% endif %}
+    <div class="custom-featured-product__container">
+      <div class="custom-featured-product__image-block">
+        {% if enableImageBlock %}
+          {% render 'image-with-text',
+            desktopImage: desktopImage,
+            mobileImage: mobileImage,
+            desktopContainerAllignment: desktopContainerAllignment,
+            textAllignment: textAllignment,
+            heading: blockHeading,
+            preHeading: preHeading,
+            buttonLabel: buttonLabel,
+            buttonLink: buttonLink,
+            colorSchema: colorSchemePrimary,
+            imageShape: imageShape
+          %}
+        {% endif %}
+      </div>
+      <splider-component class="">
+        <section class="splide color-{{ colorShemeSecondary.id }}" aria-label="Splide Basic HTML Example" data-slider-settings='{{ sliderSettings }}'>
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide custom-featured-product__product-container">
+                {% for product in productList %}
+                  <li class="splide__slide custom-featured-product__product-container"></li>
+                    {% render 'custom-product-card',
+                      product: product,
+                      media_aspect_ratio: section.settings.image_ratio,
+                      show_secondary_image: section.settings.show_secondary_image,
+                      show_vendor: section.settings.show_vendor,
+                      show_rating: section.settings.show_rating,
+                      lazy_load: lazy_load,
+                      show_quick_add: section.settings.enable_quick_add,
+                      section_id: section.id
+                    %}
+                  </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </section>
+      </splider-component>
     </div>
   </div>
 </div>
@@ -119,9 +170,64 @@
       "label":"Button link"
     },
     {
+      "type": "select",
+      "id":"text_alignment",
+      "label": "Text Allignment",
+      "options": [
+        {
+          "value": "center",
+          "label":"Center"
+        },
+        {
+          "value": "left",
+          "label":"Left"
+        },
+        {
+          "value": "right",
+          "label":"Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "label": "Desktop Content Allignment",
+      "id": "desktop_content_allignment",
+      "default":"middle-center",
+      "options": [
+        {
+          "label": "Top",
+          "value": "top-center"
+        },
+        {
+          "label": "Middle",
+          "value": "middle-center"
+        },
+        {
+          "label": "Bottom",
+          "value": "bottom-center"
+        }
+      ]
+    },
+    {
       "type":"color_scheme",
       "label":"Color scheme for image block",
       "id":"image_block_color_scheme"
+    },
+    {
+      "type": "select",
+      "id":"image_shape",
+      "label": "Image Shape",
+      "options": [
+        {
+          "value": "landscape",
+          "label":"Landscape"
+        },
+        {
+          "value": "square",
+          "label":"Square"
+        }
+      ]
     },
     {
       "type": "header",
@@ -162,31 +268,118 @@
       "default": false
     },
     {
+      "type":"range",
+      "id":"per_page_desktop",
+      "label": "No of columns per Desktop",
+      "max":5,
+      "min":3,
+      "default": 3
+    },
+    {
+      "type": "header",
+      "content": "t:sections.main-collection-product-grid.settings.header__3.content"
+    },
+    {
       "type": "select",
-      "label": "Animation on image hover",
-      "id": "animation_on_image_hover",
-      "default": "secondary-image",
+      "id": "image_ratio",
       "options": [
         {
-          "label": "Show secondary image",
-          "value": "secondary-image"
+          "value": "adapt",
+          "label": "t:sections.main-collection-product-grid.settings.image_ratio.options__1.label"
         },
         {
-          "label": "Zoom in effect",
-          "value": "zoom-in"
+          "value": "portrait",
+          "label": "t:sections.main-collection-product-grid.settings.image_ratio.options__2.label"
+        },
+        {
+          "value": "square",
+          "label": "t:sections.main-collection-product-grid.settings.image_ratio.options__3.label"
         }
-      ]
+      ],
+      "default": "adapt",
+      "label": "t:sections.main-collection-product-grid.settings.image_ratio.label"
     },
     {
       "type": "checkbox",
-      "label": "Enable quick view",
-      "id": "enable_quick_view",
-      "default": true
+      "id": "show_secondary_image",
+      "default": false,
+      "label": "t:sections.main-collection-product-grid.settings.show_secondary_image.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "default": true,
+      "label": "t:sections.main-collection-product-grid.settings.show_vendor.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_rating",
+      "default": false,
+      "label": "t:sections.main-collection-product-grid.settings.show_rating.label",
+      "info": "t:sections.main-collection-product-grid.settings.show_rating.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_quick_add",
+      "default": true,
+      "label": "t:sections.main-collection-product-grid.settings.enable_quick_buy.label"
     },
     {
       "type":"color_scheme",
       "id":"color_scheme_product",
       "label":"Color scheme for products"
+    },
+    {
+      "type": "header",
+      "content": "Slider options"
+    },
+    {
+      "type": "checkbox",
+      "label": "Enable autoplay",
+      "id": "auto_play",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "label": "Show dots",
+      "id": "show_pagination",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "label": "Show arrows",
+      "id": "show_arrows",
+      "default": true
+    },
+    {
+      "type": "range",
+      "label": "Autoplay duration",
+      "id": "auto_play_duration",
+      "default": 1000,
+      "min": 1000,
+      "max": 5000,
+      "step": 1000,
+      "unit": "sec"
+    },
+    {
+      "type":"select",
+      "label":"Slider animation",
+      "id":"slide_type",
+      "default":"slide",
+      "options":[
+        {
+          "label":"Fade",
+          "value":"fade"
+        },
+        {
+          "label":"Loop",
+          "value":"loop"
+        },
+        {
+          "label":"Slide",
+          "value":"slide"
+        }
+      ]
     },
     {
       "type": "header",

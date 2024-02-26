@@ -1,6 +1,5 @@
 {{ 'section-rich-text.css' | asset_url | stylesheet_tag }}
-<script src="{{ "section-rich-text.js" | assert_url }}" defer ></script>
-
+<script src="{{ "section-rich-text.js" | asset_url }}" defer></script>
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | divided_by:2 }}px;

@@ -1,0 +1,20 @@
+.custom-featured-product__container{
+  display: flex;
+	gap: 20px;
+}
+
+.custom-featured-product__image-block{
+	width: 30%;
+	height: auto;
+}
+
+.custom-featured-product__image-block img,
+.custom-featured-product__image-block svg{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.custom-featured-product__product-container{
+	width: 70%;
+}
