@@ -92,3 +92,12 @@
     animation-duration: 10s;
   }
 }
+
+.scrolling-banner__scrolling-items-wrapper .button{
+  background: transparent;
+  border: 1px solid;
+}
+
+.scrolling-banner__scrolling-items-wrapper .button:hover{
+  color: white;
+}

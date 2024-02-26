@@ -20,7 +20,7 @@
   }
 {% endstyle %}
 
-<div class="custom-timer padding-{{ section.id }}">
+<div class="custom-timer padding-{{ section.id }} color-{{ section.settings.color_scheme }}">
     <div class="page-width">
         <div class="grid grid--1-col grid--2-col-desktop">
             <div class="grid__item custom-timer__text-wrapper">
@@ -37,29 +37,29 @@
                       {% else %}
                       href="{{ section.settings.button_link }}"
                       {% endif %}
-                      class="btn-animate coustom-timer__button-{{ section.id }} button"
+                      class="button"
                   >
                       <span>{{- section.settings.button_text | escape -}}</span>
                   </a>
               {%  endif %}
             </div>   
             <div class="grid__item custom-timer__time-wrapper">
-                <div class = "custom-timer__card custom-border-radius">
+                <div class = "custom-timer__card">
                     <span class = "h1 custom-timer__time" id="days" >{{ section.settings.no_of_days }}</span>
                     <span class = "h4">Days</span>
                 </div>
                 <span class = "h1 custom-timer__colon">:</span>
-                <div class = "custom-timer__card custom-border-radius">
+                <div class = "custom-timer__card">
                     <h2 class = "h1 custom-timer__time" id="hours">00</h2>
                     <span class = "h4">Hours</span>
                 </div>
                 <span class = "h1 custom-timer__colon">:</span>
-                <div class = "custom-timer__card custom-border-radius">
+                <div class = "custom-timer__card">
                     <span class = "h1 custom-timer__time" id="minutes">00</span>
                     <span class = "h4">Mins</span>
                 </div>
                 <span class = "h1 custom-timer__colon">:</span>
-                <div class = "custom-timer__card custom-border-radius">
+                <div class = "custom-timer__card ">
                     <span class = "h1 custom-timer__time" id="seconds">00</span>
                     <span class = "h4">Sec</span>
                 </div>
@@ -75,68 +75,39 @@
   "name": "Custom Timer",
   "tag" : "section",
   "settings": [
-      {
-        "type" : "text",
-        "id" : "heading",
-        "label" : "Heading",
-        "default" : "Timer Heading"
-      },
-        {
-          "type": "richtext",
-          "id": "description",
-          "label": "description",
-          "default": "<p>Timer Description</p>"
-        },
-        {
-          "type": "text",
-          "id": "button_text",
-          "label": "Button label",
-          "default": "View All"
-        },
-        {
-          "type": "url",
-          "id": "button_link",
-          "label": "Button link"
-        },
-        {
-          "type": "color",
-          "id": "button_bg",
-          "label": "Button background",
-          "default": "#ffffff"
-      },
-      {
-          "type": "color",
-          "id": "button_color",
-          "label": "Button color",
-          "default": "#000000"
-      },
-        {
-          "type": "select",
-          "id": "text_alignment",
-          "label": "Text Alignment",
-          "options": [
-            {
-              "value": "left",
-              "label": "Left"
-            },
-            {
-              "value": "center",
-              "label": "Center"
-            },
-            {
-              "value": "Right",
-              "label": "Right"
-            }
-          ],
-          "default": "left"
-        },
-        {
-          "type": "number",
-          "id": "no_of_days",
-          "label": "No of days for countdown",
-          "default": 2
-        },
-        
+    {
+      "type" : "text",
+      "id" : "heading",
+      "label" : "Heading",
+      "default" : "Timer Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "description",
+      "default": "<p>Timer Description</p>"
+    },
+    {
+      "type": "text",
+      "id":"button_text",
+      "label":"Button Label"
+    },
+    {
+      "type": "url",
+      "id":"button_link",
+      "label":"Button Link"
+    },
+    {
+      "type": "color_scheme",
+      "id":"color_scheme",
+      "label":"Color Scheme"
+    },
+    {
+      "type": "number",
+      "id": "no_of_days",
+      "label": "No of days for countdown",
+      "default": 2
+    },  
     {
       "type": "header",
       "content": "Adjust Section padding"

@@ -59,3 +59,8 @@
 .collection-list-view-all {
   margin-top: 2rem;
 }
+
+.collection-list__item .card__heading{
+  font-weight: 500;
+  font-size: calc(var(--font-heading-scale)* 16px);
+}
