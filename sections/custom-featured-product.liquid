@@ -17,7 +17,7 @@
   assign desktopContainerAllignment = section.settings.desktop_content_allignment
   assign imageShape = section.settings.image_shape
   assign colorShemeSecondary = section.settings.color_scheme_product
-  assign productList = section.settings.product_list
+  assign productList = section.settings.select_products
 %}
 
 {% capture sliderSettings %}
@@ -27,8 +27,9 @@
     "speed":{{ section.settings.auto_play_duration }},
     "type":"{{ section.settings.slide_type }}",
     "arrows":{{ section.settings.show_arrows }},
-    "perpage":{{ section.settings.per_page_desktop }},
+    "perPage":{{ section.settings.per_page_desktop }},
     "gap":"20px",
+    "perMove":1,
     "breakpoints": {
       "750": {
         "perPage": 2,
@@ -50,6 +51,28 @@
       padding-bottom: {{ paddingBottom |divided_by:2 }}px;
     }
   }
+  {% if enableImageBlock %}
+    .custom-featured-product__image-block{
+      width: 30%
+    }
+    .custom-featured-product__splider{
+      width: 70%;
+    }
+
+    @media screen and (max-width:750px){
+      .custom-featured-product__image-block{
+        width: 100%
+      }
+      .custom-featured-product__splider{
+        width: 100%;
+      }
+    }
+
+  {% else %}
+    .custom-featured-product__splider{
+      width: 100%;
+    }
+  {% endif %}
 {% endstyle %}
 
 <div class="custom-featured-product padding-{{ section.id }}">
@@ -70,28 +93,27 @@
             buttonLabel: buttonLabel,
             buttonLink: buttonLink,
             colorSchema: colorSchemePrimary,
-            imageShape: imageShape
+            imageShape: "square"
           %}
         {% endif %}
       </div>
-      <splider-component class="">
+      <splider-component class="custom-featured-product__splider">
         <section class="splide color-{{ colorShemeSecondary.id }}" aria-label="Splide Basic HTML Example" data-slider-settings='{{ sliderSettings }}'>
           <div class="splide__track">
             <ul class="splide__list">
-              <li class="splide__slide custom-featured-product__product-container">
-                {% for product in productList %}
-                  <li class="splide__slide custom-featured-product__product-container"></li>
-                    {% render 'custom-product-card',
-                      product: product,
-                      media_aspect_ratio: section.settings.image_ratio,
-                      show_secondary_image: section.settings.show_secondary_image,
-                      show_vendor: section.settings.show_vendor,
-                      show_rating: section.settings.show_rating,
-                      lazy_load: lazy_load,
-                      show_quick_add: section.settings.enable_quick_add,
-                      section_id: section.id
-                    %}
-                  </li>
+              {% for product in productList %}
+                <li class="splide__slide custom-featured-product__product-container">
+                  {% render 'custom-product-card',
+                    product: product,
+                    media_aspect_ratio: section.settings.image_ratio,
+                    show_secondary_image: section.settings.show_secondary_image,
+                    show_vendor: section.settings.show_vendor,
+                    show_rating: section.settings.show_rating,
+                    lazy_load: lazy_load,
+                    show_quick_add: section.settings.enable_quick_add,
+                    section_id: section.id
+                  %}
+                </li>
               {% endfor %}
             </ul>
           </div>
@@ -171,7 +193,7 @@
     },
     {
       "type": "select",
-      "id":"text_alignment",
+      "id":"text_allignment",
       "label": "Text Allignment",
       "options": [
         {
@@ -215,43 +237,6 @@
       "id":"image_block_color_scheme"
     },
     {
-      "type": "select",
-      "id":"image_shape",
-      "label": "Image Shape",
-      "options": [
-        {
-          "value": "landscape",
-          "label":"Landscape"
-        },
-        {
-          "value": "square",
-          "label":"Square"
-        }
-      ]
-    },
-    {
-      "type": "header",
-      "content": "Slider settings"
-    },
-    {
-      "type": "checkbox",
-      "label": "Enable arrows",
-      "id": "enable_arrows",
-      "default": true
-    },
-    {
-      "type": "checkbox",
-      "label": "Enable dots",
-      "id": "enable_dots",
-      "default": true
-    },
-    {
-      "type": "checkbox",
-      "label": "Enable drag ",
-      "id": "enable_drag",
-      "default": true
-    },
-    {
       "type": "header",
       "content": "Product Settings"
     },
@@ -262,22 +247,12 @@
       "limit": 20
     },
     {
-      "type": "checkbox",
-      "label": "Show vender name",
-      "id": "show_vender_name",
-      "default": false
-    },
-    {
       "type":"range",
       "id":"per_page_desktop",
       "label": "No of columns per Desktop",
       "max":5,
       "min":3,
       "default": 3
-    },
-    {
-      "type": "header",
-      "content": "t:sections.main-collection-product-grid.settings.header__3.content"
     },
     {
       "type": "select",
