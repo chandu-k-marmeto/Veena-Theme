@@ -234,6 +234,49 @@
         "padding_bottom": 36
       }
     },
+    "custom_featured_product_AVY8Xn": {
+      "type": "custom-featured-product",
+      "settings": {
+        "section_heading": "New Arrivals",
+        "heading_size": "h1",
+        "enable_image_block": true,
+        "image": "shopify:\/\/shop_images\/1_c1c7fe9b-15a8-43a4-8d1a-c53818eda179.webp",
+        "image_mobile": "shopify:\/\/shop_images\/1_c1c7fe9b-15a8-43a4-8d1a-c53818eda179.webp",
+        "block_heading": "<p>exclusive Best & New Arrivals collection<\/p>",
+        "pre_heading": "Women's Approval",
+        "button_label": "Shop Now",
+        "button_link": "",
+        "text_allignment": "center",
+        "desktop_content_allignment": "middle-center",
+        "image_block_color_scheme": "accent-2",
+        "select_products": [
+          "august-rib-wool-oak",
+          "baume-magique",
+          "baume-magique-1",
+          "black-stripe-spring-oxford-shirt",
+          "blue-oxford-shirt",
+          "brow-boost-eyebrow-pencil",
+          "carhartt-coat-black",
+          "carson-chore-jacket-black-hole",
+          "chandus-gift-card",
+          "columbia-tee-worn-olive"
+        ],
+        "per_page_desktop": 3,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": true,
+        "enable_quick_add": true,
+        "color_scheme_product": "",
+        "auto_play": false,
+        "show_pagination": true,
+        "show_arrows": true,
+        "auto_play_duration": 1000,
+        "slide_type": "slide",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
     "custom_scrolling_banner_XaXNA9": {
       "type": "custom-scrolling-banner",
       "blocks": {
@@ -587,45 +630,6 @@
         "padding_top": 16,
         "padding_bottom": 16
       }
-    },
-    "custom_featured_product_AVY8Xn": {
-      "type": "custom-featured-product",
-      "settings": {
-        "section_heading": "New Arrivals",
-        "heading_size": "h1",
-        "enable_image_block": false,
-        "image": "shopify:\/\/shop_images\/1_c1c7fe9b-15a8-43a4-8d1a-c53818eda179.webp",
-        "image_mobile": "shopify:\/\/shop_images\/1_c1c7fe9b-15a8-43a4-8d1a-c53818eda179.webp",
-        "block_heading": "<p>exclusive Best & New Arrivals collection<\/p>",
-        "pre_heading": "Women's Approval",
-        "button_label": "Shop Now",
-        "button_link": "",
-        "text_alignment": "left",
-        "desktop_content_allignment": "middle-center",
-        "image_block_color_scheme": "accent-2",
-        "image_shape": "square",
-        "enable_arrows": true,
-        "enable_dots": true,
-        "enable_drag": true,
-        "select_products": [
-
-        ],
-        "show_vender_name": true,
-        "per_page_desktop": 3,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": true,
-        "show_rating": true,
-        "enable_quick_add": true,
-        "color_scheme_product": "",
-        "auto_play": true,
-        "show_pagination": true,
-        "show_arrows": true,
-        "auto_play_duration": 1000,
-        "slide_type": "slide",
-        "padding_top": 20,
-        "padding_bottom": 20
-      }
     }
   },
   "order": [
@@ -633,6 +637,7 @@
     "rich_text_nnnBRT",
     "custom_image_with_text_rkDt8J",
     "custom_collections_list_pMiy8K",
+    "custom_featured_product_AVY8Xn",
     "custom_scrolling_banner_XaXNA9",
     "custom_image_with_text_kdVfCP",
     "custom_timer_bqF9Fj",
@@ -642,7 +647,6 @@
     "custom_featured_brands_BgQMYU",
     "custom_testimonial_cQepbA",
     "custom_blog_post_YWe3zf",
-    "custom_faq_section_3BtxT7",
-    "custom_featured_product_AVY8Xn"
+    "custom_faq_section_3BtxT7"
   ]
 }
