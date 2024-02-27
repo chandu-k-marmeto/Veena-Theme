@@ -13,16 +13,16 @@ function updateCountdown(endTime) {
   // Update the countdown elements
   // Update the countdown elements
   const daysValue = padZero(days);
-  document.getElementById('days').textContent = days;
+  document.getElementById('days').textContent = daysValue.firstDigit.toString() + daysValue.secondDigit.toString();
 
   const hoursValue = padZero(hours);
-  document.getElementById('hours').innerHTML = hours;
+  document.getElementById('hours').innerHTML = hoursValue.firstDigit.toString() + hoursValue.secondDigit.toString();
 
   const minutesValue = padZero(minutes);
-  document.getElementById('minutes').innerHTML = minutes;
+  document.getElementById('minutes').innerHTML = minutesValue.firstDigit.toString() + minutesValue.secondDigit.toString();
 
   const secondsValue = padZero(seconds);
-  document.getElementById('seconds').innerHTML = seconds;
+  document.getElementById('seconds').innerHTML = secondsValue.firstDigit.toString() + secondsValue.secondDigit.toString();
 
   // If the countdown is still running, update every second
   if (timeDifference > 0) {
@@ -34,8 +34,6 @@ function updateCountdown(endTime) {
     document.getElementById('hours').innerHTML = "00";
     document.getElementById('minutes').innerHTML = "00";
     document.getElementById('seconds').innerHTML = "00";
-    document.querySelector('.shop-now-button').disabled = true;
-    document.querySelector('.sale-ends-text').innerHTML = "Sale has ended!";
   }
 }
 
@@ -47,7 +45,8 @@ function padZero(number) {
 
 
 // Set the end time for the countdown (replace with your desired end time)
-const endTime = new Date('Feb 27, 2024');
+const enteredDate = document.querySelector("#date").dataset.date
+const endTime = new Date(`${ enteredDate }`);
 
 // Start the countdown
 updateCountdown(endTime);

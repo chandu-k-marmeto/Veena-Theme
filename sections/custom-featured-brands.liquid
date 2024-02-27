@@ -19,11 +19,11 @@
 {% endstyle %}
 
 <div class="featured-brands padding-{{section.id}} ">
-  <div class="featured-brands__section">
-    <div class="page-width">
-      <div class="featured-brands__grid">
+  <div class="page-width">
+    <div class="featured-brands__section">
+      <div class="grid grid--3-col grid--4-col-tablet grid--6-col-desktop">
         {% for block in section.blocks %}
-          <div class="featured-brands__image">
+          <div class="featured-brands__image grid__item">
             {% if block.settings.image != blank %}
               <img src="{{ block.settings.image |  image_url: width:"85px" , height :"50px"  }}" alt="{{ block.settings.image.alt }}"/> 
             {% endif %}  

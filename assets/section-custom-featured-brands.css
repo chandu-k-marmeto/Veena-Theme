@@ -8,3 +8,7 @@
   justify-content: flex-start;
   gap: 70px;
 }
+
+.featured-brands__section{
+  padding: 0px 40px;
+}

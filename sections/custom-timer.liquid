@@ -43,7 +43,7 @@
                   </a>
               {%  endif %}
             </div>   
-            <div class="grid__item custom-timer__time-wrapper">
+            <div class="grid__item custom-timer__time-wrapper" id="date" data-date="{{ section.settings.date }}">
                 <div class = "custom-timer__card">
                     <span class = "h1 custom-timer__time" id="days" >{{ section.settings.no_of_days }}</span>
                     <span class = "h4">Days</span>
@@ -103,10 +103,11 @@
       "label":"Color Scheme"
     },
     {
-      "type": "number",
-      "id": "no_of_days",
+      "type": "text",
+      "id": "date",
       "label": "No of days for countdown",
-      "default": 2
+      "default": "feb 29, 2024",
+      "info": "Enter date like Feb 29,2024"
     },  
     {
       "type": "header",
