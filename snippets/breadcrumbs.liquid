@@ -41,7 +41,7 @@
           </li>
         {% when 'cart' %}
           <li class="breadcrumbs__listitem">
-            <a class="breadcrumbs__link" href="{{ cart.url }}" aria-current="page">cart</a>
+            <a class="breadcrumbs__link" href="{{ cart.url }}" aria-current="page">Your {{ 'sections.cart.title' | t }}</a>
           </li>
         {%- else -%}
           <li class="breadcrumbs__listitem">

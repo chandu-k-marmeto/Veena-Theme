@@ -170,9 +170,7 @@
                           </li>
                         {%- endfor -%}
                       </ul>
-                    </td>
-
-                    <td class="cart-item__totals right medium-hide large-up-hide">
+                      <div class="cart-item__totals medium-hide large-up-hide">
                       {%- render 'loading-spinner' -%}
                       <div class="cart-item__price-wrapper">
                         {%- if item.original_line_price != item.final_line_price -%}
@@ -213,7 +211,9 @@
                           </div>
                         {%- endif -%}
                       </div>
+                    </div>
                     </td>
+
                     {%- liquid
                       assign has_qty_rules = false
                       if item.variant.quantity_rule.increment > 1 or item.variant.quantity_rule.min > 1 or item.variant.quantity_rule.max != null

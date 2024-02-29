@@ -74,6 +74,7 @@
                     {{ 'sections.cart.taxes_and_shipping_at_checkout' | t }}
                   {%- endif -%}
                 </small>
+                {%  render 'free-shipping'  %}
               </div>
             {%- else -%}
               <div class="cart__ctas" {{ block.shopify_attributes }}>
@@ -82,7 +83,6 @@
                     {{ 'sections.cart.update' | t }}
                   </button>
                 </noscript>
-
                 <button
                   type="submit"
                   id="checkout"
