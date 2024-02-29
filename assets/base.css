@@ -598,9 +598,10 @@ details > * {
 .underlined-link,
 .customer a,
 .inline-richtext a {
-  text-underline-offset: 0.3rem;
+  text-underline-offset: 0.6rem;
   text-decoration-thickness: 0.1rem;
   transition: text-decoration-thickness ease 100ms;
+  text-decoration: underline;
 }
 
 .underlined-link,
@@ -799,7 +800,7 @@ summary::-webkit-details-marker {
   justify-content: space-between;
   align-items: flex-end;
   gap: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   flex-wrap: wrap;
 }
 

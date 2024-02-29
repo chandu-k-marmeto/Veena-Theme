@@ -27,6 +27,7 @@
 
 .totals__total-value {
   font-size: 1.8rem;
+  font-weight: bold;
 }
 
 .cart__ctas + .totals {
