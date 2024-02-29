@@ -73,7 +73,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Product details",
-            "icon": "check_mark",
+            "icon": "lightning_bolt",
             "content": "",
             "page": ""
           }
