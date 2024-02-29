@@ -83,7 +83,7 @@
           "settings": {
             "heading": "Shipping And Return",
             "icon": "check_mark",
-            "content": "",
+            "content": "<p>{{ block.settings.page.title }}<\/p>",
             "page": ""
           }
         }
