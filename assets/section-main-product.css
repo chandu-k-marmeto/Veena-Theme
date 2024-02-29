@@ -1732,3 +1732,61 @@ a.product__text {
   align-items: center;
   justify-content: flex-start;
 }
+
+.product-discount-coupon__container{
+  width: 100%;
+  background-image: var(--gradient-background);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-discount-coupon__button-container{
+  display: flex;
+}
+.product-discount-coupon__coupon{
+  padding: 0px 10px;
+  border: dotted white;
+  border-right: none;
+  background: transparent;
+  color: var(--color-foreground);
+}
+
+.product-discount-coupon__container::after,
+.product-discount-coupon__container::before{
+  content: "";
+  position: absolute;
+  background: rgb(var(--color-foreground));
+  width: 50px;
+  height: 50px;
+  top: 25%;
+  border-radius: 50%;
+}
+
+.product-discount-coupon__container::after{
+  left: -5%;
+}
+
+.product-discount-coupon__container::before{
+  right: -5%;
+}
+
+.show{
+  display: flex;
+}
+
+.hidden{
+  display: none;
+}
+
+.product-discount-coupon__button{
+  background-color: rgb(var(--color-button));
+  color: rgb(var(--color-button-text));
+  border: none;
+  cursor: pointer;
+}

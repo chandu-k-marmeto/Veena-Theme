@@ -145,3 +145,4 @@ productBtnMobile.forEach(each=>{
   });
   })
 })
+

@@ -1114,13 +1114,28 @@ class VariantSelects extends HTMLElement {
         
         const metaDataVariant = html.querySelector("#changeMetaFieldChandu")
         const metaDataVariantDestination = document.querySelector("#changeMetaFieldChandu")
+
+        const discountCouponDesination = document.querySelector("#discountCouponName")
+        const discountCouponSource = html.querySelector("#discountCouponName")
     
         const volumePricingDestination = document.getElementById(`Volume-${this.dataset.section}`);
         const qtyRules = document.getElementById(`Quantity-Rules-${this.dataset.section}`);
         const volumeNote = document.getElementById(`Volume-Note-${this.dataset.section}`);
 
         
-
+        if (discountCouponDesination && discountCouponSource){
+          discountCouponDesination.innerHTML = discountCouponSource.innerHTML
+          document.querySelector('.product-discount-coupon__container').classList.add("show")
+          document.querySelector('.product-discount-coupon__container').classList.remove('hidden')
+        }
+        
+        if (discountCouponDesination.innerHTML=="" && discountCouponSource.innerHTML==""){
+          if (document.querySelector('.product-discount-coupon__container').classList.contains("show")){
+            document.querySelector('.product-discount-coupon__container').classList.remove("show")
+            document.querySelector('.product-discount-coupon__container').classList.add("hidden")
+          }  
+        }
+      
         if (volumeNote) volumeNote.classList.remove('hidden');
         if (volumePricingDestination) volumePricingDestination.classList.remove('hidden');
         if (qtyRules) qtyRules.classList.remove('hidden');
@@ -1281,24 +1296,16 @@ class ProductRecommendations extends HTMLElement {
 
 customElements.define('product-recommendations', ProductRecommendations);
 
-// class GridViewButton extends HTMLElement{
-//   constructor(){
-//     super()
-//     this.addEventListener("click",this.changeGridView)
-//     this.productGrid = document.getElementById("product-grid")
-//   }
-
-//   changeGridView(){
-//     this.allButtons = document.querySelectorAll(".change-button").forEach(element => element.addEventListener("click",function (e) {
-//       e.preventDefault()
-//       this.productGrid.classList.forEach(function(className) {
-//       if (className.endsWith('desktop')) {
-//         // Replace the class name
-//         this.productGrid.classList.replace(className, `grid--${element.dataset.index}-col-desktop`);
-//       }
-//     })}
-//     ))
-//   }
-// }
-
-// customElements.define("grid-view-button" , GridViewButton)
+const discountCouponCopyButton = document.querySelector('#discountCouponCopyButton')
+if (discountCouponCopyButton){
+  discountCouponCopyButton.addEventListener("click",copyText)
+}
+function copyText(){
+  const textElement = document.getElementById("discountCouponName");
+  const range = document.createRange();
+  range.selectNode(textElement);
+  window.getSelection().removeAllRanges(); 
+  window.getSelection().addRange(range);
+  document.execCommand("copy");
+  window.getSelection().removeAllRanges();
+}

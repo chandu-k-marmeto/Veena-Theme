@@ -432,7 +432,7 @@
             {%- when 'variant_picker' -%}
               {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
             {%- when 'buy_buttons' -%}
-              {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
+              {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%} 
             {%- when 'rating' -%}
               {%- if product.metafields.reviews.rating.value != blank -%}
                 {% liquid
@@ -554,7 +554,23 @@
               {% render 'icon-with-text',
                 block: block
               %}
-          {%- endcase -%}
+            {%  when 'discount-coupon' %}
+              {% liquid
+                assign colorScheme = block.settings.color_scheme
+                assign heading = block.settings.heading 
+              %}
+            <div class="product-discount-coupon__container color-{{ colorScheme.id }} {%  if product.selected_or_first_available_variant.metafields.custom.discount_coupon.value %}show {% else %} hidden {% endif %}">
+                  <span>{{ heading }}</span>
+                  <div class="product-discount-coupon__button-container">
+                    <div class="product-discount-coupon__coupon">
+                      <span id="discountCouponName">{{ product.selected_or_first_available_variant.metafields.custom.discount_coupon.value }}</span>
+                    </div>
+                    <button id="discountCouponCopyButton" class="product-discount-coupon__button">
+                      copy code
+                    </button>
+                  </div>
+                </div>
+              {%- endcase -%}
         {%- endfor -%}
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
           {{ 'products.product.view_full_details' | t }}
@@ -2215,6 +2231,23 @@
           "default": "Heading",
           "label": "t:sections.main-product.blocks.icon_with_text.settings.heading_4.label",
           "info": "t:sections.main-product.blocks.icon_with_text.settings.heading.info"
+        }
+      ]
+    },
+    {
+      "type":"discount-coupon",
+      "name":"Discount coupon",
+      "limit": 1,
+      "settings": [
+        {
+          "type":"color_scheme",
+          "label":"Color scheme",
+          "id":"color_scheme"
+        },
+        {
+          "type": "text",
+          "id":"heading",
+          "label":"Heading"
         }
       ]
     }
