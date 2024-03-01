@@ -559,7 +559,7 @@
                 assign colorScheme = block.settings.color_scheme
                 assign heading = block.settings.heading 
               %}
-            <div class="product-discount-coupon__container color-{{ colorScheme.id }} {%  if product.selected_or_first_available_variant.metafields.custom.discount_coupon.value %}show {% else %} hidden {% endif %}">
+              <div class="product-discount-coupon__container color-{{ colorScheme.id }} {%  if product.selected_or_first_available_variant.metafields.custom.discount_coupon.value %}show {% else %} hidden {% endif %}">
                   <span>{{ heading }}</span>
                   <div class="product-discount-coupon__button-container">
                     <div class="product-discount-coupon__coupon">
@@ -570,7 +570,18 @@
                     </button>
                   </div>
                 </div>
-              {%- endcase -%}
+            {% when "payment" %}
+              <div class="wbprofpayinr">
+                <span><strong>Secure checkout with</strong></span>
+              <ul class="list list-payment" role="list">
+              {%- for type in shop.enabled_payment_types -%}
+                <li class="list-payment__item">
+                  {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+                </li>
+              {%- endfor -%}
+            </ul>
+            </div>
+          {% endcase %}  
         {%- endfor -%}
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
           {{ 'products.product.view_full_details' | t }}
@@ -2250,6 +2261,10 @@
           "label":"Heading"
         }
       ]
+    },
+    {
+      "type":"payment",
+      "name":"Payment"
     }
   ],
   "settings": [
