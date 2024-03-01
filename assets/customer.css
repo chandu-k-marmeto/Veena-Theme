@@ -1,28 +1,47 @@
 .customer:not(.account):not(.order) {
   margin: 0 auto;
-  max-width: 33.4rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   text-align: center;
+  max-width: 60%;
+  background: #f5f5f5;
+  border-radius: 16px;
 }
 
-@media screen and (min-width: 750px) {
-  .customer:not(.account):not(.order) {
-    max-width: 47.8rem;
-  }
-}
 
 .customer > h1,
 .customer__title {
   margin-top: 0;
+  font-size: px;
+}
+
+.customer__title{
+  background: #f5f5f5;
+  border-radius: 16px;
+  font-size: 38px;
 }
 
 .customer form {
   margin-top: 4rem;
+  text-align: left;
 }
 
-.customer button {
-  margin: 4rem 0 1.5rem;
+.customer .button {
+  margin: 3rem 0 1rem;
+  width: 100%;
+  display: flex;
+}
+
+.customer .button--secondary{
+  border: solid 1px black;
+}
+
+.customer .button span{
+  color: rgb(var(--color-foreground));
+}
+
+.customer .button::after{
+  background: #d03c3f;
 }
 
 .customer ul {
@@ -42,17 +61,17 @@
 }
 
 .customer h2.form__message {
-  font-size: calc(var(--font-heading-scale) * 1.8rem);
+  font-size: calc(var(--font-heading-scale) * 12rem);
 }
 
 @media only screen and (min-width: 750px) {
   .customer h2.form__message {
-    font-size: calc(var(--font-heading-scale) * 2.2rem);
+    font-size: calc(var(--font-heading-scale) * 14px);
   }
 }
 
 .customer .field {
-  margin: 2rem 0 0 0;
+  margin: 2rem 0px;
 }
 
 .customer .field:first-of-type {
@@ -74,6 +93,9 @@
   .customer table {
     border: none;
     box-shadow: 0 0 0 0.1rem rgba(var(--color-foreground), 0.08);
+  }
+  .customer h1{
+    font-size: 38px;
   }
 }
 
@@ -115,10 +137,16 @@
   font-size: 1.2rem;
   letter-spacing: 0.07rem;
   text-transform: uppercase;
+  font-weight: bold;
+  text-align: left;
 }
 
 .customer tbody td:first-of-type {
   padding-top: 4rem;
+}
+
+thead{
+  background: rgba(var(--color-foreground), .03);
 }
 
 @media screen and (min-width: 750px) {
@@ -407,10 +435,22 @@
   padding-right: 2rem;
 }
 
+.account .button{
+  display: inline-flex;
+  width: auto;
+  margin: 0px;
+}
+
+.customer-account-details__container{
+  padding: 30px;
+  border-radius: 16px;
+  background: #f5f5f5;
+}
+
 @media screen and (min-width: 750px) {
   :is(.account, .order) {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 
@@ -439,12 +479,12 @@
 }
 
 :is(.account, .order) p {
-  margin: 0 0 2rem;
+  margin: 0 0 1rem;
   font-size: 1.6rem;
 }
 
 :is(.account, .order) h1 {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 :is(.account, .order) h2 {
@@ -469,12 +509,24 @@
   margin-right: 1rem;
 }
 
-@media screen and (min-width: 750px) {
-  .account thead th:last-child,
-  .account td:last-child {
-    text-align: right;
-  }
+.accout-order-address-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 30px;
+}
 
+@media screen and (min-width:990px) {
+  .accout-order-address-container{
+    grid-template-columns: 77% 23%;
+    gap: 20px;
+  }
+  .account-order-container{
+    border-right: 1px solid black;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 750px) {
   .account table td:first-of-type {
     padding-top: 1.2rem;
     padding-bottom: 1.2rem;
@@ -484,7 +536,6 @@
 .account table td:first-of-type a {
   padding: 1.1rem 1.5rem;
   text-decoration: none;
-  box-shadow: 0 0 0 0.1rem rgba(var(--color-link), 0.2);
   border: 0.1rem solid transparent;
   font-size: 1.2rem;
 }
@@ -752,4 +803,41 @@ li[data-address] > h2 {
 .addresses form > div:nth-of-type(7),
 .addresses form > div:nth-of-type(7) + div[id] {
   margin-top: 1.5rem;
+}
+
+
+.pwd_or_email-wrapper {
+  width: 100%;
+}
+
+p.email_title {
+  display: flex;
+  align-items: center;
+}
+
+.customer.login p.email_title:before, .customer.login p.email_title:after {
+  width: 50%;
+}
+p.email_title:before {
+  margin: 0 15px 0 0;
+}
+
+p.email_title:before, p.email_title:after {
+  content: "";
+  width: 10%;
+  height: 1px;
+  background: rgba(var(--color-foreground), .2);
+}
+
+.customer.login p.email_title:after {
+  width: 50%;
+}
+p.email_title:after {
+  margin: 0 0 0 15px;
+}
+p.email_title:before, p.email_title:after {
+  content: "";
+  width: 10%;
+  height: 1px;
+  background: rgba(var(--color-foreground), .2);
 }

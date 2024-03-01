@@ -47,6 +47,7 @@
             <th id="ColumnPrice" scope="col" role="columnheader">{{ 'customer.order.price' | t }}</th>
             <th id="ColumnQuantity" scope="col" role="columnheader">{{ 'customer.order.quantity' | t }}</th>
             <th id="ColumnTotal" scope="col" role="columnheader">{{ 'customer.order.total' | t }}</th>
+            <th></th>
           </tr>
         </thead>
         <tbody role="rowgroup">
@@ -58,7 +59,7 @@
                 role="rowheader"
                 scope="row"
                 data-label="{{ 'customer.order.product' | t }}"
-              >
+               >
                 <div>
                   {%- if line_item.url != blank -%}
                     <a href="{{ line_item.url }}">{{ line_item.title }}</a>
@@ -135,14 +136,14 @@
                 headers="Row{{ line_item.key }} ColumnSku"
                 role="cell"
                 data-label="{{ 'customer.order.sku' | t }}"
-              >
+               >
                 {{ line_item.sku }}
               </td>
               <td
                 headers="Row{{ line_item.key }} ColumnPrice"
                 role="cell"
                 data-label="{{ 'customer.order.price' | t }}"
-              >
+               >
                 {%- if line_item.original_price != line_item.final_price or line_item.unit_price_measurement -%}
                   <dl>
                     {%- if line_item.original_price != line_item.final_price -%}
@@ -197,14 +198,14 @@
                 headers="Row{{ line_item.key }} ColumnQuantity"
                 role="cell"
                 data-label="{{ 'customer.order.quantity' | t }}"
-              >
+               >
                 {{ line_item.quantity }}
               </td>
               <td
                 headers="Row{{ line_item.key }} ColumnTotal"
                 role="cell"
                 data-label="{{ 'customer.order.total' | t }}"
-              >
+               >
                 {%- if line_item.original_line_price != line_item.final_line_price -%}
                   <dl>
                     <dt>
@@ -223,6 +224,9 @@
                 {%- else -%}
                   {{ line_item.original_line_price | money }}
                 {%- endif -%}
+              </td>
+              <td class="lasttd">
+                <a href="{{ order.customer_order_url }}">View order</a>
               </td>
             </tr>
           {%- endfor -%}

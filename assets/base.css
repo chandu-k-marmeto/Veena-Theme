@@ -596,7 +596,6 @@ details > * {
 }
 
 .underlined-link,
-.customer a,
 .inline-richtext a {
   text-underline-offset: 0.6rem;
   text-decoration-thickness: 0.1rem;
@@ -616,7 +615,6 @@ details > * {
 }
 
 .underlined-link:hover,
-.customer a:hover,
 .inline-richtext a:hover {
   color:#d03c3f;
   text-decoration-thickness: 0.2rem;
@@ -1779,6 +1777,7 @@ details[open] > .share-button__fallback {
   padding: 1.5rem;
   margin: var(--inputs-border-width);
   transition: box-shadow var(--duration-short) ease;
+  background-color: transparent;
 }
 
 .field__label,
@@ -3693,6 +3692,7 @@ a {
 
 .button span {
   z-index: 2;
+  position: relative;
 }
 
 .h0 a:hover::after,
