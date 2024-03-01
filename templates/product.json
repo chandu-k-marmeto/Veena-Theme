@@ -57,6 +57,11 @@
             "heading_4": "Help center 24\/7"
           }
         },
+        "payment_am9CHC": {
+          "type": "payment",
+          "settings": {
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -96,6 +101,7 @@
         "quantity_selector",
         "buy_buttons",
         "icon_with_text_NxCJwx",
+        "payment_am9CHC",
         "description",
         "share",
         "collapsible_tab_cdhAgY",

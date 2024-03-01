@@ -232,3 +232,15 @@ cart-remove-button svg{
     gap: 1rem;
   }
 }
+
+.cart__warnings-container{
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: var(--media-radius);
+  position: relative;
+  background: rgba(var(--color-foreground),0.07);
+}
+
+.cart__warnings .button::after{
+  background:#d03c3f ;
+}

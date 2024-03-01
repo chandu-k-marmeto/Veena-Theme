@@ -607,6 +607,7 @@ details > * {
 .underlined-link,
 .customer a {
   color: rgba(var(--color-link), var(--alpha-link));
+  transition: all var(--duration-medium) ease;
 }
 
 .inline-richtext a,
@@ -617,8 +618,9 @@ details > * {
 .underlined-link:hover,
 .customer a:hover,
 .inline-richtext a:hover {
-  color: rgb(var(--color-link));
+  color:#d03c3f;
   text-decoration-thickness: 0.2rem;
+  transition: all var(--duration-medium) ease;
 }
 
 .icon-arrow {
@@ -805,7 +807,11 @@ summary::-webkit-details-marker {
 }
 
 .title--primary {
-  margin: 4rem 0;
+  margin: 0px;
+  font-weight: 700;
+  font-size: 4rem;
+  font-family: sans-serif;
+  margin-bottom: 2rem;
 }
 
 .title-wrapper--self-padded-tablet-down,
@@ -1372,7 +1378,7 @@ button.shopify-payment-button__button--unbranded {
   .shopify-challenge__button,
   .customer button,
   button.shopify-payment-button__button--unbranded {
-    min-width: calc(10rem + var(--buttons-border-width) * 2);
+    min-width: calc(9rem + var(--buttons-border-width) * 2);
     min-height: calc(3.5rem + var(--buttons-border-width) * 2);
     font-size: calc(var(--font-body-scale) * 14px);
   }
@@ -1689,8 +1695,8 @@ details[open] > .share-button__fallback {
 .customer .field:hover.field:after,
 .customer select:hover.select:after,
 .localization-form__select:hover.localization-form__select:after {
-  box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width))
-    rgba(var(--color-foreground), var(--inputs-border-opacity));
+  /* box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width))
+    rgba(var(--color-foreground), var(--inputs-border-opacity)); */
   outline: 0;
   border-radius: var(--inputs-radius);
 }
@@ -3735,4 +3741,8 @@ a {
   position: absolute;
   transition: all .75s ease-in-out;
   transform: translate(-70%,-45%) rotate(30deg);
+}
+
+* {
+  transition: all var(--duration-medium) ease;
 }

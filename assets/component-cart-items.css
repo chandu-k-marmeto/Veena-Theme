@@ -270,7 +270,7 @@ cart-remove-button .icon-remove {
   .cart-item__totals {
     display: flex;
     align-items: flex-start;
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
 }
 
@@ -365,5 +365,15 @@ cart-remove-button .icon-remove {
 @media screen and (min-width: 749px) and (max-width: 990px) {
   .cart-items .quantity-popover__info-button {
     padding-left: 1.5rem;
+  }
+}
+
+.hidden{
+  display: none;
+}
+
+@media screen and (max-width:575px) {
+  .cart-item__details *{
+    font-size: calc(var(--font-body-scale)* 14px);
   }
 }
