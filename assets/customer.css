@@ -1,13 +1,62 @@
 .customer:not(.account):not(.order) {
-  margin: 0 auto;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  text-align: center;
-  max-width: 60%;
-  background: #f5f5f5;
-  border-radius: 16px;
+  width: 60%;
 }
 
+.customer__button{
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 50%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff !important;
+  background-color: #895e59 !important;
+  border: 1px solid #895e59;
+  cursor: pointer;
+  border-radius: 4px !important;
+}
+
+.account-heading__container{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-bottom: 18px;
+}
+
+.account-heading__container .customer__title{
+  margin-bottom: 0px;
+}
+
+.account-heading__container svg{
+  height: 20px;
+  width: 20px;
+}
+
+.account__container{
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+@media screen and (max-width:768px) {
+  .customer{
+    flex-direction: column;
+  }
+}
+
+.customer-account-details__container{
+  width: 60%;
+}
+
+@media screen and (max-width:768px) {
+  .customer-account-details__container{
+    width: 100%;
+  }
+}
 
 .customer > h1,
 .customer__title {
@@ -15,11 +64,6 @@
   font-size: px;
 }
 
-.customer__title{
-  background: #f5f5f5;
-  border-radius: 16px;
-  font-size: 38px;
-}
 
 .customer form {
   margin-top: 4rem;
@@ -36,9 +80,7 @@
   border: solid 1px black;
 }
 
-.customer .button span{
-  color: rgb(var(--color-foreground));
-}
+
 
 .customer .button::after{
   background: #d03c3f;
@@ -441,11 +483,6 @@ thead{
   margin: 0px;
 }
 
-.customer-account-details__container{
-  padding: 30px;
-  border-radius: 16px;
-  background: #f5f5f5;
-}
 
 @media screen and (min-width: 750px) {
   :is(.account, .order) {
@@ -457,7 +494,7 @@ thead{
 @media screen and (min-width: 990px) {
   :is(.account, .order) > div:nth-of-type(2) {
     display: flex;
-    margin-top: 5rem;
+    flex-direction: column;
   }
 }
 
@@ -512,19 +549,8 @@ thead{
 .accout-order-address-container{
   display: grid;
   grid-template-columns: 1fr;
-  margin-top: 30px;
 }
 
-@media screen and (min-width:990px) {
-  .accout-order-address-container{
-    grid-template-columns: 77% 23%;
-    gap: 20px;
-  }
-  .account-order-container{
-    border-right: 1px solid black;
-    padding-right: 20px;
-  }
-}
 
 @media screen and (min-width: 750px) {
   .account table td:first-of-type {
@@ -744,11 +770,10 @@ label[for='AddressProvinceNew'] {
 .addresses ul {
   list-style: none;
   padding-left: 0;
-  text-align: center;
 }
 
 li[data-address] {
-  margin-top: 5rem;
+  margin-top: 2.4rem;
 }
 
 .addresses [aria-expanded='false'] ~ div[id] {
@@ -764,9 +789,14 @@ li[data-address] {
 }
 
 li[data-address] > h2 {
-  text-align: center;
   font-size: calc(var(--font-heading-scale) * 1.8rem);
   margin-bottom: 0;
+}
+
+.addresses-button-container{
+  display: flex;
+  width: 100%;
+  gap: 5px;
 }
 
 @media only screen and (min-width: 750px) {
@@ -840,4 +870,11 @@ p.email_title:before, p.email_title:after {
   width: 10%;
   height: 1px;
   background: rgba(var(--color-foreground), .2);
+}
+
+.account-page-subtitle-block {
+  padding: 10px 24px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  border: 1px solid var(--primary-colors-p-3, #d0bbba);
 }

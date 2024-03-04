@@ -99,7 +99,6 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  color: rgba(var(--color-button-text), 1);
 }
 
 .cart-drawer__warnings .drawer__close {
@@ -297,7 +296,8 @@ cart-drawer-items {
 
 .cart-drawer .cart-items .cart-item__quantity {
   padding-top: 0;
-  grid-column: 2 / 5;
+  grid-column: 4/ 5;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 749px) {

@@ -1,0 +1,37 @@
+{{ "customer-side-bar.css" |  asset_url |  stylesheet_tag }}
+
+
+<div class="customer-sidebar__container" data-display="account">
+    <a href="/account">
+			<div class="account-page-account-btn">
+			<span class="account-btn-logo">  
+				{% render "icon-account" %}
+			</span> 
+			<div>Account Details</div>
+			</div>
+    </a>
+    <a href="/account">
+			<div class="account-page-account-btn">
+				<span class="account-btn-logo">
+					{% render "icon-orders" %}
+				</span>
+				<div>View Orders</div>
+			</div>
+		</a>
+    <a href="/account/addresses">
+			<div class="account-page-account-btn">
+				<span class="account-btn-logo">
+					{% render "icon-address" %}
+				</span>
+				<div>View Address</div>
+			</div>
+		</a>
+    <a href="/account/logout">
+		<div class="account-page-account-btn">
+			<span class="account-btn-logo">
+				{% render "icon-signout" %}
+			</span>
+			<div>Sign out</div>
+		</div>
+		</a>
+</div>
