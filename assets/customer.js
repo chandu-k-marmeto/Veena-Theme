@@ -64,6 +64,7 @@ class CustomerAddresses {
 
   _toggleExpanded(target) {
     target.setAttribute(attributes.expanded, (target.getAttribute(attributes.expanded) === 'false').toString());
+    document.querySelector(".addresses-button-container").setAttribute(attributes.expanded, (target.getAttribute(attributes.expanded) === 'false').toString());
   }
 
   _handleAddEditButtonClick = ({ currentTarget }) => {
