@@ -15,7 +15,7 @@
 {%- endstyle -%}
 
 {% render "breadcrumbs" %}
-<div class="customer account__container account section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
+<div class="customer account__container account section-{{ section.id }}-padding color-{{ section.settings.color_scheme }} page-width">
    {% render "customer-side-bar" %}
   <div class="customer-account-details__container">
     <div class="account-heading__container">
@@ -23,7 +23,7 @@
       <h1 class="customer__title">{{ 'customer.account.title' | t }}</h1>
     </div>
     <div class="accout-order-address-container">
-      <div class="account-order-container">
+      {% comment %} <div class="account-order-container">
         <h2>{{ 'customer.orders.title' | t }}</h2>
 
         {% paginate customer.orders by 20 %}
@@ -133,7 +133,7 @@
             {%- endif -%}
           {%- endif -%}
         {% endpaginate %}
-      </div>
+      </div> {% endcomment %}
       <div class="account-address-container">
         <h2 class="h2">{{ customer.name }}</h2>
         <div class="account-page-subtitle-block">

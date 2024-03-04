@@ -1,6 +1,6 @@
 {{ "customer-side-bar.css" |  asset_url |  stylesheet_tag }}
 
-{{ handle }}
+
 <div class="customer-sidebar__container" data-display="account">
     <a href="/account">
 			<div class="account-page-account-btn">
@@ -10,8 +10,8 @@
 			<div>Account Details</div>
 			</div>
     </a>
-    <a href="/account">
-			<div class="account-page-account-btn">
+    <a href="/pages/orders">
+			<div class="account-page-account-btn {% if page.url =="/pages/orders" %}active {% endif %}">
 				<span class="account-btn-logo">
 					{% render "icon-orders" %}
 				</span>

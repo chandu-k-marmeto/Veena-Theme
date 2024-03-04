@@ -24,6 +24,13 @@
 	gap: 20px;
 }
 
+.active{
+	background: var(--Secondary-Colors-S1, #895e59);
+  color: #fff;
+  border-left: 8px solid #bc9891;
+  padding: 0 20px;
+}
+
 @media screen and (max-width:768px) {
 	.customer-sidebar__container{
 		width: 100%;

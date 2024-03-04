@@ -147,7 +147,6 @@
 @media screen and (min-width: 750px) {
   .customer table {
     border: none;
-    box-shadow: 0 0 0 0.1rem rgba(var(--color-foreground), 0.08);
   }
   .customer h1{
     font-size: 38px;
@@ -196,12 +195,29 @@
   text-align: left;
 }
 
+.addresses__container{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 30px;
+  gap: 20px;
+}
+
+.addresses__container > div{
+  width: 50%;
+}
+
+tr{
+  border-bottom: 1px solid;
+  border-color: rgba(var(--color-foreground), .2);
+}
+
 .customer tbody td:first-of-type {
   padding-top: 4rem;
 }
 
 thead{
-  background: rgba(var(--color-foreground), .03);
+  background: #e3dbd3;
 }
 
 @media screen and (min-width: 750px) {
@@ -483,11 +499,18 @@ thead{
 }
 
 /* Account/Order */
-:is(.account, .order) {
+:is( .order) {
   margin: 0 auto;
-  max-width: var(--page-width);
   padding-left: 2rem;
   padding-right: 2rem;
+  display: flex;
+  gap: 20px;
+}
+
+@media screen and (max-width:768px) {
+  :is( .order) {
+    flex-direction: column;
+  }
 }
 
 .account .button{
@@ -508,6 +531,7 @@ thead{
   :is(.account, .order) > div:nth-of-type(2) {
     display: flex;
     flex-direction: column;
+    width: 60%;
   }
 }
 
@@ -714,6 +738,7 @@ thead{
   width: 1.1rem;
   color: rgb(var(--color-foreground));
   margin-right: 0.5rem;
+  transform: rotate(180deg);
 }
 
 .order dl {
