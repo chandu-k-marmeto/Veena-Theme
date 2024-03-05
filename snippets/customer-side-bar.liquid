@@ -1,17 +1,17 @@
 {{ "customer-side-bar.css" |  asset_url |  stylesheet_tag }}
 
-{%  assign url = canonical_url |  split: "/" |  last %}
+{%  assign url = request.path |  split: "/" %}
 <div class="customer-sidebar__container" data-display="account">
   <a href="/account">
-<div class="account-page-account-btn {% if url == "account" %} active {% endif %}">
+	<div class="account-page-account-btn {% if url == "account" %} active {% endif %}">
 		<span class="account-btn-logo">  
 			{% render "icon-account" %}
 		</span> 
 		<div>Account Details</div>
-		</div>
+	</div>
   </a>
     <a href="/pages/orders">
-			<div class="account-page-account-btn {% if url == "orders" %} active {% endif %}">
+			<div class="account-page-account-btn {% if url contains "orders" %} active {% endif %}">
 				<span class="account-btn-logo">
 					{% render "icon-orders" %}
 				</span>
@@ -19,7 +19,7 @@
 			</div>
 		</a>
     <a href="/account/addresses">
-			<div class="account-page-account-btn {% if url == "addresses" %} active {% endif %}">
+			<div class="account-page-account-btn {% if url == "accountaddresses" %} active {% endif %}">
 				<span class="account-btn-logo">
 					{% render "icon-address" %}
 				</span>

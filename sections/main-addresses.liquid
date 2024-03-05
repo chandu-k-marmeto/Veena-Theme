@@ -175,8 +175,8 @@
           {%- if address == customer.default_address -%}
             <h2>{{ 'customer.addresses.default' | t }}</h2>
           {%- endif -%}
-          {{ address | format_address }} 
-          <div class="addresses-button-container" aria-expanded="false">
+          {{ address | format_address }}
+          <div class="addresses-button-container"> 
             <button
               type="button"
               id="EditFormButton_{{ address.id }}"
@@ -185,6 +185,7 @@
               aria-expanded="false"
               data-address-id="{{ address.id }}"
               class="customer__button"
+              data-id="{{ address.id }}"
             >
               {{ 'customer.addresses.edit' | t }}
             </button>
@@ -198,7 +199,8 @@
               {{ 'customer.addresses.delete' | t }}
             </button>
           </div>
-          <div id="EditAddress_{{ address.id }}">
+          </li>
+          <div data-address="{{ address.id }}" class="account-address-form hidden">
             <h2>{{ 'customer.addresses.edit_address' | t }}</h2>
             {%- form 'customer_address', address -%}
               <div class="field">
@@ -338,7 +340,6 @@
               </div>
             {%- endform -%}
           </div>
-        </li>
       {%- endfor -%}
     </ul>
 
