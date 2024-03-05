@@ -144,6 +144,9 @@
           <p>{{ customer.email }}</p>
           {{ customer.default_address | format_address }}
         </div>
+        <div>
+          {% render "responsive-image" , desktopImage:section.settings.image, class:"media media--square" %}
+        </div>
       </div>
     </div>
   </div>
@@ -157,6 +160,11 @@
       "type": "color_scheme",
       "id":"color_scheme",
       "label": "Color scheme"
+    },
+    {
+      "type": "image_picker",
+      "label": "Image",
+      "id": "image"
     },
     {
       "type": "header",
