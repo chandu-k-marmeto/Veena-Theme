@@ -1,0 +1,93 @@
+{{ "custom-collections-tab.css" |  asset_url |  stylesheet_tag }}
+
+{% liquid
+	assign paddingTop = section.settings.padding_top
+	assign paddingBottom = section.settings.padding_bottom
+	assign heading = section.settings.heading  
+%}
+
+{% style %}
+	.padding-{{ section.id }}{
+		padding-top : {{ paddingTop |  divided_by: 2 }}px;
+		padding-bottom : {{ paddingBottom |  divided_by: 2 }}px ;
+	}
+
+	@media screen and (min-width:750px){
+		padding-top : {{ paddingTop }}px;
+		padding-bottom : {{ paddingBottom }}px ;
+	}
+{% endstyle %}
+
+<div class="padding-{{ section.id }} custom-collections-tab__container">
+	<div class="page-width">
+		{% if heading %}
+			<h2 class="h2 custom-collections-tab__heading">{{ heading }}</h2>
+		{% endif %}
+		<div class="custom-collections-tab__inner">
+			
+		</div>
+	</div>
+</div>
+
+{% schema %}
+{
+	"name": "Collections tab",
+	"tag": "section",
+	"settings": [
+		{
+			"type": "text",
+			"label": "Heading",
+			"id": "heading",
+			"default": "Fresh from the source"
+		},
+		{
+			"type": "header",
+			"content": "Section padding"
+		},
+		{
+			"type": "range",
+			"label": "Padding top",
+			"id": "padding_top",
+			"default": 20,
+			"min": 0,
+			"max": 100,
+			"step": 2,
+			"unit": "px"
+		},
+		{
+			"type": "range",
+			"label": "Padding bottom",
+			"id": "padding_bottom",
+			"default": 20,
+			"min": 0,
+			"max": 100,
+			"step": 2,
+			"unit": "px"
+		}
+	],
+	"blocks": [
+		{
+			"type": "collection_tab",
+			"name": "Collection tab",
+			"settings": [
+				{
+					"type": "richtext",
+					"label": "Heading",
+					"id": "heading"
+				},
+				{
+					"type": "collection_list",
+					"label": "Pick collection",
+					"id": "pick_collection",
+					"limit": 1
+				}
+			]
+		}
+	],
+	"presets": [
+		{
+			"name": "Collections tab"
+		}
+	]
+}
+{% endschema %}

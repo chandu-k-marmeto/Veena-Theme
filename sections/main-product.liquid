@@ -579,9 +579,11 @@
                   {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
                 </li>
               {%- endfor -%}
-            </ul>
-            </div>
-          {% endcase %}  
+              </ul>
+              </div>
+            {%- when 'pincode_checker' -%}
+              {% render 'zipcode'  %}
+            {% endcase %}  
         {%- endfor -%}
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
           {{ 'products.product.view_full_details' | t }}
@@ -2264,7 +2266,13 @@
     },
     {
       "type":"payment",
-      "name":"Payment"
+      "name":"Payment",
+      "limit": 1
+    },
+    {
+      "type": "pincode_checker",
+      "name": "Pincode Validator",
+      "limit": 1
     }
   ],
   "settings": [

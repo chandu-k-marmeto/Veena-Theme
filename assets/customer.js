@@ -64,7 +64,14 @@ class CustomerAddresses {
 
   _toggleExpanded(target) {
     target.setAttribute(attributes.expanded, (target.getAttribute(attributes.expanded) === 'false').toString());
-    document.querySelector(".addresses-button-container").setAttribute(attributes.expanded, (target.getAttribute(attributes.expanded) === 'false').toString());
+    const id = target.dataset.id 
+    document.querySelectorAll(".account-address-form").forEach(element=>{
+      if (element.dataset.address === id){
+        element.classList.toggle("hidden")
+      }else{
+        element.classList.add("hidden")
+      }
+    })
   }
 
   _handleAddEditButtonClick = ({ currentTarget }) => {
