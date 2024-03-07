@@ -62,6 +62,11 @@
           "settings": {
           }
         },
+        "bundler_7XYGdG": {
+          "type": "bundler",
+          "settings": {
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -102,6 +107,7 @@
         "buy_buttons",
         "icon_with_text_NxCJwx",
         "payment_am9CHC",
+        "bundler_7XYGdG",
         "description",
         "share",
         "collapsible_tab_cdhAgY",
