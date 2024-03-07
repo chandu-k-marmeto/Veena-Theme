@@ -583,6 +583,13 @@
               </div>
             {%- when 'pincode_checker' -%}
               {% render 'zipcode'  %}
+            {% when "bundler" %}
+              {% assign products = product.metafields.custom.bundle_products %}
+              {% if products %}
+                {% for product in products.value %}
+                  <h1>product.title</h1>
+                {% endfor %}
+              {% endif %}
             {% endcase %}  
         {%- endfor -%}
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -2272,6 +2279,11 @@
     {
       "type": "pincode_checker",
       "name": "Pincode Validator",
+      "limit": 1
+    },
+    {
+      "type": "bundler",
+      "name": "Bundle products",
       "limit": 1
     }
   ],
