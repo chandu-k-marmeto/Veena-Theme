@@ -18,7 +18,49 @@
 
 <div class="padding-{{ section.id }}">
 	<div class="page-width">
-
+		<div class="container">
+			<div class="container__inner">
+				<h2 class="h2 custom-dealer__heading">Store Locator</h2>
+				<div class="filter">
+					<label>
+						<span>Category</span>
+						<select name="selectcatid" id="slcatid" onchange="findstatelist();">
+							<option value="" disabled selected>Select Category {% render "icon-caret" %}</option>
+						</select>
+					</label>
+					<label id="slstatelist">
+						<span>State</span>
+						<select name="selectState" id="slstate" onchange="findcitylist();">
+								<option value="" disabled selected>Select State {% render "icon-caret" %}</option>
+						</select>
+					</label>
+					<label id="citylist">
+						<span>City</span>
+						<select name="selectCity" id="slcity">
+								<option value="" disabled selected>Select City {% render "icon-caret" %}</option>
+						</select>
+					</label>
+					<label>
+						<button type="button" id="submitButton">Show results</button>
+					</label>
+					<div id="loader" class="frmloader"><span></span></div>
+				</div>
+			</div>
+			<div class="address-list">
+				<div class="list">
+					<div class="box">
+						<h3>KANISHKA ENTERPRISES</h3>
+						<div class="info">
+							<p class="address">AMBEDKAR CHOWK, DEOGHAR - 814112</p>
+							<p>
+								<span>DEOGHAR, Jharkhand</span>
+								Phone: <strong>9709700526</strong>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 
