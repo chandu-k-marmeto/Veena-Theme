@@ -1799,3 +1799,41 @@ a.product__text {
   padding: 8px 20px;
   column-gap: 20px;
 }
+
+.bundle-product__content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+img.bundle-product__image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: var(--media-radius);
+}
+
+.bundle-checkbox{
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+
+.bundle-product__image-container {
+  position: relative;
+}
+
+.bundle-product__container{
+  position: relative;
+}
+
+.bundle-product__container::after{
+  position: absolute;
+  content: "+";
+  top: 30%;
+  right: -10%;
+}
+
+.bundle-products__wrapper div:last-child::after{
+  content: "";
+}
