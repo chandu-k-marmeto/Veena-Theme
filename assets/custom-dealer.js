@@ -53,7 +53,21 @@ async function viewlist(){
 	const addressList = document.querySelector(".address-list")
 	console.log(addressList)
 
-	categories.forEach(address => {
+	const categoryValue = slcatid.value
+	const stateValue = slstate.value
+	const cityValue = slcity.value
+
+	let addressList = []
+	
+	for ( i = 0 ; i < categories.length ; i++){
+		if (categories[i][1] === categoryValue && categories[i][3] === stateValue && categories[i][4] === cityValue){
+			addressList.push(i)
+		}
+	}
+
+	console.log(addressList)
+
+	addressList.forEach(address => {
 		address.forEach(list => {
 			addressList.innerHTML += 
 				`<div class="list">
