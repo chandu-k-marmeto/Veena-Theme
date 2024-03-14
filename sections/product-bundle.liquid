@@ -1,3 +1,5 @@
+<script src="{{ "product-bundle.js" |  asset_url }}" defer></script>
+
 {% assign products = product.metafields.custom.bundle_products %}
 
 {% style %}
@@ -14,7 +16,7 @@
 	}
 {% endstyle %}
 
-<div class="padding-{{ section.id }}">
+<div class="padding-{{ section.id }} bundle-products">
 	<div class="page-width">
 		{% if products %}
 			{% if section.settings.heading %}
@@ -25,7 +27,7 @@
 				<div class="bundle-product__container grid__item">
 					<div class="bundle-product__image-container">
 					<img class="bundle-product__image" src="{{ product.featured_image |  image_url }}" />
-					<input type="checkbox" name="bundle-product" class="bundle-checkbox"/>
+					<input checked type="checkbox" name="bundle-product" class="bundle-checkbox" data-id="{{ product.selected_or_first_available_variant.id }}" data-qunatity="1"/>
 					</div>
 					<div class="bundle-product__content-container">
 					<span class="bundle-product__title">{{ product.title |  truncate: 15 }}</span>
@@ -34,6 +36,7 @@
 				</div>
 				{% endfor %}
 			</div>
+			<button class="button" id="product-bundle-bundle"><span>Add to cart</span></button>
 		{% endif %}
 	</div>
 </div>

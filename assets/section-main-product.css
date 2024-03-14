@@ -1804,6 +1804,7 @@ a.product__text {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  text-align: left;
 }
 
 img.bundle-product__image {
@@ -1831,9 +1832,22 @@ img.bundle-product__image {
   position: absolute;
   content: "+";
   top: 30%;
-  right: -10%;
+  right: -5%;
 }
 
 .bundle-products__wrapper div:last-child::after{
   content: "";
+}
+
+.bundle-products .button{
+  color: white;
+  background-color: #D03C3F;
+}
+
+.bundle-products{
+  text-align: right;
+}
+
+.bundle-products .h2{
+  text-align: left;
 }
