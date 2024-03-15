@@ -7,6 +7,12 @@ button.addEventListener("click" , addToCart)
 function addToCart(){
     const productId =  document.querySelectorAll("input[name=bundle-product]:checked")
     const productIds = []
+    const mainProduct = document.querySelector(".bundle-products")
+    const mainProductQuantity = document.querySelector(".quantity__input")
+    productIds.push({
+      "id":mainProduct.dataset.id,
+      "quantity" : mainProductQuantity.value
+    })
     productId.forEach(item => {
         const itemValues = {
             "id" : item.dataset.id,
@@ -31,7 +37,6 @@ function addToCart(){
          return response.json()
        })
        .then(response => {
-				console.log(response)
         cart.renderContents(response)
 			 })
        .catch((error) => {

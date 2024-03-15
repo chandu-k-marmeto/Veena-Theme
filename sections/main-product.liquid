@@ -29,6 +29,8 @@
 
   <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ "product-bundle.js" |  asset_url }}" defer></script>
+
   {%- if product.quantity_price_breaks_configured? -%}
     <script src="{{ 'show-more.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'price-per-item.js' | asset_url }}" defer="defer"></script>
@@ -583,6 +585,32 @@
               </div>
             {%- when 'pincode_checker' -%}
               {% render 'zipcode'  %}
+            {% when "bundler" %}
+              {% assign products = product.metafields.custom.bundle_products %}
+              <div class="bundle-products" data-id="{{ product.selected_or_first_available_variant.id }}" data-qunatity="1">
+                <div class="page-width">
+                  {% if products %}
+                    {% if section.settings.heading %}
+                      <h3 class="h2">{{ section.settings.heading }}</h3>
+                    {% endif %}
+                    <div class="bundle-products__wrapper grid grid--2-col">
+                      {% for product in products.value %}
+                      <div class="bundle-product__container grid__item">
+                        <div class="bundle-product__image-container">
+                        <img class="bundle-product__image" src="{{ product.featured_image |  image_url }}" />
+                        <input checked type="checkbox" name="bundle-product" class="bundle-checkbox" data-id="{{ product.selected_or_first_available_variant.id }}" data-qunatity="1"/>
+                        </div>
+                        <div class="bundle-product__content-container">
+                        <span class="bundle-product__title">{{ product.title |  truncate: 15 }}</span>
+                        <span class="bundle-product__price">{{ product.price |  money_without_currency }}</span>
+                        </div>
+                      </div>
+                      {% endfor %}
+                    </div>
+                    <button class="button" id="product-bundle-bundle"><span>Add to cart</span></button>
+                  {% endif %}
+                </div>
+              </div>
             {% endcase %}  
         {%- endfor -%}
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -2272,6 +2300,11 @@
     {
       "type": "pincode_checker",
       "name": "Pincode Validator",
+      "limit": 1
+    },
+    {
+      "type": "bundler",
+      "name": "Product bundle",
       "limit": 1
     }
   ],
