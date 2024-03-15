@@ -91,6 +91,11 @@
             "content": "<p>{{ block.settings.page.title }}<\/p>",
             "page": ""
           }
+        },
+        "bundler_KtbUCH": {
+          "type": "bundler",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -102,11 +107,11 @@
         "buy_buttons",
         "icon_with_text_NxCJwx",
         "payment_am9CHC",
-        "bundler_7XYGdG",
         "description",
         "share",
         "collapsible_tab_cdhAgY",
-        "collapsible_tab_B9KmHe"
+        "collapsible_tab_B9KmHe",
+        "bundler_KtbUCH"
       ],
       "settings": {
         "enable_sticky_info": true,
